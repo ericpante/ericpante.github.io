@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://ericpante.github.io/about.html</loc>
-    <lastmod>2026-04-05T07:11:38.781Z</lastmod>
+    <loc>https://ericpante.github.io/publications.html</loc>
+    <lastmod>2026-04-05T11:34:43.759Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ericpante.github.io/projects.html</loc>
+    <lastmod>2026-04-05T11:37:58.649Z</lastmod>
   </url>
   <url>
     <loc>https://ericpante.github.io/index.html</loc>
-    <lastmod>2026-04-05T07:49:47.988Z</lastmod>
+    <lastmod>2026-04-05T11:21:43.314Z</lastmod>
   </url>
 </urlset>
