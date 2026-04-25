@@ -1,0 +1,8 @@
+---
+title: "biodiversity 3"
+date: "2026-04-21"
+author: "Pante E"
+categories: [biodiversity,belmont forum]
+image: biodiversity3.png
+description: Enhancing Long-Term Biodiversity Monitoring through Transdisciplinary Approaches for Holistic Ecosystem protection
+---

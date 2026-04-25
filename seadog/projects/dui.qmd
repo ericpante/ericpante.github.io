@@ -1,0 +1,8 @@
+---
+title: "drive"
+date: "2026-04-09"
+author: "Pante E"
+categories: [biodiversity,genomics,bivalves]
+image: drive_logo.png
+description: study of Doubly Uniparental Inheritance (DUI) of mitochondria and its role in maintaining reproductive isolation in bivalves
+---

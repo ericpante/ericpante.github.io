@@ -1,0 +1,8 @@
+---
+title: "ocean 2"
+date: "2026-04-09"
+author: "Pante E"
+categories: ["belmont forum", "biodiversity"]
+image: "ocean2_logo.png"
+description: "towards the ocean we want: biodiversity and ecosystem sustainability for nature and human well-being"
+---

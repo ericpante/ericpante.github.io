@@ -1,0 +1,30 @@
+---
+title: "Eric Pante, PhD"
+description: "molecular marine biologist"
+image: sea.png
+about:
+  template: trestles
+  image-shape: round
+  links:
+    - text: GitHub
+      icon: github
+      url: "https://github.com/ericpante"
+    - text: ORCID
+      icon: person-circle
+      url: "https://orcid.org/0000-0001-7680-2112"
+    - text: ResearchGate
+      icon: journal
+      url: "https://www.researchgate.net/profile/Eric-Pante"
+    - text: Email
+      icon: envelope
+      url: "mailto:eric.pante@cnrs.fr"
+    - text: Google Scholar
+      icon: mortarboard
+      url: "https://scholar.google.fr/citations?user=_jtgsu0AAAAJ&hl=en"
+    - text: iNaturalist
+      icon: binoculars
+      href: "https://www.inaturalist.org/people/7034264"
+comments: false
+---
+
+I am a [CNRS](http://www.cnrs.fr/) researcher based at the [LABORATOIRE DES SCIENCES](https://www-iuem.univ-brest.fr/lemar/) [DE L’ENVIRONNEMENT MARIN](#0) (LEMAR) in Plouzané, France. I am broadly interested in the molecular ecology of marine organisms, with particular fondness for corals and mollusks. You can learn more on my research here.

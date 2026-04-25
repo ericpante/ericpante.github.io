@@ -1,0 +1,18 @@
+---
+title: "daunpapua"
+date: "2026-04-09"
+author: "Pante E"
+categories: [biodiversity,deep-sea,corals]
+image: daunpapua_logo.png
+description: oceanographic cruise aimed at exploring the deep-sea benthic biodiversity of Papua New Guinea
+---
+
+SCG link: <http://dx.doi.org/10.17600/18002418>
+
+SEANOE ?
+
+SISMER?
+
+blog
+
+press

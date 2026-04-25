@@ -1,0 +1,8 @@
+---
+title: "resilience"
+date: "2026-04-09"
+author: "Pante E"
+categories: [belmont forum]
+image: resilience_logo.png
+description: vulnerability and resilience management for socio-environmental systems in exposed territories
+---

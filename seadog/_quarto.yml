@@ -1,0 +1,42 @@
+project:
+  type: website
+
+website:
+  title: "seadog"
+  navbar:
+    right:
+      - href: index.qmd
+        text: Home
+      - href: projects.qmd
+        text: Projects
+      - href: publications.qmd
+        text: Publications
+  page-footer:
+    center: "made with [quarto](https://quarto.org/), an open source scientific publishing system. To see the code, click [here](https://github.com/ericpante/ericpante.github.io)"
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+    css: styles.css
+    toc: true
+
+editor: visual
+
+extensions:
+  badge:
+    - key: current
+      colour: springgreen
+    - key: future
+      class: bg-danger
+      href: https://github.com/mcanouil/quarto-badge@2.4.0
+    - key: deprecated
+      class: bg-warning
+      href: https://github.com/mcanouil/quarto-badge@2.4.0/releases/tag/{{value}}
+    - key: stable
+      colour: "#28a745"
+    - key: beta
+      colour: "#ffc107"
+    - key: experimental
+      class: bg-info

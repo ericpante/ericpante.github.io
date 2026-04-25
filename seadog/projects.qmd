@@ -1,0 +1,13 @@
+---
+title: "Projects"
+listing:
+  contents: projects
+  sort-ui: [title, date]
+  type: grid
+  filter-ui: [title, date]
+  categories: true
+  image-height: 230px
+---
+
+::: {#project-listing}
+:::

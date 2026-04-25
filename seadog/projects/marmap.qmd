@@ -1,0 +1,9 @@
+---
+title: "marmap"
+subtitle: "marmap"
+date: "2026-04-09"
+author: "Pante E"
+categories: [R]
+image: marmap_logo.png
+description: R package to fetch, plot and analyse bathymetric and topographic data
+---

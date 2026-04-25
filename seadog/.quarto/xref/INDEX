@@ -1,0 +1,29 @@
+{
+  "index.qmd": {
+    "index.html": "bf2e5562"
+  },
+  "projects.qmd": {
+    "projects.html": "5a8b888d"
+  },
+  "publications.qmd": {
+    "publications.html": "ae6a3ab3"
+  },
+  "projects/marmap.qmd": {
+    "marmap.html": "dcb32f2c"
+  },
+  "projects/daunpapua.qmd": {
+    "daunpapua.html": "f3c30625"
+  },
+  "projects/dui.qmd": {
+    "dui.html": "4b5361d4"
+  },
+  "projects/ocean2.qmd": {
+    "ocean2.html": "55b7dfdb"
+  },
+  "projects/biodiversity3.qmd": {
+    "biodiversity3.html": "bfe0c96e"
+  },
+  "projects/resilience.qmd": {
+    "resilience.html": "8e6141f6"
+  }
+}
