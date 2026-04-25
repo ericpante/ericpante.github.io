@@ -2,13 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.9.37">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Publications – qssite</title>
+<title>Publications – seadog</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -20,7 +23,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -36,10 +59,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-c1fac2584b48ed01fb6e278e36375074.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-158031087360bce0ff56dc785ce39e06.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -72,7 +95,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -80,7 +103,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">qssite</span>
+    <span class="navbar-title">seadog</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -88,18 +111,18 @@ ul.task-list li input[type="checkbox"] {
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
     <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./publications.html" aria-current="page"> 
-<span class="menu-text">Publications</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="./projects.html"> 
 <span class="menu-text">Projects</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./publications.html" aria-current="page"> 
+<span class="menu-text">Publications</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -112,9 +135,7 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
-    </div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -137,11 +158,2910 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>About this site</p>
+<div class="cell">
+<style type="text/css">
+/* Group header */
+.year-group { margin: 28px 0 8px; }
+.year-title { margin: 0; font-size: 1.35rem; border-bottom: 1px solid #e5e7eb; padding-bottom: 2px; }
+
+/* Card + layout */
+.pub-card {
+  padding: 16px 16px 10px 16px;
+  margin: 14px 0;
+  background: #fff;
+}
+.pub-title { font-weight: 600; font-size: 1.05rem; margin-bottom: 4px; }
+.pub-title a { text-decoration: none; }
+.pub-meta  { color: #555; font-size: 0.95rem; margin-bottom: 8px; }
+
+/* Actions row */
+.pub-actions {
+  display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center;
+  margin-top: 8px; margin-bottom: 8px;
+}
+.pub-actions a {
+  text-decoration: none; font-size: 0.92rem;
+  border-bottom: 1px dotted #999; color: #0b66c3; cursor: pointer;
+}
+.pub-actions a.external { border-bottom-style: solid; }
+
+/* Toggle area */
+.toggle-area {
+  display: none; position: relative;
+  border: 1px solid #000; border-radius: 10px;
+  padding: 12px 44px 12px 12px; background: #fafafa;
+  margin-top: 10px; overflow: auto;
+}
+.toggle-area .panel-label {
+  font-size: 0.82rem; color: #333; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.03em;
+  opacity: 0.85; margin-bottom: 6px;
+}
+.toggle-area pre { white-space: pre-wrap; word-wrap: break-word; margin: 0; }
+.toggle-area .content p { margin: 0 0 0.6em 0; }
+
+/* Copy button */
+.copy-btn {
+  position: absolute; top: 6px; right: 6px;
+  border: 1px solid #ddd; background: #fff; font-size: 0.85rem;
+  padding: 4px 8px; border-radius: 6px; cursor: pointer;
+}
+.copy-btn:active { transform: translateY(1px); }
+.copy-toast {
+  position: absolute; top: 6px; right: 70px; font-size: 0.8rem;
+  background: #333; color: #fff; padding: 3px 7px; border-radius: 6px; display: none;
+}
+
+/* Lab-led star on Abstract link */
+.pub-actions .lab-star {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  line-height: 1;
+  color: #ffb300;
+  user-select: none;
+}
+.pub-actions .lab-star[role="img"] {
+  cursor: default;
+}
+.pub-actions .lab-star .sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px; overflow: hidden;
+  clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+}
+</style>
+</div>
+<script>
+(function() {
+  function getCard(el) {
+    while (el && !el.classList?.contains('pub-card')) el = el.parentNode;
+    return el;
+  }
+  function showPanel(card, label, html, mode) {
+    const area = card.querySelector('.toggle-area');
+    const labelEl = area.querySelector('.panel-label');
+    const contentEl = area.querySelector('.content');
+
+    // Toggle: if clicking same action while open, collapse
+    const current = area.getAttribute('data-current');
+    if (current === mode && area.style.display === 'block') {
+      area.style.display = 'none';
+      area.setAttribute('data-current', '');
+      return;
+    }
+
+    labelEl.textContent = label;
+    if (mode === 'bib') {
+      contentEl.innerHTML = '';
+      const pre = document.createElement('pre');
+      pre.textContent = html;
+      contentEl.appendChild(pre);
+    } else if (mode === 'abstract') {
+      contentEl.textContent = html;
+    } else if (mode === 'dataset_info') {
+      contentEl.textContent = html;
+    } else {
+      contentEl.innerHTML = html; // citation HTML
+    }
+    area.style.display = 'block';
+    area.setAttribute('data-current', mode);
+  }
+
+  // Resource link handler (toggle)
+  document.addEventListener('click', function(evt) {
+    const a = evt.target.closest('a[data-action]');
+    if (!a) return;
+    const action = a.getAttribute('data-action');
+    const card   = getCard(a);
+    if (!card) return;
+    evt.preventDefault();
+
+    if (action === 'abstract' || action === 'dataset_info' || action === 'citation' || action === 'bib') {
+      const key = card.getAttribute('data-key');  // <-- Pandoc ref id suffix
+
+      // Build label + payload
+      //let label = action === 'citation' ? 'Citation' : (action === 'bib' ? 'BibTeX' : 'Abstract');
+      let label = 
+        action === 'citation' ? 'Citation' :
+         action === 'bib' ? 'BibTeX' :
+        action === 'dataset_info' ? 'Data' :
+        'Abstract';
+  
+      let html  = '';
+
+      if (action === 'abstract') {
+        const payloadEl = card.querySelector('.payload-abstract');
+        const text = (payloadEl?.textContent || 'No abstract available.').trim();
+        showPanel(card, label, text, 'abstract');
+        return;
+      }
+
+     if (action === 'dataset_info') {
+        const payloadEl = card.querySelector('.payload-dataset_info');
+        const text = (payloadEl?.textContent || 'No data available.').trim();
+        showPanel(card, label, text, 'dataset_info');
+        return;
+      }
+
+      if (action === 'citation') {
+        // Pull APA-formatted HTML from hidden #refs list: <div id="ref-KEY">
+        const ref = document.querySelector('#ref-' + key);
+        html = (ref ? ref.innerHTML : 'Citation unavailable.').trim();
+        showPanel(card, label, html, 'citation');
+        return;
+      }
+
+      if (action === 'bib') {
+        const payloadEl = card.querySelector('.payload-bibtex');
+        const text = (payloadEl?.textContent || 'No BibTeX available.').trim();
+        showPanel(card, label, text, 'bib');
+        return;
+      }
+    }
+  }, false);
+
+  // Copy button
+  document.addEventListener('click', function(evt) {
+    const btn = evt.target.closest('.copy-btn');
+    if (!btn) return;
+    const card = getCard(btn);
+    const area = card.querySelector('.toggle-area');
+    const contentEl = area.querySelector('.content');
+
+    let textToCopy = '';
+    const pre = contentEl.querySelector('pre');
+    if (pre) textToCopy = pre.textContent;
+    else textToCopy = contentEl.innerText;
+
+    navigator.clipboard.writeText(textToCopy).then(() => {
+      const toast = area.querySelector('.copy-toast');
+      toast.style.display = 'inline-block';
+      setTimeout(() => { toast.style.display = 'none'; }, 1200);
+    }).catch(() => {
+      const ta = document.createElement('textarea');
+      ta.value = textToCopy;
+      document.body.appendChild(ta);
+      ta.select();
+      try { document.execCommand('copy'); } catch (e) {}
+      document.body.removeChild(ta);
+    });
+  }, false);
+})();
+</script>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<div class="year-group">
+<h2 class="year-title anchored" id="y-preprint">Preprint</h2>
+<div>
+<div class="pub-card" data-key="hanafi2025image">
+<div class="pub-title">
+<a href="https://doi.org/10.1101/2025.08.18.670867" target="_blank" rel="noopener">Image-based ecological assessment of deep-sea sponge, coral and other cnidarian assemblages through a morpho-functional approach</a>
+</div>
+<div class="pub-meta">
+Hanafi-Portier, Samadi, Cárdenas, Pante &amp; Olu
+<br>
+<em>bioRxiv</em>
+</div>
+<div class="pub-actions">
+<a href="#" data-action="abstract" role="button">Abstract</a>
+<a href="#" data-action="dataset_info" role="button">Data</a>
+<a href="#" data-action="citation" role="button">Citation</a>
+<a href="#" data-action="bib" role="button">BibTeX</a>
+<a class="external" href="https://doi.org/10.1101/2025.08.18.670867" target="_blank" rel="noopener">Preprint</a>
+</div>
+<div class="toggle-area" data-current="">
+<button class="copy-btn">Copy</button>
+<span class="copy-toast">Copied!</span>
+<div class="panel-label">—</div>
+<div class="content"></div>
+</div>
+<div style="display:none;">
+<div class="payload-abstract">NA</div>
+<div class="payload-dataset_info">seanoe: doi:10.17882/108256</div>
+<div class="payload-bibtex">@article{hanafi2025image,
+  author = {M{\a'e}lissa Hanafi-Portier and Sarah Samadi and Paco C{\a'a}rdenas and Eric Pante and Karine Olu},
+  doi = {10.1101/2025.08.18.670867},
+  journal = {bioRxiv},
+  pages = {2025--08},
+  publisher = {Cold Spring Harbor Laboratory},
+  title = {Image-based ecological assessment of deep-sea sponge, coral and other cnidarian assemblages through a morpho-functional approach},
+  year = {preprint}
+}</div>
+</div>
+</div>
+<div class="pub-card" data-key="xu2025unexpected">
+<div class="pub-title">
+<a href="https://doi.org/10.1101/2025.09.11.675584" target="_blank" rel="noopener">Unexpected diversity of Isidoides (Anthozoa: Octocorallia: Isidoidae) revealed by morphology and phylogenomics analysis with descriptions of three new species</a>
+</div>
+<div class="pub-meta">
+Xu, Bilewitch, Pante, Zhan, Mills, Clark &amp; Xu
+<br>
+<em>bioRxiv</em>
+</div>
+<div class="pub-actions">
+<a href="#" data-action="abstract" role="button">Abstract</a>
+<a href="#" data-action="dataset_info" role="button">Data</a>
+<a href="#" data-action="citation" role="button">Citation</a>
+<a href="#" data-action="bib" role="button">BibTeX</a>
+<a class="external" href="https://www.biorxiv.org/content/10.1101/2025.09.11.675584v1" target="_blank" rel="noopener">Preprint</a>
+<a class="external" href="https://github.com/ericpante/isidoides" target="_blank" rel="noopener">GitHub</a>
+</div>
+<div class="toggle-area" data-current="">
+<button class="copy-btn">Copy</button>
+<span class="copy-toast">Copied!</span>
+<div class="panel-label">—</div>
+<div class="content"></div>
+</div>
+<div style="display:none;">
+<div class="payload-abstract">NA</div>
+<div class="payload-dataset_info">seanoe: 10.17882/111869 ; SRA: PRJNA1293818</div>
+<div class="payload-bibtex">@article{xu2025unexpected,
+  author = {Yu Xu and Jaret Bilewitch and Eric Pante and Zifeng Zhan and Sadie Mills and Malcolm Clark and Kuidong Xu},
+  doi = {10.1101/2025.09.11.675584},
+  journal = {bioRxiv},
+  pages = {2025--09},
+  publisher = {Cold Spring Harbor Laboratory},
+  title = {Unexpected diversity of Isidoides (Anthozoa: Octocorallia: Isidoidae) revealed by morphology and phylogenomics analysis with descriptions of three new species},
+  year = {preprint}
+}</div>
+</div>
+</div>
+</div>
+</div>
+<div class="year-group">
+<h2 class="year-title anchored" id="y-2026">2026</h2>
+<div>
+<div class="pub-card" data-key="soldourdinsepia2026">
+<div class="pub-title">
+<a href="https://doi.org/10.24072/pcjournal.703" target="_blank" rel="noopener">Two de novo transcriptome assemblies and functional annotations from juvenile cuttlefish (Sepia officinalis) under various metal and CO2 exposure conditions</a>
+</div>
+<div class="pub-meta">
+Sol Dourdin, Minet, Pante &amp; Lacoue-Labarthe
+<br>
+<em>Peer Community Journal</em>
+</div>
+<div class="pub-actions">
+<a href="#" data-action="abstract" role="button">Abstract</a>
+<a href="#" data-action="dataset_info" role="button">Data</a>
+<a href="#" data-action="citation" role="button">Citation</a>
+<a href="#" data-action="bib" role="button">BibTeX</a>
+<a class="external" href="https://www.biorxiv.org/content/10.1101/2025.06.03.657592v4" target="_blank" rel="noopener">Preprint</a>
+<a class="external" href="https://github.com/ericpante/rnasep" target="_blank" rel="noopener">GitHub</a>
+<a class="external" href="https://genomics.peercommunityin.org/articles/rec?id=452" target="_blank" rel="noopener">Recommendation</a>
+</div>
+<div class="toggle-area" data-current="">
+<button class="copy-btn">Copy</button>
+<span class="copy-toast">Copied!</span>
+<div class="panel-label">—</div>
+<div class="content"></div>
+</div>
+<div style="display:none;">
+<div class="payload-abstract">The cuttlefish Sepia officinalis is a precious model in behavioural and neurobiology studies. It is currently facing combined environmental changes related to the anthropogenic global change. However, genomic resources available to support investigations tackling this issue are still scarce. Therefore, we present two annotated de novo transcriptome assemblies from recently hatched (whole body) and one-month old (head) Sepia officinalis juveniles. Both assemblies rely on an important read depth validated by a pseudo-rarefaction analysis, and gathered several individuals from various metal and pCO2 exposure conditions. After redundancy reduction, assemblies from newly hatched and one-month-old individuals comprised 230,672 and 370,613 transcripts with 35,590 and 44,233 putative ORFs, respectively, and an annotation rate arounf 70%. Assemblies were compared to each other, revealing age-specific transcriptomic landscapes. These two assemblies constitute highly valuable genomic resources complementing reference genome assembly and facilitating the investigation of transcriptomic endpoints in environmental studies considering coleoid cephalopods.</div>
+<div class="payload-dataset_info">Assemblies and Annotations : https://doi.org/10.5281/zenodo.17878811 ; intermediate annotation files : https://doi.org/10.5281/zenodo.17896603 ; Github Repo: https://doi.org/10.5281/zenodo.15655834</div>
+<div class="payload-bibtex">@article{soldourdinsepia2026,
+  author = {Thomas {Sol Dourdin} and Antoine Minet and Eric Pante and Thomas Lacoue-Labarthe},
+  doi = {10.24072/pcjournal.703},
+  journal = {Peer Community Journal},
+  number = {article no. e28},
+  publisher = {Peer Community In},
+  title = {Two de novo transcriptome assemblies and functional annotations from juvenile cuttlefish (Sepia officinalis) under various metal and CO2 exposure conditions},
+  url = {https://peercommunityjournal.org/articles/10.24072/pcjournal.703/},
+  volume = {6},
+  year = {2026}
+}</div>
+</div>
+</div>
+</div>
+</div>
+<div class="year-group">
+<h2 class="year-title anchored" id="y-2025">2025</h2>
+<div>
+<div class="pub-card" data-key="muller2025capacity">
+<div class="pub-title">
+<a href="https://doi.org/10.1093/icesjms/fsae187" target="_blank" rel="noopener">Capacity sharing to protect and restore ecosystems and biodiversity</a>
+</div>
+<div class="pub-meta">
+Muller-Karger, Tan, Allcock, Appeltans, Aguilar, Blanco, Bograd, Costello, Darnaude, Dupuis &amp; others
+<br>
+<em>ICES Journal of Marine Science</em>
+</div>
+<div class="pub-actions">
+<a href="#" data-action="abstract" role="button">Abstract</a>
+<a href="#" data-action="dataset_info" role="button">Data</a>
+<a href="#" data-action="citation" role="button">Citation</a>
+<a href="#" data-action="bib" role="button">BibTeX</a>
+<a class="external" href="https://univ-brest.hal.science/hal-04878471v1" target="_blank" rel="noopener">Preprint</a>
+</div>
+<div class="toggle-area" data-current="">
+<button class="copy-btn">Copy</button>
+<span class="copy-toast">Copied!</span>
+<div class="panel-label">—</div>
+<div class="content"></div>
+</div>
+<div style="display:none;">
+<div class="payload-abstract">Challenge 2 of the UN Ocean Decade focuses on protecting and restoring marine ecosystems and biodiversity as a fundamental requirement to achieve sustainable development. Addressing this challenge requires reliable and timely information on biodiversity and ecosystems. To achieve this, academic, government, and private groups should engage in a process of co-design that aims to facilitate decision-making at the local and national level, and agree on common and interoperable practices for the collection and curation of biology and ecosystem information. Implementing the flow of data to enable the management of human activities and sustainable development will require the sharing of capacity. An all-hands-on-deck effort will help us ensure a better future for ourselves. A positive step would be to identify the minimum essential ocean variables that can serve multiple relevant regional and international frameworks and to link and harmonize the required data and information flow (i.e., for frameworks including the Convention on Biological Diversity Kunming-Montreal Global Biodiversity Framework, the United Nations Framework Convention on Climate Change Paris Agreement, the Biodiversity Beyond National Jurisdiction Agreement, the International Seabed Authority, the Convention on the Conservation of Antarctic Marine Living Resources, the Intergovernmental Science-Policy Platform on Biodiversity and Ecosystem Services, and deep and national ocean fisheries policies). A key strategy is to support and build on existing local and national networks for biodiversity observation. With this information, local communities and nations can better understand and manage how they use marine life and also report on progress toward Sustainable Development Goals.</div>
+<div class="payload-dataset_info">NA</div>
+<div class="payload-bibtex">@article{muller2025capacity,
+  author = {Frank E Muller-Karger and Aileen Shau Hwai Tan and A Louise Allcock and Ward Appeltans and Claudia Bar{\a'o}n Aguilar and Andreu Blanco and Steven J Bograd and Mark John Costello and Audrey M Darnaude and Britt Dupuis and {others}},
+  doi = {10.1093/icesjms/fsae187},
+  journal = {ICES Journal of Marine Science},
+  number = {1},
+  pages = {fsae187},
+  publisher = {Oxford University Press},
+  title = {Capacity sharing to protect and restore ecosystems and biodiversity},
+  volume = {82},
+  year = {2025}
+}</div>
+</div>
+</div>
+<div class="pub-card" data-key="leCam2025discordant">
+<div class="pub-title">
+<a href="https://doi.org/10.24072/pcjournal.529" target="_blank" rel="noopener">Discordant population structure inferred from male-and female-type mtDNAs from Macoma balthica, a bivalve species characterized by doubly uniparental inheritance of mitochondria</a>
+</div>
+<div class="pub-meta">
+Le Cam, Brémaud, Becquet, Huet, Dubillot, Garcia, Viricel, Breton &amp; Pante
+<br>
+<em>Peer Community Journal</em>
+</div>
+<div class="pub-actions">
+<a href="#" data-action="abstract" role="button">Abstract</a>
+<a href="#" data-action="dataset_info" role="button">Data</a>
+<a href="#" data-action="citation" role="button">Citation</a>
+<a href="#" data-action="bib" role="button">BibTeX</a>
+<a class="external" href="https://www.biorxiv.org/content/10.1101/2022.02.28.479517v5" target="_blank" rel="noopener">Preprint</a>
+<a class="external" href="https://github.com/SabLeCam/Cox1_DUI" target="_blank" rel="noopener">GitHub</a>
+<a class="external" href="https://evolbiol.peercommunityin.org/articles/rec?id=540" target="_blank" rel="noopener">Recommendation</a>
+</div>
+<div class="toggle-area" data-current="">
+<button class="copy-btn">Copy</button>
+<span class="copy-toast">Copied!</span>
+<div class="panel-label">—</div>
+<div class="content"></div>
+</div>
+<div style="display:none;">
+<div class="payload-abstract">Doubly Uniparental Inheritance (DUI) of mitochondria is a remarkable exception to the Strictly Maternal Inheritance (SMI) in metazoans. In species characterized by DUI --- almost exclusively gonochoric bivalve mollusks --- females (F) transmit mitochondria to offspring of both sexes, while males (M) pass on their mitochondria exclusively to their sons. Under DUI, males are heteroplasmic, somatic tissues containing F-transmitted mtDNA and gametic cells containing M-transmitted mtDNAs. The aforementioned transmission routes make M- and F-transmitted mtDNA interesting as sex-specific markers which can differ in their effective population sizes, mutation rates, and selective constraints. For these reasons, looking at both markers can provide significant insights into the genetic structure of populations and investigate its determinants. In this study, we document differences in genetic diversity, divergence, inter-populational differentiation, and biogeographic structure between M- and F-type cox1 mt genes in the Baltic tellin (Macoma balthica) to test whether cox1m and cox1f genes bear the marks of similar phylogeographic histories. These markers were sequenced for 302 male individuals sampled from the North Sea to the Gironde Estuary (Southern France) encompassing the intra-subspecific M. b. rubra hybrid zone in the Gulf of Saint-Malo. Both genes supported a scenario of cladogenesis of M.b. rubra clades prior to the last glacial maximum. Nucleotide diversity and net divergence were over twice higher in cox1m compared to cox1f. Genetic differentiation between northern and southern populations was nearly 3 times higher at cox1m compared to cox1f (global ΦST = 0.345 and 0.126 respectively) and the geographic localization of the strongest genetic break significantly differed between the markers (Finist{\`e}re Peninsula at cox1f; Cotentin Peninsula at cox1m, ~250 km apart). A higher mutation rate, relaxed negative selection, and differences in effective population sizes (depending on locations) at cox1m could explain differences in population genetic structure. As both F- and M-type mtDNAs interact with nuclear genes for oxidative phosphorylation and ATP production, geographical discordances in genetic clines in a context of secondary contact could be linked to mito-nuclear genetic incompatibilities.</div>
+<div class="payload-dataset_info">Cox1f and cox1m-long sequences were submitted to Genbank (accession N$\,^{\circ}$ OM855617 - OM855929 and OM856027 - OM856339 respectively. Supplementary information: ZENODO: https://doi.org/10.5281/zenodo.14849343</div>
+<div class="payload-bibtex">@article{leCam2025discordant,
+  author = {Sabrina {Le Cam} and Julie Br{\a'e}maud and Vanessa Becquet and Val{\a'e}rie Huet and Emmanuel Dubillot and Pascale Garcia and Am{\a'e}lia Viricel and Sophie Breton and Eric Pante},
+  doi = {10.24072/pcjournal.529},
+  journal = {Peer Community Journal},
+  title = {Discordant population structure inferred from male-and female-type mtDNAs from Macoma balthica, a bivalve species characterized by doubly uniparental inheritance of mitochondria},
+  volume = {5},
+  year = {2025}
+}</div>
+</div>
+</div>
+<div class="pub-card" data-key="hill2025exploring">
+<div class="pub-title">
+<a href="https://doi.org/10.3354/dao03834" target="_blank" rel="noopener">Exploring the impact of the widely introduced Pacific oyster Magallana gigas on the dispersal of Bonamia (Haplosporida): a global snapshot</a>
+</div>
+<div class="pub-meta">
+Hill-Spanik, Rothkopf, Strand, Carnegie, Carlton, Couceiro, Crooks, Endo, Hori, Kamiya &amp; others
+<br>
+<em>Diseases of Aquatic Organisms</em>
+</div>
+<div class="pub-actions">
+<a href="#" data-action="abstract" role="button">Abstract</a>
+<a href="#" data-action="dataset_info" role="button">Data</a>
+<a href="#" data-action="citation" role="button">Citation</a>
+<a href="#" data-action="bib" role="button">BibTeX</a>
+<a class="external" href="https://univ-brest.hal.science/hal-04979239v1/document" target="_blank" rel="noopener">Preprint</a>
+</div>
+<div class="toggle-area" data-current="">
+<button class="copy-btn">Copy</button>
+<span class="copy-toast">Copied!</span>
+<div class="panel-label">—</div>
+<div class="content"></div>
+</div>
+<div style="display:none;">
+<div class="payload-abstract"> Bonamia (Haplosporida) are oyster parasites capable of devastating oyster populations. The near-circumglobal distribution of the host generalist B. exitiosa has previously been associated with the natural and anthropogenic dispersal of broadly distributed non-commercial oysters in the Ostrea stentina species complex. Here, we took a global snapshot approach to explore the role of the widely introduced Pacific oyster Magallana gigas, a commercially important species that can be found on every continent except Antarctica, in transporting Bonamia. We screened 938 M. gigas individuals from 41 populations in this oyster's native and non-native geographic range for presence of Bonamia DNA using PCR. B. exitiosa was the only species detected and only within 2 of 5 populations from southern California, USA (10 and 42% PCR prevalence). Therefore, M. gigas could have played a role in transporting B. exitiosa to California (if introduced) and/or maintaining B. exitiosa populations within California, but morphological confirmation of infection needs to be done to better understand the host-parasite dynamics within this system. We detected no Bonamia DNA within any other non-native M. gigas populations (n = 302) nor within native M. gigas populations in Japan and Korea (n = 582) and thus found no evidence to support the co-dispersal of M. gigas and other Bonamia species. Lower sample sizes within some populations and the non-systematic nature of our sampling design may have led to false negatives, especially in areas where Bonamia are known to occur. Nevertheless, this global snapshot provides preliminary guidance for managing both natural and farmed oyster populations.</div>
+<div class="payload-dataset_info">NA</div>
+<div class="payload-bibtex">@article{hill2025exploring,
+  author = {Kristina M Hill-Spanik and Hannah Rothkopf and Allan E Strand and Ryan B Carnegie and James T Carlton and Lucia Couceiro and Jeffrey A Crooks and Hikaru Endo and Masakazu Hori and Mitsunobu Kamiya and {others}},
+  doi = {10.3354/dao03834},
+  journal = {Diseases of Aquatic Organisms},
+  pages = {39--46},
+  title = {Exploring the impact of the widely introduced Pacific oyster Magallana gigas on the dispersal of Bonamia (Haplosporida): a global snapshot},
+  url = {https://www.int-res.com/abstracts/dao/v161/p39-46},
+  volume = {161},
+  year = {2025}
+}</div>
+</div>
+</div>
+<div class="pub-card" data-key="le2025population">
+<div class="pub-title">
+<a href="https://doi.org/10.1139/cjfas-2024-0369" target="_blank" rel="noopener">Population genetic diversity and structure of wild and hatchery-raised populations of European abalone Haliotis tuberculata tuberculata: guidelines for future restocking and stock-enhancement programs</a>
+</div>
+<div class="pub-meta">
+Le Gall, Chauvaud, Viricel, Roussel, Pante, Boudry &amp; Charrier
+<br>
+<em>Canadian Journal of Fisheries and Aquatic Sciences</em>
+</div>
+<div class="pub-actions">
+<a href="#" data-action="abstract" role="button">Abstract</a>
+<a href="#" data-action="dataset_info" role="button">Data</a>
+<a href="#" data-action="citation" role="button">Citation</a>
+<a href="#" data-action="bib" role="button">BibTeX</a>
+<a class="external" href="https://hal.science/hal-05375461v1/document" target="_blank" rel="noopener">Preprint</a>
+</div>
+<div class="toggle-area" data-current="">
+<button class="copy-btn">Copy</button>
+<span class="copy-toast">Copied!</span>
+<div class="panel-label">—</div>
+<div class="content"></div>
+</div>
+<div style="display:none;">
+<div class="payload-abstract">Populations of Haliotis tuberculata tuberculata declined sharply over the last two decades, mainly due to pathogenic bacteria, Vibrio Harveyi. In this context, restocking or stock-enhancement operations based on hatchery juveniles might be relevant to restore populations and ensure sustainable fisheries. Maintaining the genetic diversity of wild populations and hatchery individuals is a primary concern in supplementation programs. Here, the genetic diversity of 14 hatchery samples and 10 wild populations was assessed using 158 nuclear SNPs. Genetic diversity was comparable between wild and hatchery samples, and even slightly higher in the hatchery. However, high genetic differentiation and small effective population sizes suggested strong genetic drift in the hatchery. Pooling hatchery samples decreased differentiation levels with wild samples, suggesting that released juveniles should be composed of several cohorts and/or generations to limit the genetic heterogeneity between seed and wild populations. Moreover, reduced connectivity was detected between northwestern and southeastern populations, suggesting that restocking broodstock should be chosen depending on the locality where it would be released. Overall, this study provides useful guidelines for future restocking programs.</div>
+<div class="payload-dataset_info">seanoe: DOI 10.17882/106440</div>
+<div class="payload-bibtex">@article{le2025population,
+  author = {Ronan {Le Gall} and Pierre Chauvaud and Am{\a'e}lia Viricel and Sabine Roussel and Eric Pante and Pierre Boudry and Gr{\a'e}gory Charrier},
+  doi = {10.1139/cjfas-2024-0369},
+  journal = {Canadian Journal of Fisheries and Aquatic Sciences},
+  pages = {1-16},
+  title = {Population genetic diversity and structure of wild and hatchery-raised populations of European abalone Haliotis tuberculata tuberculata: guidelines for future restocking and stock-enhancement programs},
+  url = {https://cdnsciencepub.com/doi/10.1139/cjfas-2024-0369},
+  volume = {82},
+  year = {2025}
+}</div>
+</div>
+</div>
+<div class="pub-card" data-key="sotka2025genetic">
+<div class="pub-title">
+<a href="https://doi.org/10.1073/pnas.2418730122" target="_blank" rel="noopener">The genetic legacy of a global marine invader</a>
+</div>
+<div class="pub-meta">
+Sotka, Carnegie, Carlton, Couceiro, Crooks, Endo, Hayford, Hori, Kamiya, Kanaya &amp; others
+<br>
+<em>Proceedings of the National Academy of Sciences</em>
+</div>
+<div class="pub-actions">
+<a href="#" data-action="abstract" role="button">Abstract</a>
+<a href="#" data-action="dataset_info" role="button">Data</a>
+<a href="#" data-action="citation" role="button">Citation</a>
+<a href="#" data-action="bib" role="button">BibTeX</a>
+<a class="external" href="https://hal.science/hal-05060477v1" target="_blank" rel="noopener">Preprint</a>
+<a class="external" href="https://github.com/stranda/TestInvPath" target="_blank" rel="noopener">GitHub</a>
+</div>
+<div class="toggle-area" data-current="">
+<button class="copy-btn">Copy</button>
+<span class="copy-toast">Copied!</span>
+<div class="panel-label">—</div>
+<div class="content"></div>
+</div>
+<div style="display:none;">
+<div class="payload-abstract">he massive geographic expansion of terrestrial plant crops, livestock, and marine aquacultured species during the 19th and 20th centuries provided local economic benefits, stabilized food demands, and altered local ecosystems. The invasion history of these translocations remains uncertain for most species, limiting our understanding of their future adaptive potential and historical roles as vectors for coinvaded species. We provide a framework for filling this gap in invasion biology using the widely transplanted Pacific oyster as a case study. A two-dimensional summary of population-level variation in single nucleotide polymorphisms in native Japan reflected the geographical map of Japan and allowed identification of the source regions for the worldwide expansion. Pacific oysters proliferate in nonnative areas with environmental temperatures similar to those areas where native lineages evolved. Using Approximate Bayesian Computation, we ranked the likelihood of historical oyster or shipping vectors to explain current-day distribution of genotypes in 14 coinvaded algal and animal species. Oyster transplants were a more likely vector than shipping for six species, shipping activity was more likely for five species, and a vector was ambiguous for three species. Applying this approach to other translocated species should reveal similar legacy effects, especially for economically important foundation species that also served as vectors for nonnative species.</div>
+<div class="payload-dataset_info">zenodo: https://doi.org/10.5281/zenodo.14947816 ; docker: https://hub.docker.com/r/astrand/testinvpath ; SRA: PRJNA1135237</div>
+<div class="payload-bibtex">@article{sotka2025genetic,
+  author = {Erik E Sotka and Ryan B Carnegie and James T Carlton and Lucia Couceiro and Jeffrey A Crooks and Hikaru Endo and Hilary Hayford and Masakazu Hori and Mitsunobu Kamiya and Gen Kanaya and {others}},
+  doi = {10.1073/pnas.2418730122},
+  journal = {Proceedings of the National Academy of Sciences},
+  number = {15},
+  pages = {e2418730122},
+  publisher = {National Academy of Sciences},
+  title = {The genetic legacy of a global marine invader},
+  url = {https://www.pnas.org/doi/10.1073/pnas.2418730122#executive-summary-abstract},
+  volume = {122},
+  year = {2025}
+}</div>
+</div>
+</div>
+</div>
+</div>
+<div class="year-group">
+<h2 class="year-title anchored" id="y-2024">2024</h2>
+<div>
+<div class="pub-card" data-key="bellec2024fish">
+<div class="pub-title">
+<a href="https://doi.org/10.1016/j.aquatox.2023.106799" target="_blank" rel="noopener">Fish gut and skin microbiota dysbiosis induced by exposure to commercial sunscreen formulations</a>
+</div>
+<div class="pub-meta">
+Bellec, Milinkovitch, Dubillot, Pante, Tran &amp; Lefrancois
+<br>
+<em>Aquatic Toxicology</em>
+</div>
+<div class="pub-actions">
+<a href="#" data-action="abstract" role="button">Abstract</a>
+<a href="#" data-action="dataset_info" role="button">Data</a>
+<a href="#" data-action="citation" role="button">Citation</a>
+<a href="#" data-action="bib" role="button">BibTeX</a>
+<a class="external" href="https://hal.science/hal-04417025v1" target="_blank" rel="noopener">Preprint</a>
+</div>
+<div class="toggle-area" data-current="">
+<button class="copy-btn">Copy</button>
+<span class="copy-toast">Copied!</span>
+<div class="panel-label">—</div>
+<div class="content"></div>
+</div>
+<div style="display:none;">
+<div class="payload-abstract">UV filters (organic or mineral) present in sunscreen products are emerging contaminants of coastal aquatic environments. There is an urgent need to understand marine organisms responses to these compounds. In this study, we investigated the effect of exposure to dilutions of commercial sunscreen formulations on bacterial communities of mullet (Chelon sp.). The gut and skin mucus microbial communities were characterized using a metabarcoding approach targeting the 16S rRNA gene. Our results revealed that mullets had its own bacterial communities that differ from their surrounding habitats and specific to tissue. The dilutions of commercial sunscreens modified the relative abundance of Actinobacteroita, Bacteriodota and Proteobacteria for both gut and skin microbiota. They also allowed to bacteria affiliated to Mycobacterium, Nocardia and Tenacibaculum genera, known to house pathogenic species, to colonize the epithelium which may have implications for fish host health.</div>
+<div class="payload-dataset_info">NA</div>
+<div class="payload-bibtex">@article{bellec2024fish,
+  author = {Laure Bellec and Thomas Milinkovitch and Emmanuel Dubillot and Eric Pante and Damien Tran and Christel Lefrancois},
+  doi = {10.1016/j.aquatox.2023.106799},
+  journal = {Aquatic Toxicology},
+  pages = {106799},
+  publisher = {Elsevier},
+  title = {Fish gut and skin microbiota dysbiosis induced by exposure to commercial sunscreen formulations},
+  url = {https://www.sciencedirect.com/science/article/abs/pii/S0166445X23004010?dgcid=author},
+  volume = {266},
+  year = {2024}
+}</div>
+</div>
+</div>
+<div class="pub-card" data-key="pante2024common">
+<div class="pub-title">
+<a href="https://doi.org/10.24072/pci.evolbiol.100783" target="_blank" rel="noopener">How common cryptic coral diversity can blur biodiversity metrics and challenge management</a>
+</div>
+<div class="pub-meta">
+Pante
+<br>
+<em>Peer Community in Evolutionary Biology</em>
+</div>
+<div class="pub-actions">
+<a href="#" data-action="abstract" role="button">Abstract</a>
+<a href="#" data-action="dataset_info" role="button">Data</a>
+<a href="#" data-action="citation" role="button">Citation</a>
+<a href="#" data-action="bib" role="button">BibTeX</a>
+<a class="external" href="https://hal.science/hal-04755829v1" target="_blank" rel="noopener">Preprint</a>
+</div>
+<div class="toggle-area" data-current="">
+<button class="copy-btn">Copy</button>
+<span class="copy-toast">Copied!</span>
+<div class="panel-label">—</div>
+<div class="content"></div>
+</div>
+<div style="display:none;">
+<div class="payload-abstract">Biological conservation aims at protecting the genetic diversity generated by evolutionary processes over the course of life's history on earth (Allendorf and Luikart 2007), and to be effective, it requires that its fundamental units (among which populations and species) be delimited as precisely as possible. This exercise is particularly important for corals because hybridisation and introgression have played a fundamental role in shaping their contemporary diversity (eg Veron 1995). 
+In their review paper, Riginos et al (2024) show that 68% of nominal taxa investigated for genomic population structure bear the molecular signature of partial reproductive isolation, and can be considered as cryptic genetic groups. Another review study (published a day before the preprint of Riginos et al), converges in the finding that cryptic diversity is rampant in nominal coral species (Grupstra et al 2024). This result has strong bearing on the study of coral biology; as Riginos et al state, "any coral investigation that does not genotype the corals under study risks treating a heterogeneous mix of partially reproductively isolated taxa as a single species." The stakes are therefore high, given the ecological importance of corals and the ecosystem services they provide. 
+While Grupstra et al (2024) discusses the impact of cryptic coral diversity in the context of functional differences in thermal adaptation and the processes that lead to cryptic lineages, Riginos et al (2024) provide a quantitative review of cryptic lineages within nominal species, providing reproducible criteria for delineation, details the importance of detecting hybrids, summarises how biodiversity metrics and conservation efforts can be biased by unrecognised cryptic lineages, offer recommendations on how to recognise and deal with cryptic diversity, and discuss how corals can be regarded as highly valuable model systems to study adaptation and speciation. The study of Riginos et al (2024) is therefore a must-read to all coral biologists, especially those involved in biological conservation.</div>
+<div class="payload-dataset_info">NA</div>
+<div class="payload-bibtex">@article{pante2024common,
+  author = {Eric Pante},
+  doi = {10.24072/pci.evolbiol.100783},
+  journal = {Peer Community in Evolutionary Biology},
+  pages = {100783},
+  publisher = {Peer Community In},
+  title = {How common cryptic coral diversity can blur biodiversity metrics and challenge management},
+  url = {https://evolbiol.peercommunityin.org/articles/rec?id=783},
+  volume = {1},
+  year = {2024}
+}</div>
+</div>
+</div>
+<div class="pub-card" data-key="muller2024ocean">
+<div class="pub-title">
+<a href="https://doi.org/NA" target="_blank" rel="noopener">Ocean Decade Vision 2030 White Papers--Challenge 2: Protect and Restore Ecosystems and Biodiversity.</a>
+</div>
+<div class="pub-meta">
+Muller-Karger, AS, Allcock, Appeltans, Aguilar, Blanco, Buttigieg, Darnaude, Dupuis, Friedman &amp; others
+<br>
+<em>UNESCO-IOC</em>
+</div>
+<div class="pub-actions">
+<a href="#" data-action="abstract" role="button">Abstract</a>
+<a href="#" data-action="dataset_info" role="button">Data</a>
+<a href="#" data-action="citation" role="button">Citation</a>
+<a href="#" data-action="bib" role="button">BibTeX</a>
+<a class="external" href="https://hal.science/hal-04614355v1" target="_blank" rel="noopener">Preprint</a>
+</div>
+<div class="toggle-area" data-current="">
+<button class="copy-btn">Copy</button>
+<span class="copy-toast">Copied!</span>
+<div class="panel-label">—</div>
+<div class="content"></div>
+</div>
+<div style="display:none;">
+<div class="payload-abstract">This White Paper has been prepared as part of the Vision 2030 process being undertaken in the framework of the UN Decade of Ocean Science for Sustainable Development. The Vision 2030 process aims to achieve a common and tangible measure of success for each of the ten Ocean Decade Challenges by 2030. From a starting point of existing initiatives underway in the Ocean Decade and beyond, and through a lens of priority user needs, the process determines priority datasets, critical gaps in science and knowledge, and needs in capacity development, infrastructure and technology required for each Challenge to ensure that it can be fulfilled by the end of the Ocean Decade in 2030. </div>
+<div class="payload-dataset_info">NA</div>
+<div class="payload-bibtex">NA</div>
+</div>
+</div>
+</div>
+</div>
+<div class="year-group">
+<h2 class="year-title anchored" id="y-2023">2023</h2>
+<div>
+<div class="pub-card" data-key="cook2023growth">
+<div class="pub-title">
+<a href="https://doi.org/10.11646/zootaxa.5336.1.3" target="_blank" rel="noopener">Growth in two deep-sea associates: the octocoral Pseudogorgia bellona and the euryalid snake star Asteroschema ajax</a>
+</div>
+<div class="pub-meta">
+Cook, Okanishi &amp; Pante
+<br>
+<em>Zootaxa</em>
+</div>
+<div class="pub-actions">
+<a href="#" data-action="abstract" role="button">Abstract</a>
+<a href="#" data-action="dataset_info" role="button">Data</a>
+<a href="#" data-action="citation" role="button">Citation</a>
+<a href="#" data-action="bib" role="button">BibTeX</a>
+<a class="external" href="https://hal.science/hal-04238413v1" target="_blank" rel="noopener">Preprint</a>
+</div>
+<div class="toggle-area" data-current="">
+<button class="copy-btn">Copy</button>
+<span class="copy-toast">Copied!</span>
+<div class="panel-label">—</div>
+<div class="content"></div>
+</div>
+<div style="display:none;">
+<div class="payload-abstract">The deep-sea octocoral Pseudochrysogorgia bellona was recently described from specimens sampled on the Chesterfield Plateau, off New Caledonia. It is morphologically and genetically similar to the con-familial Metallogorgia melanotrichos, which is known to closely associate with a species of brittle star, Ophiocreas oedipus. These latter two species have never been observed separately and are thought to grow synchronously. The morphological similarity between M. melanotrichos and P. bellona makes the latter another possible host for ophiuroids. However, no brittle star was associated with P. bellona specimens from the type collection. In 2017, 130 P. bellona colonies were sampled near the type locality, and 98% were associated with Asteroschema ajax, a species closely related to O. oedipus. Mitochondrial DNA analysis confirmed the morphological identifications of both P. bellona and A. ajax. Uni- and multivariate statistical analyses were used to characterize the morphological space of both species to test if larger ophiuroids are associated with larger corals. Two variables were measured to estimate the size of the coral (total height and diameter of the skeletal axis at its base) and 9 variables were used to characterize the brittle star (disc and arm morphology). Morphological variables representing the size for both species were significantly correlated (Spearman rank correlation coefficient: 50%, p &lt; 0.001), suggesting that larger ophiuroids indeed associate with larger corals. This is one of the rare studies that allowed comparison of growth in associated deep-sea invertebrates.</div>
+<div class="payload-dataset_info">zenodo: https://zenodo.org/records/8186489</div>
+<div class="payload-bibtex">@article{cook2023growth,
+  author = {Isobel Cook and Masanori Okanishi and Eric Pante},
+  doi = {10.11646/zootaxa.5336.1.3},
+  journal = {Zootaxa},
+  number = {1},
+  pages = {82--94},
+  title = {Growth in two deep-sea associates: the octocoral Pseudogorgia bellona and the euryalid snake star Asteroschema ajax},
+  url = {https://www.mapress.com/zt/article/view/zootaxa.5336.1.3},
+  volume = {5336},
+  year = {2023}
+}</div>
+</div>
+</div>
+<div class="pub-card" data-key="le2023lamp">
+<div class="pub-title">
+<a href="https://doi.org/10.1002/ece3.10320" target="_blank" rel="noopener">LAMP-based molecular sexing in a gonochoric marine bivalve (Macoma balthica rubra) with divergent sex-specific mitochondrial genomes</a>
+</div>
+<div class="pub-meta">
+Le Cam, Brémaud, Malkócs, Kreckelbergh, Becquet, Dubillot, Garcia, Breton &amp; Pante
+<br>
+<em>Ecology and Evolution</em>
+</div>
+<div class="pub-actions">
+<a href="#" data-action="abstract" role="button">Abstract</a>
+<a href="#" data-action="dataset_info" role="button">Data</a>
+<a href="#" data-action="citation" role="button">Citation</a>
+<a href="#" data-action="bib" role="button">BibTeX</a>
+<a class="external" href="https://univ-brest.hal.science/hal-04208451" target="_blank" rel="noopener">Preprint</a>
+<a class="external" href="Supplemental File: https://onlinelibrary.wiley.com/action/downloadSupplement?doi=10.1002%2Fece3.10320&amp;file=ece310320-sup-0001-Figures.docx" target="_blank" rel="noopener">GitHub</a>
+</div>
+<div class="toggle-area" data-current="">
+<button class="copy-btn">Copy</button>
+<span class="copy-toast">Copied!</span>
+<div class="panel-label">—</div>
+<div class="content"></div>
+</div>
+<div style="display:none;">
+<div class="payload-abstract">Taking advantage of the unique system of doubly uniparental inheritance (DUI) of mitochondria, we developed a reliable molecular method to sex individuals of the marine bivalve Macoma balthica rubra. In species with DUI (~100 known bivalves), both sexes transmit their mitochondria: males bear both a male- and female-type mitogenome, while females bear only the female type. Male and female mitotypes are sufficiently divergent to reliably PCR-amplify them specifically. Loop-mediated isothermal amplification (LAMP) is a precise, economical and portable alternative to PCR for molecular sexing and we demonstrate its application in this context. We used 154 individuals sampled along the Atlantic coast of France and sexed microscopically by gonad examination to test for the congruence among gamete type, PCR sexing and LAMP sexing. We show an exact match among the sexing results from these three methods using the male and female mt-cox1 genes. DUI can be disrupted in inter-specific hybrids, causing unexpected distribution of mitogenomes, such as homoplasmic males or heteroplasmic females. To our knowledge, DUI disruption at the intra-specific scale has never been tested. We applied our sexing protocol to control for unexpected heteroplasmy caused by hybridization between divergent genetic lineages and found no evidence of disruption in the mode of mitochondrial inheritance in M. balthica rubra. We propose LAMP as a useful tool to accelerate eco-evolutionary studies of DUI. It offers the opportunity to investigate the potential role of, previously unaccounted-for, sex-specific patterns such as sexual selection or sex-specific dispersal bias in the evolution of free-spawning benthic species.</div>
+<div class="payload-dataset_info">NA</div>
+<div class="payload-bibtex">@article{le2023lamp,
+  author = {Sabrina {Le Cam} and Julie Br{\a'e}maud and Tam{\a'a}s Malk{\a'o}cs and Eug{\a'e}nie Kreckelbergh and Vanessa Becquet and Emmanuel Dubillot and Pascale Garcia and Sophie Breton and Eric Pante},
+  doi = {10.1002/ece3.10320},
+  journal = {Ecology and Evolution},
+  number = {8},
+  pages = {e10320},
+  publisher = {Wiley Online Library},
+  title = {LAMP-based molecular sexing in a gonochoric marine bivalve (Macoma balthica rubra) with divergent sex-specific mitochondrial genomes},
+  url = {https://onlinelibrary.wiley.com/doi/10.1002/ece3.10320},
+  volume = {13},
+  year = {2023}
+}</div>
+</div>
+</div>
+<div class="pub-card" data-key="sauriau2023quelques">
+<div class="pub-title">
+<a href="https://doi.org/NA" target="_blank" rel="noopener">Sur quelques curiosit\'es d'histoire naturelle dans les pertuis charentais: faune des invert\'ebr\'es marins</a>
+</div>
+<div class="pub-meta">
+Sauriau, De Montaudouin, Aubert, Charpentier, De Casamajor, Fichet, Guyot, Jourde, Le Duigou, Masse &amp; others
+<br>
+<em>Annales de la Soci\'et\'e des Sciences naturelles de Charente-Maritime</em>
+</div>
+<div class="pub-actions">
+<a href="#" data-action="abstract" role="button">Abstract</a>
+<a href="#" data-action="dataset_info" role="button">Data</a>
+<a href="#" data-action="citation" role="button">Citation</a>
+<a href="#" data-action="bib" role="button">BibTeX</a>
+</div>
+<div class="toggle-area" data-current="">
+<button class="copy-btn">Copy</button>
+<span class="copy-toast">Copied!</span>
+<div class="panel-label">—</div>
+<div class="content"></div>
+</div>
+<div style="display:none;">
+<div class="payload-abstract">Eight invertebrate species, rediscovered, demographically expanding or newly observed are reported from the Pertuis Charentais Sea. They were sampled from intertidal rocky shores (Alpheus macrocheles, Aslia lefevrei, Epitonium clathrulatum and Haliotis tuberculata), intertidal sand flats (Africorchestia spinifera and Arcuatula senhousia) and subtidal bottoms (Aslia lefevrei and Rapana venosa). One species is pelagic (Lepas anatifera). Most of them are within their natural range. However, R. venosa, native to Southeast Asia, has been introduced in the Pertuis Charentais since the 2010s and its populations are currently expanding. The new northern limit of Africorchestia spinifera along the Atlantic coast is defined as the R{\'e} Island. Phoresis of Crepidula fornicata on Carcinus maenas is noted but was already described in European waters whereas it is a hitherto undescribed and unexpected association with the gastropod R. venosa.</div>
+<div class="payload-dataset_info">NA</div>
+<div class="payload-bibtex">@inproceedings{sauriau2023quelques,
+  author = {Pierre-Guy Sauriau and Xavier {De Montaudouin} and Fabien Aubert and Patrick Charpentier and Marie-No{\"e}lle {De Casamajor} and Denis Fichet and Thierry Guyot and J{\a'e}r{\^o}me Jourde and Mathieu {Le Duigou} and C{\a'e}cile Masse and {others}},
+  booktitle = {Annales de la Soci{\'e}t{\'e} des Sciences naturelles de Charente-Maritime},
+  pages = {533--548},
+  title = {Sur quelques curiosit{\'e}s d'histoire naturelle dans les pertuis charentais: faune des invert{\'e}br{\'e}s marins},
+  year = {2023}
+}</div>
+</div>
+</div>
+<div class="pub-card" data-key="pante2023difficult">
+<div class="pub-title">
+<a href="https://doi.org/10.24072/pci.evolbiol.100634" target="_blank" rel="noopener">The difficult task of partitioning the effects of vicariance and isolation by distance in poor dispersers</a>
+</div>
+<div class="pub-meta">
+Pante
+<br>
+<em>Peer Community in Evolutionary Biology</em>
+</div>
+<div class="pub-actions">
+<a href="#" data-action="abstract" role="button">Abstract</a>
+<a href="#" data-action="dataset_info" role="button">Data</a>
+<a href="#" data-action="citation" role="button">Citation</a>
+<a href="#" data-action="bib" role="button">BibTeX</a>
+<a class="external" href="https://univ-brest.hal.science/hal-04208451" target="_blank" rel="noopener">Preprint</a>
+</div>
+<div class="toggle-area" data-current="">
+<button class="copy-btn">Copy</button>
+<span class="copy-toast">Copied!</span>
+<div class="panel-label">—</div>
+<div class="content"></div>
+</div>
+<div style="display:none;">
+<div class="payload-abstract">Partitioning the effects of vicariance and low dispersal has been a long-standing problem in historical biogeography and phylogeography. While the term ``vicariance'' refers to divergence in allopatry, caused by some physical (geological, geographical) or climatic barriers (e.g. Rosen 1978), isolation by distance refers to the genetic differentiation of remote populations due to the physical distance separating them, when the latter surpasses the scale of dispersal (Wright 1938, 1940, 1943). 
+Vicariance and dispersal have long been considered as separate forces leading to separate scenarii of speciation (e.g. reviewed in Hickerson and Meyer 2008). Nevertheless, these two processes are strongly linked, as, for example, vicariance theory relies on the assumption that ancestral lineages were once linked by dispersal prior to physical or climatic isolation (Rosen 1978). Low dispersal and vicariance are not mutually exclusive, and distinguishing these two processes in heterogeneous landscapes, especially for poor dispersers, remains therefore a severe challenge. For example, low dispersal (and/or small population size) can give rise to geographic patterns consistent with a phylogeographic break and be mistaken for geographic isolation (Irwin 2002, Kuo and Avise 2005).
+The study of Rancilliac and colleagues (2023) is at the heart of this issue. It focuses on a nominal lizard species, the red-tailed spiny-footed lizard (Acanthodactylus erythrurus, Squamata: Lacertidae), which has a wide spatial distribution (from the Maghreb to the Iberian Peninsula), is found in a variety of different habitats, and has a wide range of morphological traits that do not always correlate with phylogeny. The main question is the following: have ``the morphological and ecological diversification of this group been produced by vicariance and lineage diversification, or by local adaptation in the face of historical gene flow?'' To tackle this question, the authors used sequence data from multiple mitochondrial and nuclear markers and a nested analysis workflow integrating phylogeography, multiple correspondence analyses and a relatively novel approach to IBD testing (Hausdorf &amp; Henning, 2020). The latter is based on regression analysis and was shown to be less prone to error than the traditional (partial) Mantel test. 
+While this set of methods allowed the partitioning of the effect of isolation by distance and vicariance in shaping contemporary genetic diversity in red-tailed spiny-footed lizards, some of the evolutionary history of this species complex remains blurred by ongoing gene flow and admixture, retention of ancestral polymorphism, or selection. The lack of congruence between mitochondrial and nuclear gene trees once again warns us that proposing evolutionary scenarii based on individual gene trees is a risky business. </div>
+<div class="payload-dataset_info">NA</div>
+<div class="payload-bibtex">@article{pante2023difficult,
+  author = {Eric Pante},
+  doi = {10.24072/pci.evolbiol.100634},
+  journal = {Peer Community in Evolutionary Biology},
+  pages = {100634},
+  publisher = {Peer Community In},
+  title = {The difficult task of partitioning the effects of vicariance and isolation by distance in poor dispersers},
+  url = {https://evolbiol.peercommunityin.org/articles/rec?id=634},
+  volume = {1},
+  year = {2023}
+}</div>
+</div>
+</div>
+</div>
+</div>
+<div class="year-group">
+<h2 class="year-title anchored" id="y-2022">2022</h2>
+<div>
+<div class="pub-card" data-key="malkocs2022complex">
+<div class="pub-title">
+<a href="https://doi.org/10.1186/s12862-022-01976-0" target="_blank" rel="noopener">Complex mitogenomic rearrangements within the Pectinidae (Mollusca: Bivalvia)</a>
+</div>
+<div class="pub-meta">
+Malkócs, Viricel, Becquet, Evin, Dubillot &amp; Pante
+<br>
+<em>BMC Ecology and Evolution</em>
+</div>
+<div class="pub-actions">
+<a href="#" data-action="abstract" role="button">Abstract</a>
+<a href="#" data-action="dataset_info" role="button">Data</a>
+<a href="#" data-action="citation" role="button">Citation</a>
+<a href="#" data-action="bib" role="button">BibTeX</a>
+<a class="external" href="https://hal.science/hal-03434007" target="_blank" rel="noopener">Preprint</a>
+<a class="external" href="https://github.com/ericpante/Malkocs_etal_2022" target="_blank" rel="noopener">GitHub</a>
+</div>
+<div class="toggle-area" data-current="">
+<button class="copy-btn">Copy</button>
+<span class="copy-toast">Copied!</span>
+<div class="panel-label">—</div>
+<div class="content"></div>
+</div>
+<div style="display:none;">
+<div class="payload-abstract">Background: Scallops (Bivalvia: Pectinidae) present extraordinary variance in both mitochondrial genome size, structure and content, even when compared to the extreme diversity documented within Mollusca and Bivalvia. In pectinids, mitogenome rearrangements involve protein coding and rRNA genes along with tRNAs, and different genome organization patterns can be observed even at the level of Tribes. Existing pectinid phylogenies fail to resolve some relationships in the family, Chlamydinae being an especially problematic group. Results: In our study, we sequenced, annotated and characterized the mitochondrial genome of a member of Chlamydinae, Mimachlamys varia---a species of commercial interest and an effective bioindicator---revealing yet another novel gene arrangement in the Pectinidae. The phylogeny based on all mitochondrial protein coding and rRNA genes suggests the paraphyly of the Mimachlamys genus, further commending the taxonomic revision of the classification within the Chlamydinae subfamily. At the scale of the Pectinidae, we found that 15 sequence blocks are involved in mitogenome rearrangements, which behave as separate units. Conclusions: Our study reveals incongruities between phylogenies based on mitochondrial protein-coding versus rRNA genes within the Pectinidae, suggesting that locus sampling affects phylogenetic inference at the scale of the family. We also conclude that the available taxon sampling does not allow for understanding of the mechanisms responsible for the high variability of mitogenome architecture observed in the Pectinidae, and that unraveling these processes will require denser taxon sampling.</div>
+<div class="payload-dataset_info">Raw Mimachlamys varia RNAseq reads are deposited in the NBCI Sequence Read Archive (Acc. SRP127478), and transcripts can be accessed at the Transcriptome Shotgun Assembly database (GGGO01000000). The assembled mitochondrial genome is uploaded to GenBank (MZ520326), and the GenBank accession numbers of all mitogenomes used in this study can be found in Table 4. The sequence alignments used in this article are publicly available on GitHub</div>
+<div class="payload-bibtex">@article{malkocs2022complex,
+  author = {Tam{\a'a}s Malk{\a'o}cs and Am{\a'e}lia Viricel and Vanessa Becquet and Louise Evin and Emmanuel Dubillot and Eric Pante},
+  doi = {10.1186/s12862-022-01976-0},
+  journal = {BMC Ecology and Evolution},
+  number = {1},
+  pages = {29},
+  publisher = {BioMed Central London},
+  title = {Complex mitogenomic rearrangements within the Pectinidae (Mollusca: Bivalvia)},
+  url = {https://link.springer.com/article/10.1186/s12862-022-01976-0},
+  volume = {22},
+  year = {2022}
+}</div>
+</div>
+</div>
+<div class="pub-card" data-key="tasse2022longest">
+<div class="pub-title">
+<a href="https://doi.org/10.1098/rsbl.2022.0122" target="_blank" rel="noopener">The longest mitochondrial protein in metazoans is encoded by the male-transmitted mitogenome of the bivalve Scrobicularia plana</a>
+</div>
+<div class="pub-meta">
+Tassé, Choquette, Angers, Stewart, Pante &amp; Breton
+<br>
+<em>Biology Letters</em>
+</div>
+<div class="pub-actions">
+<a href="#" data-action="abstract" role="button">Abstract</a>
+<a href="#" data-action="dataset_info" role="button">Data</a>
+<a href="#" data-action="citation" role="button">Citation</a>
+<a href="#" data-action="bib" role="button">BibTeX</a>
+<a class="external" href="https://hal.science/hal-03691400" target="_blank" rel="noopener">Preprint</a>
+</div>
+<div class="toggle-area" data-current="">
+<button class="copy-btn">Copy</button>
+<span class="copy-toast">Copied!</span>
+<div class="panel-label">—</div>
+<div class="content"></div>
+</div>
+<div style="display:none;">
+<div class="payload-abstract">Cytochrome c oxidase subunit II (COX2) is one of the three mitochondrially encoded proteins of the complex IV of the respiratory chain that catalyses the reduction of oxygen to water. The cox2 gene spans about 690 base pairs in most animal species and produces a protein composed of approximately 230 amino acids. We discovered an extreme departure from this pattern in the male-transmitted mitogenome of the bivalve Scrobicularia plana with doubly uniparental inheritance (DUI) of mitochondrial DNA (mtDNA), which possesses an important in-frame insertion of approximately 4.8 kb in its cox2 gene. This feature---an enlarged male cox2 gene---is found in many species with DUI; the COX2 protein can be up to 420 amino acids long. Through RT-PCRs, immunoassays and comparative genetics, the evolution and functionality of this insertion in S. plana were characterized. The in-frame insertion is conserved among individuals from different populations and bears the signature of purifying selection seemingly indicating maintenance of functionality. Its transcription and translation were confirmed: this gene produces a polypeptide of 1892 amino acids, making it the largest metazoan COX2 protein known to date. We hypothesize that these extreme modifications in the COX2 protein affect the metabolism of mitochondria containing the male-transmitted mtDNA in Scrobicularia plana.</div>
+<div class="payload-dataset_info">GenBank accession number OM928010-064 ; https://rs.figshare.com/collections/Supplementary_material_from_The_longest_mitochondrial_protein_in_metazoans_is_encoded_by_the_male-transmitted_mitogenome_of_the_bivalve_i_Scrobicularia_plana_i_/6013522</div>
+<div class="payload-bibtex">@article{tasse2022longest,
+  author = {M{\a'e}lanie Tass{\a'e} and Thierry Choquette and Annie Angers and Donald T Stewart and Eric Pante and Sophie Breton},
+  doi = {10.1098/rsbl.2022.0122},
+  journal = {Biology Letters},
+  number = {6},
+  pages = {20220122},
+  publisher = {The Royal Society},
+  title = {The longest mitochondrial protein in metazoans is encoded by the male-transmitted mitogenome of the bivalve Scrobicularia plana},
+  url = {https://royalsocietypublishing.org/rsbl/article/18/6/20220122/63135/The-longest-mitochondrial-protein-in-metazoans-is},
+  volume = {18},
+  year = {2022}
+}</div>
+</div>
+</div>
+<div class="pub-card" data-key="lucas2022translocation">
+<div class="pub-title">
+<a href="https://doi.org/10.1098/rsos.211888" target="_blank" rel="noopener">Translocation of mitochondrial DNA into the nuclear genome blurs phylogeographic and conservation genetic studies in seabirds</a>
+</div>
+<div class="pub-meta">
+Lucas, Vincent &amp; Eric
+<br>
+<em>Royal Society Open Science</em>
+</div>
+<div class="pub-actions">
+<a href="#" data-action="abstract" role="button">Abstract</a>
+<a href="#" data-action="dataset_info" role="button">Data</a>
+<a href="#" data-action="citation" role="button">Citation</a>
+<a href="#" data-action="bib" role="button">BibTeX</a>
+<a class="external" href="https://hal.science/hal-03697326" target="_blank" rel="noopener">Preprint</a>
+</div>
+<div class="toggle-area" data-current="">
+<button class="copy-btn">Copy</button>
+<span class="copy-toast">Copied!</span>
+<div class="panel-label">—</div>
+<div class="content"></div>
+</div>
+<div style="display:none;">
+<div class="payload-abstract">Mitochondrial DNA (mtDNA) translocated into the nuclear genome (numt), when co-analysed with genuine mtDNA, could plague phylogeographic studies. To evaluate numt-related biases in population genetics parameters in birds, which are prone to accumulating numts, we targeted the mitochondrial mt-cytb gene. We looked at 13 populations of Audubon's shearwater ( Puffinus lherminieri ), including five mitochondrial lineages. mt-cytb homologue and paralogue (numt) sequences were determined by Sanger sequencing with and without prior exonuclease digestion of nuclear DNA. Numts formed monophyletic clades corresponding to three of the five mitochondrial lineages tested (the remaining two forming a paraphyletic group). Nineteen percent of numt alleles fell outside of their expected mitochondrial clade, a pattern consistent with multiple translocation events, incomplete lineage sorting (ILS), and/or introgression. When co-analysing mt-cytb paralogues and homologues, excluding individuals with ambiguities underestimates genetic diversity (4%) and differentiation (11%) among least-sampled populations. Removing ambiguous sites drops the proportion of inter-lineage genetic variance by 63%. While co-analysing numts with mitochondrial sequences can lead to severe bias and information loss in bird phylogeographic studies, the separate analysis of genuine mitochondrial loci and their nuclear paralogues can shed light on numt molecular evolution, as well as evolutionary processes such as ILS and introgression.</div>
+<div class="payload-dataset_info">DNA sequences are available on Genbank (Accession no.: OK042970-3170 for the CLEAN dataset, OK043171-245 for the NUMT dataset). Supplemetals on FigShare: https://rs.figshare.com/collections/Supplementary_material_from_Translocation_of_mitochondrial_DNA_into_the_nuclear_genome_blurs_phylogeographic_and_conservation_genetic_studies_in_seabirds_/5979241</div>
+<div class="payload-bibtex">@article{lucas2022translocation,
+  author = {Torres Lucas and Bretagnolle Vincent and Pante Eric},
+  doi = {10.1098/rsos.211888},
+  journal = {Royal Society Open Science},
+  number = {6},
+  pages = {211888},
+  publisher = {The Royal Society},
+  title = {Translocation of mitochondrial DNA into the nuclear genome blurs phylogeographic and conservation genetic studies in seabirds},
+  url = {https://royalsocietypublishing.org/rsos/article/9/6/211888/96797/Translocation-of-mitochondrial-DNA-into-the},
+  volume = {9},
+  year = {2022}
+}</div>
+</div>
+</div>
+</div>
+</div>
+<div class="year-group">
+<h2 class="year-title anchored" id="y-2021">2021</h2>
+<div>
+<div class="pub-card" data-key="dartois2021molecular">
+<div class="pub-title">
+<a href="https://doi.org/10.7717/peerj.11966" target="_blank" rel="noopener">Molecular genetic diversity of seaweeds morphologically related to Ulva rigida at three sites along the French Atlantic coast</a>
+</div>
+<div class="pub-meta">
+Dartois, Pante, Viricel, Becquet &amp; Sauriau
+<br>
+<em>PeerJ</em>
+</div>
+<div class="pub-actions">
+<a href="#" data-action="abstract" role="button">Abstract</a>
+<a href="#" data-action="dataset_info" role="button">Data</a>
+<a href="#" data-action="citation" role="button">Citation</a>
+<a href="#" data-action="bib" role="button">BibTeX</a>
+<a class="external" href="https://hal.science/hal-03364596/?" target="_blank" rel="noopener">Preprint</a>
+</div>
+<div class="toggle-area" data-current="">
+<button class="copy-btn">Copy</button>
+<span class="copy-toast">Copied!</span>
+<div class="panel-label">—</div>
+<div class="content"></div>
+</div>
+<div style="display:none;">
+<div class="payload-abstract">Foliose species of the genus Ulva are notoriously difficult to identify due to their variable morphological characteristics and high phenotypic plasticity. We reassessed the taxonomic status of several distromatic foliose Ulva spp., morphologically related to Ulva rigida, using DNA barcoding with the chloroplastic tufA and rbcL (for a subset of taxa) genes for 339 selected attached Ulva specimens collected from three intertidal rocky sites. Two of the collection sites were in Brittany and one site was in Vend{\'e}e, along the Atlantic coast of France. Molecular analyses included several museum specimens and the holotype of Ulva armoricana Dion, Reviers &amp; Coat. We identified five different tufA haplotypes using a combination of phylogenetic analysis, with the support of several recently sequenced holotypes and lectotypes, and a species delimitation method based on hierarchical clustering. Four haplotypes were supported by validly named species: Ulva australis Areschoug, Ulva fenestrata Postels &amp; Ruprecht, Ulva lacinulata (K{\"u}tzing) Wittrock and U. rigida C. Agardh. The later was additionally investigated using rbcL. The fifth haplotype represented exact sequence matches to an unnamed species from European Atlantic coasts. Our results support: (1) the synonymy of both U. rigida sensu Bliding non C. Agardh and U. armoricana with U. lacinulata. This finding is based on current genetic analysis of tufA from the U. armoricana holotype and recent molecular characterization of the lectotype of U. laetevirens, which is synonymous to U. australis, (2) the presence of U. australis as a misidentified introduced species in Brittany, and (3) the presence of U. fenestrata and U. rigida in southern Brittany. The taxonomic history of each species is discussed, highlighting issues within distromatic foliose taxa of the genus Ulva and the need to genetically characterize all its available type specimens.</div>
+<div class="payload-dataset_info">Accession numbers and description of tufA. sequences deposited in Genbank : Supplemental File S1</div>
+<div class="payload-bibtex">@article{dartois2021molecular,
+  author = {Manon Dartois and Eric Pante and Am{\a'e}lia Viricel and Vanessa Becquet and Pierre-Guy Sauriau},
+  doi = {10.7717/peerj.11966},
+  journal = {PeerJ},
+  pages = {e11966},
+  publisher = {PeerJ Inc.},
+  title = {Molecular genetic diversity of seaweeds morphologically related to Ulva rigida at three sites along the French Atlantic coast},
+  url = {https://peerj.com/articles/11966/},
+  volume = {9},
+  year = {2021}
+}</div>
+</div>
+</div>
+<div class="pub-card" data-key="sauriau2021multiple">
+<div class="pub-title">
+<a href="https://doi.org/10.1080/09670262.2021.1876249" target="_blank" rel="noopener">Multiple genetic marker analysis challenges the introduction history of Ulva australis (Ulvales, Chlorophyta) on French coasts</a>
+</div>
+<div class="pub-meta">
+Sauriau, Dartois, Becquet, Aubert, Huet, Bréret, Viricel &amp; Pante
+<br>
+<em>European Journal of Phycology</em>
+</div>
+<div class="pub-actions">
+<a href="#" data-action="abstract" role="button">Abstract</a>
+<a href="#" data-action="dataset_info" role="button">Data</a>
+<a href="#" data-action="citation" role="button">Citation</a>
+<a href="#" data-action="bib" role="button">BibTeX</a>
+<a class="external" href="https://hal.science/hal-03150027" target="_blank" rel="noopener">Preprint</a>
+</div>
+<div class="toggle-area" data-current="">
+<button class="copy-btn">Copy</button>
+<span class="copy-toast">Copied!</span>
+<div class="panel-label">—</div>
+<div class="content"></div>
+</div>
+<div style="display:none;">
+<div class="payload-abstract">The green seaweeds Ulva australis and U. pertusa were described from southern Australia and Japan, respectively. They are conspecific and U. australis, the currently accepted taxon, is native to temperate marine waters in north-eastern Asia, and known to be introduced overseas into Australasia, the Americas and Europe. Although the genetics of U. australis have been investigated elsewhere, along French coasts the origins and history of the introduction of this species need to be clarified. We used mitochondrial, plastid and nuclear markers to differentiate introduced populations of U. australis along the French Atlantic coasts. The plastid tufA gene used as a barcoding marker revealed a well-defined species with a higher haplotype diversity in native vs. introduced areas. The ITS2 region (nuclear) and rbcL (plastid) were used to compare French specimens with the lectotype of U. australis. Putative geographic origins of the genetically determined U. australis were examined using genetic markers with better resolution, the plastid atpI-H combined with the mitochondrial trnA-N. Origin(s) and introduction history of French specimens were inferred from the comparison between their haplotypes and those previously described in native and non-native temperate areas worldwide. Our results indicate that the presence of U. australis along the French Atlantic and Mediterranean coasts is the result of multiple introductions and independent pathways, and suggest that historical oyster transfers from Japan and British Columbia can only partially explain the observed patterns in genetic markers. Alternative hypotheses for the timing and pathways of introductions are proposed in the light of the historic background of maritime transport networks and trade between north-eastern Asia and Europe.</div>
+<div class="payload-dataset_info">GenBankc Acc: Sup Table S2 ; MT078942, MT078943, MT078944, MT078945, MT078936, MT078937, MT078938, MT078939, MT078952, MT078953, MT078958, MT078959, MT078940, MT078941</div>
+<div class="payload-bibtex">@article{sauriau2021multiple,
+  author = {Pierre-Guy Sauriau and Manon Dartois and Vanessa Becquet and Fabien Aubert and Val{\a'e}rie Huet and Martine Br{\a'e}ret and Am{\a'e}lia Viricel and Eric Pante},
+  doi = {10.1080/09670262.2021.1876249},
+  journal = {European Journal of Phycology},
+  number = {4},
+  pages = {455--467},
+  publisher = {Taylor \&amp; Francis},
+  title = {Multiple genetic marker analysis challenges the introduction history of Ulva australis (Ulvales, Chlorophyta) on French coasts},
+  url = {https://www.tandfonline.com/doi/full/10.1080/09670262.2021.1876249?journalCode=tejp20#abstract},
+  volume = {56},
+  year = {2021}
+}</div>
+</div>
+</div>
+<div class="pub-card" data-key="untiedt2021phylogenetic">
+<div class="pub-title">
+<a href="https://doi.org/10.3389/fmars.2020.599984" target="_blank" rel="noopener">Phylogenetic relationships within Chrysogorgia (Alcyonacea: Octocorallia), a morphologically diverse genus of octocoral, revealed using a target enrichment approach</a>
+</div>
+<div class="pub-meta">
+Untiedt, Quattrini, McFadden, Alderslade, Pante &amp; Burridge
+<br>
+<em>Frontiers in Marine Science</em>
+</div>
+<div class="pub-actions">
+<a href="#" data-action="abstract" role="button">Abstract</a>
+<a href="#" data-action="dataset_info" role="button">Data</a>
+<a href="#" data-action="citation" role="button">Citation</a>
+<a href="#" data-action="bib" role="button">BibTeX</a>
+<a class="external" href="https://hal.sorbonne-universite.fr/hal-03154113" target="_blank" rel="noopener">Preprint</a>
+</div>
+<div class="toggle-area" data-current="">
+<button class="copy-btn">Copy</button>
+<span class="copy-toast">Copied!</span>
+<div class="panel-label">—</div>
+<div class="content"></div>
+</div>
+<div style="display:none;">
+<div class="payload-abstract">The octocoral genus Chrysogorgia (Duchassaing and Michelotti, 1864) contains 81 nominal species that are ecologically important components of benthic communities. Taxonomic examination of a large set of samples revealed many provisional new species, exhibiting a wide range of morphological variation. We established nine, distinct morphological groups of Chrysogorgia s.l. that were hypothesized to represent distinct genera. Here, we applied a recently developed universal target enrichment bait method for octocoral exons and ultraconserved elements (UCEs) on 96 specimens varying in morphology, collection ages and DNA quality and quantity to determine whether there was genetic support for these morphologically defined groups. Following Illumina sequencing and SPAdes assembly we recovered 1,682 of 1,700 targeted exon loci and 1,333 of 1,340 targeted UCE loci. Locus recovery per sample was highly variable and significantly correlated with time since specimen collection (2--60 years) and DNA quantity and quality. Phylogenetically informative sites in UCE and exon loci were ∼35% for 50% and 75% taxon-occupancy matrices. Maximum likelihood analyses recovered highly resolved trees with topologies supporting the recognition of 11 candidate genera, corresponding with morphological groups assigned a priori, nine of which are novel. Our results also demonstrate that this target-enrichment approach can be successfully applied to degraded museum specimens of up to 60 years old. This study shows that an integrative approach consisting of molecular and morphological methods will be essential to a proper revision of Chrysogorgia taxonomy and to understand regional diversity of these ecologically important corals.</div>
+<div class="payload-dataset_info">GenBank: PRJNA681648</div>
+<div class="payload-bibtex">@article{untiedt2021phylogenetic,
+  author = {Candice Bobby Untiedt and Andrea M Quattrini and Catherine S McFadden and Phil A Alderslade and Eric Pante and Christopher P Burridge},
+  doi = {10.3389/fmars.2020.599984},
+  journal = {Frontiers in Marine Science},
+  pages = {599984},
+  publisher = {Frontiers Media SA},
+  title = {Phylogenetic relationships within Chrysogorgia (Alcyonacea: Octocorallia), a morphologically diverse genus of octocoral, revealed using a target enrichment approach},
+  url = {https://www.frontiersin.org/journals/marine-science/articles/10.3389/fmars.2020.599984/full},
+  volume = {7},
+  year = {2021}
+}</div>
+</div>
+</div>
+<div class="pub-card" data-key="torres2021sea">
+<div class="pub-title">
+<a href="https://doi.org/10.1002/ece3.8180" target="_blank" rel="noopener">Sea surface temperature, rather than land mass or geographic distance, may drive genetic differentiation in a species complex of highly dispersive seabirds</a>
+</div>
+<div class="pub-meta">
+Torres, Pante, González-Solís, Viricel, Ribout, Zino, MacKin, Precheur, Tourmetz, Calabrese &amp; others
+<br>
+<em>Ecology and evolution</em>
+</div>
+<div class="pub-actions">
+<a href="#" data-action="abstract" role="button">Abstract</a>
+<a href="#" data-action="dataset_info" role="button">Data</a>
+<a href="#" data-action="citation" role="button">Citation</a>
+<a href="#" data-action="bib" role="button">BibTeX</a>
+<a class="external" href="https://hal.science/hal-02910956" target="_blank" rel="noopener">Preprint</a>
+</div>
+<div class="toggle-area" data-current="">
+<button class="copy-btn">Copy</button>
+<span class="copy-toast">Copied!</span>
+<div class="panel-label">—</div>
+<div class="content"></div>
+</div>
+<div style="display:none;">
+<div class="payload-abstract">Seabirds, particularly Procellariiformes, are highly mobile organisms with a great capacity for long dispersal, though simultaneously showing high philopatry, two conflicting life-history traits that may lead to contrasted patterns of genetic population structure. Landmasses were suggested to explain differentiation patterns observed in seabirds, but philopatry, isolation by distance, segregation between breeding and nonbreeding zones, and oceanographic conditions (sea surface temperatures) may also contribute to differentiation patterns. To our knowledge, no study has simultaneously contrasted the multiple factors contributing to the diversification of seabird species, especially in the gray zone of speciation. We conducted a multilocus phylogeographic study on a widespread seabird species complex, the little shearwater complex, showing highly homogeneous morphology, which led to considerable taxonomic debate. We sequenced three mitochondrial and six nuclear markers on all extant populations from the Atlantic (lherminieri) and Indian Oceans (bailloni), that is, five nominal lineages from 13 populations, along with one population from the eastern Pacific Ocean (representing the dichrous lineage). We found sharp differentiation among populations separated by the African continent with both mitochondrial and nuclear markers, while only mitochondrial markers allowed characterizing the five nominal lineages. No differentiation could be detected within these five lineages, questioning the strong level of philopatry showed by these shearwaters. Finally, we propose that Atlantic populations likely originated from the Indian Ocean. Within the Atlantic, a stepping-stone process accounts for the current distribution. Based on our divergence time estimates, we suggest that the observed pattern of differentiation mostly resulted from historical and current variation in sea surface temperatures.</div>
+<div class="payload-dataset_info">MH206162-163 ; MH383332-506 ; OK042970-3663</div>
+<div class="payload-bibtex">@article{torres2021sea,
+  author = {Lucas Torres and Eric Pante and Jacob Gonz{\a'a}lez-Sol{\a'\i}s and Am{\a'e}lia Viricel and C{\a'e}cile Ribout and Francis Zino and Will MacKin and Carine Precheur and Julie Tourmetz and Licia Calabrese and {others}},
+  doi = {10.1002/ece3.8180},
+  journal = {Ecology and evolution},
+  number = {21},
+  pages = {14960--14976},
+  title = {Sea surface temperature, rather than land mass or geographic distance, may drive genetic differentiation in a species complex of highly dispersive seabirds},
+  url = {https://onlinelibrary.wiley.com/doi/10.1002/ece3.8180},
+  volume = {11},
+  year = {2021}
+}</div>
+</div>
+</div>
+</div>
+</div>
+<div class="year-group">
+<h2 class="year-title anchored" id="y-2020">2020</h2>
+<div>
+<div class="pub-card" data-key="stewart2020unusual">
+<div class="pub-title">
+<a href="https://doi.org/10.1007/978-3-030-57246-4_12" target="_blank" rel="noopener">An unusual evolutionary strategy: the origins, genetic repertoire, and implications of doubly uniparental inheritance of mitochondrial DNA in bivalves</a>
+</div>
+<div class="pub-meta">
+Stewart, Breton, Chase, Robicheau, Bettinazzi, Pante, Youssef &amp; Garrido-Ramos
+<br>
+<em>Evolutionary Biology---A Transdisciplinary Approach</em>
+</div>
+<div class="pub-actions">
+<a href="#" data-action="abstract" role="button">Abstract</a>
+<a href="#" data-action="dataset_info" role="button">Data</a>
+<a href="#" data-action="citation" role="button">Citation</a>
+<a href="#" data-action="bib" role="button">BibTeX</a>
+<a class="external" href="https://hal.science/hal-02927307" target="_blank" rel="noopener">Preprint</a>
+</div>
+<div class="toggle-area" data-current="">
+<button class="copy-btn">Copy</button>
+<span class="copy-toast">Copied!</span>
+<div class="panel-label">—</div>
+<div class="content"></div>
+</div>
+<div style="display:none;">
+<div class="payload-abstract">Mitochondrial DNA (mtDNA) is typically passed on to progeny only by the female parent. The phenomenon of ``doubly uniparental inheritance'' (DUI) of mtDNA in many bivalve species is a fascinating exception to the paradigm of strict maternal inheritance of mtDNA. In this review, we survey the current state of knowledge of DUI and discuss several active areas of research in this field. Topics/questions covered include: the number of times DUI evolved (once or multiple origins), the link between DUI and sex determination, the role(s) of mtDNA-encoded non-oxidative phosphorylation genes (i.e. ORFan/orf genes) in freshwater mussels, the function of conserved sequence motifs and sperm transmission elements in mtDNA of marine mussels, the challenges of annotating mtDNA genomes of DUI species, the presence of unorthodox features in venerid mtDNA, whether or not orf DNA sequences are useful in species-level identification of freshwater mussel, and finally, whether or not there are obvious benefits of DUI. For each topic, we also highlight important avenues for future research within this fascinating field of mitochondrial evolutionary biology.</div>
+<div class="payload-dataset_info">NA</div>
+<div class="payload-bibtex">@article{stewart2020unusual,
+  author = {Donald T Stewart and Sophie Breton and Emily E Chase and Brent M Robicheau and Stefano Bettinazzi and Eric Pante and Noor Youssef and Manuel A Garrido-Ramos},
+  doi = {10.1007/978-3-030-57246-4_12},
+  journal = {Evolutionary Biology---A Transdisciplinary Approach},
+  pages = {301--323},
+  publisher = {Springer, Cham},
+  title = {An unusual evolutionary strategy: the origins, genetic repertoire, and implications of doubly uniparental inheritance of mitochondrial DNA in bivalves},
+  url = {https://link.springer.com/chapter/10.1007/978-3-030-57246-4_12#citeas},
+  year = {2020}
+}</div>
+</div>
+</div>
+<div class="pub-card" data-key="zaharias2020data">
+<div class="pub-title">
+<a href="https://doi.org/10.1016/j.ympev.2019.106660" target="_blank" rel="noopener">Data, time and money: evaluating the best compromise for inferring molecular phylogenies of non-model animal taxa</a>
+</div>
+<div class="pub-meta">
+Zaharias, Pante, Gey, Fedosov &amp; Puillandre
+<br>
+<em>Molecular phylogenetics and evolution</em>
+</div>
+<div class="pub-actions">
+<a href="#" data-action="abstract" role="button">Abstract</a>
+<a href="#" data-action="dataset_info" role="button">Data</a>
+<a href="#" data-action="citation" role="button">Citation</a>
+<a href="#" data-action="bib" role="button">BibTeX</a>
+<a class="external" href="https://hal.science/hal-02458233" target="_blank" rel="noopener">Preprint</a>
+</div>
+<div class="toggle-area" data-current="">
+<button class="copy-btn">Copy</button>
+<span class="copy-toast">Copied!</span>
+<div class="panel-label">—</div>
+<div class="content"></div>
+</div>
+<div style="display:none;">
+<div class="payload-abstract">For over a decade now, High Throughput sequencing (HTS) approaches have revolutionized phylogenetics, both in terms of data production and methodology. While transcriptomes and (reduced) genomes are increasingly used, generating and analyzing HTS datasets remain expensive, time consuming and complex for most non-model taxa. Indeed, a literature survey revealed that 74% of the molecular phylogenetics trees published in 2018 are based on data obtained through Sanger sequencing. In this context, our goal was to identify the strategy that would represent the best compromise among costs, time and robustness of the resulting tree. We sequenced and assembled 32 transcriptomes of the marine mollusk family Turridae, considered as a typical non-model animal taxon. From these data, we extracted the loci most commonly used in gastropod phylogenies (cox1, 12S, 16S, 28S, h3 and 18S), full mitogenomes, and a reduced nuclear transcriptome representation. With each dataset, we reconstructed phylogenies and compared their robustness and accuracy. We discuss the impact of missing data and the use of statistical tests, tree metrics, and supertree and supermatrix methods to further improve phylogenetic data acquisition pipelines. We evaluated the overall costs (time and money) in order to identify the best compromise for phylogenetic data sampling in non-model animal taxa. Although sequencing full mitogenomes seems to constitute the best compromise both in terms of costs and node support, they are known to induce biases in phylogenetic reconstructions. Rather, we recommend to systematically include loci commonly used for phylogenetics and taxonomy (i.e. DNA barcodes, rRNA genes, full mitogenomes, etc.) among the other loci when designing baits for capture.</div>
+<div class="payload-dataset_info">DRYAD: https://datadryad.org/dataset/doi:10.5061/dryad.r606d128</div>
+<div class="payload-bibtex">@article{zaharias2020data,
+  author = {Paul Zaharias and Eric Pante and Delphine Gey and Alexander E Fedosov and Nicolas Puillandre},
+  doi = {10.1016/j.ympev.2019.106660},
+  journal = {Molecular phylogenetics and evolution},
+  pages = {106660},
+  publisher = {Elsevier},
+  title = {Data, time and money: evaluating the best compromise for inferring molecular phylogenies of non-model animal taxa},
+  url = {https://www.sciencedirect.com/science/article/abs/pii/S1055790319305445?via%3Dihub},
+  volume = {142},
+  year = {2020}
+}</div>
+</div>
+</div>
+<div class="pub-card" data-key="breton2020evolution">
+<div class="pub-title">
+<a href="https://doi.org/10.3389/fevo.2020.615233" target="_blank" rel="noopener">Evolution of Mitochondrial Genomes</a>
+</div>
+<div class="pub-meta">
+Breton, Pante, Xue &amp; Sun
+<br>
+<em>Frontiers in Ecology and Evolution</em>
+</div>
+<div class="pub-actions">
+<a href="#" data-action="abstract" role="button">Abstract</a>
+<a href="#" data-action="dataset_info" role="button">Data</a>
+<a href="#" data-action="citation" role="button">Citation</a>
+<a href="#" data-action="bib" role="button">BibTeX</a>
+<a class="external" href="https://hal.science/hal-03000374" target="_blank" rel="noopener">Preprint</a>
+</div>
+<div class="toggle-area" data-current="">
+<button class="copy-btn">Copy</button>
+<span class="copy-toast">Copied!</span>
+<div class="panel-label">—</div>
+<div class="content"></div>
+</div>
+<div style="display:none;">
+<div class="payload-abstract">Animal mitochondria have their own genome (mtDNA), which is typically described as small (~16 kb), circular and maternally inherited with 37 genes, i.e., 13 for protein-coding genes involved in ATP production, and 22 for transfer RNAs and two for ribosomal RNAs. However, recent data show that the functional repertoire of the animal mtDNA has been underestimated, even in humans. Moreover, while several animal groups are relatively conservative in terms of their mt genome content and organization, recent studies revealed that some groups exhibit an astonishing diversity in mt chromosome form and number as well as coding content and organization.
+One aim of this Research Topic was to better understand the evolutionary processes that underlie mt genome diversity in animals and also other organisms (e.g., Nishimura et al.; Smith). For example, one major difference in mitochondrial gene content between animals and plants + some unicellular eukaryotes resides in the occurrence in the latter two of ccm genes (for cytochrome c maturation). In their study, Nishimura et al. were interested in two evolutionarily distinct systems for cytochrome c maturation in mitochondria---Systems I and III--- the former involves a set of mitochondrion-encoded proteins whereas the latter is operated exclusively by nucleus-encoded proteins. Specifically, the authors tested the previous hypothesis that cytochrome c maturation switched from System I to III in the early evolution of Cryptista, one of the major taxonomic assemblages in eukaryotes, by sequencing two new mtDNAs from two key cryptist members. The two newly sequenced mtDNAs revealed a patchy distribution of the two evolutionarily distinct systems, and prompted the authors to revise previously proposed scenarios for the evolution of cytochrome c maturation in this group.
+Another aim of this Research Topic was to disentangle the phylogeny and evolution of some animal groups at a wide scale, using characters of mt genomes or complete mtDNA sequences. Indeed, some characters, such as atypical secondary structures of transfer RNAs, which have been consistently found in nematodes, insects, spiders, mites and ticks, have potential value to decipher the phylogeny and evolution of animals at a higher level (class, order or family). For example, studies in insects (e.g., Du et al.) and nematodes (reviewed in Kern et al.) have shown that complete mtDNA sequences have higher resolutions than partial gene sequences for population genetics and phylogenetic studies, although combining several mitochondrial and nuclear genes also remain an appropriate approach. Overall, this Research Topic aimed in elucidating the genetic, life history, and ecological factors that contribute to the evolutionary dynamics of mt genomes in animals and other organisms.</div>
+<div class="payload-dataset_info">NA</div>
+<div class="payload-bibtex">@article{breton2020evolution,
+  author = {Sophie Breton and Eric Pante and Xiao-Feng Xue and Jing-Tao Sun},
+  doi = {10.3389/fevo.2020.615233},
+  journal = {Frontiers in Ecology and Evolution},
+  pages = {615233},
+  publisher = {Frontiers Media SA},
+  title = {Evolution of Mitochondrial Genomes},
+  url = {https://www.frontiersin.org/journals/ecology-and-evolution/articles/10.3389/fevo.2020.615233/full},
+  volume = {8},
+  year = {2020}
+}</div>
+</div>
+</div>
+<div class="pub-card" data-key="capt2020unorthodox">
+<div class="pub-title">
+<a href="https://doi.org/10.1038/s41598-020-57975-y" target="_blank" rel="noopener">Unorthodox features in two venerid bivalves with doubly uniparental inheritance of mitochondria</a>
+</div>
+<div class="pub-meta">
+Capt, Bouvet, Guerra, Robicheau, Stewart, Pante &amp; Breton
+<br>
+<em>Scientific reports</em>
+</div>
+<div class="pub-actions">
+<a href="#" data-action="abstract" role="button">Abstract</a>
+<a href="#" data-action="dataset_info" role="button">Data</a>
+<a href="#" data-action="citation" role="button">Citation</a>
+<a href="#" data-action="bib" role="button">BibTeX</a>
+<a class="external" href="https://hal.science/hal-02499562/?" target="_blank" rel="noopener">Preprint</a>
+</div>
+<div class="toggle-area" data-current="">
+<button class="copy-btn">Copy</button>
+<span class="copy-toast">Copied!</span>
+<div class="panel-label">—</div>
+<div class="content"></div>
+</div>
+<div style="display:none;">
+<div class="payload-abstract">In animals, strictly maternal inheritance (SMi) of mitochondria is the rule, but one exception (doubly uniparental inheritance or DUI), marked by the transmission of sex-specific mitogenomes, has been reported in bivalves. Associated with DUI is a frequent modification of the mitochondrial cox2 gene, as well as additional sex-specific mitochondrial genes not involved in oxidative phosphorylation. With the exception of freshwater mussels (for 3 families of the order Unionida), these DUI-associated features have only been shown in few species [within Mytilidae (order Mytilida) and Veneridae (order Venerida)] because of the few complete sex-specific mitogenomes published for these orders. Here, we present the complete sex-specific mtDNAs of two recently-discovered DUI species in two families of the order Venerida, Scrobicularia plana (Semelidae) and Limecola balthica (tellinidae). these species display the largest differences in genome size between sex-specific mitotypes in DUI species (&gt;10 kb), as well as the highest mtDNA divergences (sometimes reaching &gt;50%). An important in-frame insertion (&gt;3.5 kb) in the male cox2 gene is partly responsible for the differences in genome size. The S. plana cox2 gene is the largest reported so far in the Kingdom Animalia. The mitogenomes may be carrying sex-specific genes, indicating that general mitochondrial features are shared among DUI species. Animal mitochondrial DNA (mtDNA) is typically depicted as a strictly maternally inherited (SMI) circular DNA molecule that is relatively small (~16 kb) and genomically streamlined with almost invariant gene content (13 protein-coding genes and 24 structural RNAs) 1,2. However, important deviations do occur in the mtD-NAs of bivalve molluscs, which not only display dramatic variation in size (&lt;14.7 kb to &gt;67 kb) 3,4 and gene arrangement 5 , but also the presence of additional protein-coding genes not associated with oxidative phospho-rylation 6-9. An even more extreme departure from the norm in bivalve mitochondrial genomes is their mode of doubly uniparental inheritance (DUI)-both egg and sperm mitochondria are transmitted from generation to generation in several bivalve species, but only male offspring retain paternally-transmitted mitochondria (with male or M mtDNA) in their gametes 10-12. Adult females of DUI-exhibiting species usually possess only the female-transmitted mtDNA (F mtDNA) in their soma and gametes whereas males possess F mtDNA in their soma and M mtDNA in their gametes 10-13. The DNA divergence between F and M mtDNAs usually vary from about 8% to 40% depending on the species 12,14. Genetic analyses suggested that both F and M mtDNAs in DUI bivalves evolve at a faster rate than typical metazoan mtDNA, and that M mtDNA evolves faster than F mtDNA 15-17. One factor explaining this observation may be that the M genome is subject to weaker selective pressures than the F genome due to an unequal "division of labor" in the DUI system 16. Typical animal mtDNA functions in gonads and somatic tissues of both sexes whereas under DUI, F mtDNA functions in female gonads and the soma of both sexes, while M mtDNAs functions primarily in spermatozoa of male gonads and only partially in the male soma 13,16,18. As opposed to SMI that promotes homoplasmy, a state in which all mtDNA copies are typically genetically identical in each cell, thus preventing potentially harmful genomic conflicts, DUI is a naturally heter-oplasmic system in which two highly divergent mitochondrial lineages coexist in the same nuclear background, enabling the analysis of the consequences of tissue heteroplamy.</div>
+<div class="payload-dataset_info">GenBank Acc MN528028, MN528029</div>
+<div class="payload-bibtex">@article{capt2020unorthodox,
+  author = {Charlotte Capt and Karim Bouvet and Davide Guerra and Brent M Robicheau and Donald T Stewart and Eric Pante and Sophie Breton},
+  doi = {10.1038/s41598-020-57975-y},
+  journal = {Scientific reports},
+  number = {1},
+  pages = {1087},
+  publisher = {Nature Publishing Group UK London},
+  title = {Unorthodox features in two venerid bivalves with doubly uniparental inheritance of mitochondria},
+  url = {https://www.nature.com/articles/s41598-020-57975-y},
+  volume = {10},
+  year = {2020}
+}</div>
+</div>
+</div>
+</div>
+</div>
+<div class="year-group">
+<h2 class="year-title anchored" id="y-2019">2019</h2>
+<div>
+<div class="pub-card" data-key="torres2019evidence">
+<div class="pub-title">
+<a href="https://doi.org/NA" target="_blank" rel="noopener">Evidence for a duplicated mitochondrial region in Audubon's shearwater based on MinION sequencing</a>
+</div>
+<div class="pub-meta">
+Torres, Welch, Zanchetta, Chesser, Manno, Donnadieu, Bretagnolle &amp; Pante
+<br>
+<em>Mitochondrial DNA Part A</em>
+</div>
+<div class="pub-actions">
+<a href="#" data-action="abstract" role="button">Abstract</a>
+<a href="#" data-action="dataset_info" role="button">Data</a>
+<a href="#" data-action="citation" role="button">Citation</a>
+<a href="#" data-action="bib" role="button">BibTeX</a>
+</div>
+<div class="toggle-area" data-current="">
+<button class="copy-btn">Copy</button>
+<span class="copy-toast">Copied!</span>
+<div class="panel-label">—</div>
+<div class="content"></div>
+</div>
+<div style="display:none;">
+<div class="payload-abstract">NA</div>
+<div class="payload-dataset_info">NA</div>
+<div class="payload-bibtex">@article{torres2019evidence,
+  author = {Lucas Torres and Andreanna J Welch and Catherine Zanchetta and R Terry Chesser and Maxime Manno and C{\a'e}cile Donnadieu and Vincent Bretagnolle and Eric Pante},
+  journal = {Mitochondrial DNA Part A},
+  number = {2},
+  pages = {256--263},
+  publisher = {Taylor \&amp; Francis},
+  title = {Evidence for a duplicated mitochondrial region in Audubon's shearwater based on MinION sequencing},
+  volume = {30},
+  year = {2019}
+}</div>
+</div>
+</div>
+<div class="pub-card" data-key="pante2019investigation">
+<div class="pub-title">
+<a href="https://doi.org/NA" target="_blank" rel="noopener">Investigation of the molecular signatures of selection on ATP synthase genes in the marine bivalve Limecola balthica</a>
+</div>
+<div class="pub-meta">
+Pante, Becquet, Viricel &amp; Garcia
+<br>
+<em>Aquatic Living Resources</em>
+</div>
+<div class="pub-actions">
+<a href="#" data-action="abstract" role="button">Abstract</a>
+<a href="#" data-action="dataset_info" role="button">Data</a>
+<a href="#" data-action="citation" role="button">Citation</a>
+<a href="#" data-action="bib" role="button">BibTeX</a>
+</div>
+<div class="toggle-area" data-current="">
+<button class="copy-btn">Copy</button>
+<span class="copy-toast">Copied!</span>
+<div class="panel-label">—</div>
+<div class="content"></div>
+</div>
+<div style="display:none;">
+<div class="payload-abstract">NA</div>
+<div class="payload-dataset_info">NA</div>
+<div class="payload-bibtex">@article{pante2019investigation,
+  author = {Eric Pante and Vanessa Becquet and Am{\a'e}lia Viricel and Pascale Garcia},
+  journal = {Aquatic Living Resources},
+  pages = {3},
+  publisher = {EDP Sciences},
+  title = {Investigation of the molecular signatures of selection on ATP synthase genes in the marine bivalve Limecola balthica},
+  volume = {32},
+  year = {2019}
+}</div>
+</div>
+</div>
+<div class="pub-card" data-key="vagner2019ocean">
+<div class="pub-title">
+<a href="https://doi.org/NA" target="_blank" rel="noopener">Ocean warming combined with lower omega-3 nutritional availability impairs the cardio-respiratory function of a marine fish</a>
+</div>
+<div class="pub-meta">
+Vagner, Pante, Viricel, Lacoue-Labarthe, Zambonino-Infante, Quazuguel, Dubillot, Huet, Le Delliou, Lefrançois &amp; others
+<br>
+<em>Journal of Experimental Biology</em>
+</div>
+<div class="pub-actions">
+<a href="#" data-action="abstract" role="button">Abstract</a>
+<a href="#" data-action="dataset_info" role="button">Data</a>
+<a href="#" data-action="citation" role="button">Citation</a>
+<a href="#" data-action="bib" role="button">BibTeX</a>
+</div>
+<div class="toggle-area" data-current="">
+<button class="copy-btn">Copy</button>
+<span class="copy-toast">Copied!</span>
+<div class="panel-label">—</div>
+<div class="content"></div>
+</div>
+<div style="display:none;">
+<div class="payload-abstract">NA</div>
+<div class="payload-dataset_info">NA</div>
+<div class="payload-bibtex">@article{vagner2019ocean,
+  author = {Marie Vagner and Eric Pante and Amelia Viricel and Thomas Lacoue-Labarthe and Jose-Luis Zambonino-Infante and Patrick Quazuguel and Emmanuel Dubillot and Valerie Huet and Herve {Le Delliou} and Christel Lefran{\c c}ois and {others}},
+  journal = {Journal of Experimental Biology},
+  number = {8},
+  pages = {jeb187179},
+  publisher = {The Company of Biologists Ltd},
+  title = {Ocean warming combined with lower omega-3 nutritional availability impairs the cardio-respiratory function of a marine fish},
+  volume = {222},
+  year = {2019}
+}</div>
+</div>
+</div>
+</div>
+</div>
+<div class="year-group">
+<h2 class="year-title anchored" id="y-2018">2018</h2>
+<div>
+<div class="pub-card" data-key="viricel2018novo">
+<div class="pub-title">
+<a href="https://doi.org/NA" target="_blank" rel="noopener">De novo assembly and functional annotation of the transcriptome of Mimachlamys varia, a bioindicator marine bivalve</a>
+</div>
+<div class="pub-meta">
+Viricel, Becquet, Dubillot &amp; Pante
+<br>
+<em>Marine Genomics</em>
+</div>
+<div class="pub-actions">
+<a href="#" data-action="abstract" role="button">Abstract</a>
+<a href="#" data-action="dataset_info" role="button">Data</a>
+<a href="#" data-action="citation" role="button">Citation</a>
+<a href="#" data-action="bib" role="button">BibTeX</a>
+</div>
+<div class="toggle-area" data-current="">
+<button class="copy-btn">Copy</button>
+<span class="copy-toast">Copied!</span>
+<div class="panel-label">—</div>
+<div class="content"></div>
+</div>
+<div style="display:none;">
+<div class="payload-abstract">NA</div>
+<div class="payload-dataset_info">NA</div>
+<div class="payload-bibtex">@article{viricel2018novo,
+  author = {Am{\a'e}lia Viricel and Vanessa Becquet and Emmanuel Dubillot and Eric Pante},
+  journal = {Marine Genomics},
+  pages = {42--45},
+  publisher = {Elsevier},
+  title = {De novo assembly and functional annotation of the transcriptome of Mimachlamys varia, a bioindicator marine bivalve},
+  volume = {41},
+  year = {2018}
+}</div>
+</div>
+</div>
+</div>
+</div>
+<div class="year-group">
+<h2 class="year-title anchored" id="y-2017">2017</h2>
+<div>
+<div class="pub-card" data-key="pante2017putative">
+<div class="pub-title">
+<a href="https://doi.org/NA" target="_blank" rel="noopener">Putative sex-linked heteroplasmy in the tellinid bivalve Limecola balthica (Linnaeus, 1758)</a>
+</div>
+<div class="pub-meta">
+Pante, Poitrimol, Saunier, Becquet &amp; Garcia
+<br>
+<em>Journal of Molluscan Studies</em>
+</div>
+<div class="pub-actions">
+<a href="#" data-action="abstract" role="button">Abstract</a>
+<a href="#" data-action="dataset_info" role="button">Data</a>
+<a href="#" data-action="citation" role="button">Citation</a>
+<a href="#" data-action="bib" role="button">BibTeX</a>
+</div>
+<div class="toggle-area" data-current="">
+<button class="copy-btn">Copy</button>
+<span class="copy-toast">Copied!</span>
+<div class="panel-label">—</div>
+<div class="content"></div>
+</div>
+<div style="display:none;">
+<div class="payload-abstract">NA</div>
+<div class="payload-dataset_info">NA</div>
+<div class="payload-bibtex">@article{pante2017putative,
+  author = {Eric Pante and Camille Poitrimol and Alice Saunier and Vanessa Becquet and Pascale Garcia},
+  journal = {Journal of Molluscan Studies},
+  number = {2},
+  pages = {226--228},
+  publisher = {Oxford University Press},
+  title = {Putative sex-linked heteroplasmy in the tellinid bivalve Limecola balthica (Linnaeus, 1758)},
+  volume = {83},
+  year = {2017}
+}</div>
+</div>
+</div>
+</div>
+</div>
+<div class="year-group">
+<h2 class="year-title anchored" id="y-2016">2016</h2>
+<div>
+<div class="pub-card" data-key="castelin2016new">
+<div class="pub-title">
+<a href="https://doi.org/NA" target="_blank" rel="noopener">A new integrative framework for large-scale assessments of biodiversity and community dynamics, using littoral gastropods and crabs of British Columbia, Canada</a>
+</div>
+<div class="pub-meta">
+Castelin, Van Steenkiste, Pante, Harbo, Lowe, Gilmore, Therriault &amp; Abbott
+<br>
+<em>Molecular ecology resources</em>
+</div>
+<div class="pub-actions">
+<a href="#" data-action="abstract" role="button">Abstract</a>
+<a href="#" data-action="dataset_info" role="button">Data</a>
+<a href="#" data-action="citation" role="button">Citation</a>
+<a href="#" data-action="bib" role="button">BibTeX</a>
+</div>
+<div class="toggle-area" data-current="">
+<button class="copy-btn">Copy</button>
+<span class="copy-toast">Copied!</span>
+<div class="panel-label">—</div>
+<div class="content"></div>
+</div>
+<div style="display:none;">
+<div class="payload-abstract">NA</div>
+<div class="payload-dataset_info">NA</div>
+<div class="payload-bibtex">@article{castelin2016new,
+  author = {M Castelin and N {Van Steenkiste} and E Pante and R Harbo and G Lowe and SR Gilmore and TW Therriault and CL Abbott},
+  journal = {Molecular ecology resources},
+  number = {6},
+  pages = {1322--1339},
+  title = {A new integrative framework for large-scale assessments of biodiversity and community dynamics, using littoral gastropods and crabs of British Columbia, Canada},
+  volume = {16},
+  year = {2016}
+}</div>
+</div>
+</div>
+<div class="pub-card" data-key="pante2016nomenclatural">
+<div class="pub-title">
+<a href="https://doi.org/NA" target="_blank" rel="noopener">Nomenclatural note on the homonymy between the octocoral genus Dendrobrachia Brook 1889 and the entoproct phylum Dendrobrachia Xian-Guan, Bergstr\"om, Xio-Ya and Jie 2006.</a>
+</div>
+<div class="pub-meta">
+Pante
+<br>
+<em>Zootaxa</em>
+</div>
+<div class="pub-actions">
+<a href="#" data-action="abstract" role="button">Abstract</a>
+<a href="#" data-action="dataset_info" role="button">Data</a>
+<a href="#" data-action="citation" role="button">Citation</a>
+<a href="#" data-action="bib" role="button">BibTeX</a>
+</div>
+<div class="toggle-area" data-current="">
+<button class="copy-btn">Copy</button>
+<span class="copy-toast">Copied!</span>
+<div class="panel-label">—</div>
+<div class="content"></div>
+</div>
+<div style="display:none;">
+<div class="payload-abstract">NA</div>
+<div class="payload-dataset_info">NA</div>
+<div class="payload-bibtex">@article{pante2016nomenclatural,
+  author = {Eric Pante},
+  journal = {Zootaxa},
+  number = {4},
+  pages = {598--598},
+  title = {Nomenclatural note on the homonymy between the octocoral genus Dendrobrachia Brook 1889 and the entoproct phylum Dendrobrachia Xian-Guan, Bergstr{\"o}m, Xio-Ya and Jie 2006.},
+  volume = {4107},
+  year = {2016}
+}</div>
+</div>
+</div>
+<div class="pub-card" data-key="breitwieser2016short">
+<div class="pub-title">
+<a href="https://doi.org/NA" target="_blank" rel="noopener">Short-Term and Long-Term Biological Effects of Chronic Chemical Contamination on Natural Populations of a Marine Bivalve</a>
+</div>
+<div class="pub-meta">
+Breitwieser, Viricel, Graber, Murillo, Becquet, Churlaud, Fruitier-Arnaudin, Huet, Lacroix, Pante &amp; others
+<br>
+<em>PLOS ONE</em>
+</div>
+<div class="pub-actions">
+<a href="#" data-action="abstract" role="button">Abstract</a>
+<a href="#" data-action="dataset_info" role="button">Data</a>
+<a href="#" data-action="citation" role="button">Citation</a>
+<a href="#" data-action="bib" role="button">BibTeX</a>
+</div>
+<div class="toggle-area" data-current="">
+<button class="copy-btn">Copy</button>
+<span class="copy-toast">Copied!</span>
+<div class="panel-label">—</div>
+<div class="content"></div>
+</div>
+<div style="display:none;">
+<div class="payload-abstract">NA</div>
+<div class="payload-dataset_info">NA</div>
+<div class="payload-bibtex">@article{breitwieser2016short,
+  author = {Marine Breitwieser and Am{\a'e}lia Viricel and Marianne Graber and Laurence Murillo and Vanessa Becquet and Carine Churlaud and Ingrid Fruitier-Arnaudin and Val{\a'e}rie Huet and Camille Lacroix and Eric Pante and {others}},
+  journal = {PLOS ONE},
+  number = {3},
+  pages = {e0150184},
+  publisher = {Public Library of Science},
+  title = {Short-Term and Long-Term Biological Effects of Chronic Chemical Contamination on Natural Populations of a Marine Bivalve},
+  volume = {11},
+  year = {2016}
+}</div>
+</div>
+</div>
+</div>
+</div>
+<div class="year-group">
+<h2 class="year-title anchored" id="y-2015">2015</h2>
+<div>
+<div class="pub-card" data-key="pante2015inter">
+<div class="pub-title">
+<a href="https://doi.org/NA" target="_blank" rel="noopener">An inter-ocean comparison of coral endemism on seamounts: the case of Chrysogorgia</a>
+</div>
+<div class="pub-meta">
+Pante, France, Gey, Cruaud &amp; Samadi
+<br>
+<em>Journal of Biogeography</em>
+</div>
+<div class="pub-actions">
+<a href="#" data-action="abstract" role="button">Abstract</a>
+<a href="#" data-action="dataset_info" role="button">Data</a>
+<a href="#" data-action="citation" role="button">Citation</a>
+<a href="#" data-action="bib" role="button">BibTeX</a>
+</div>
+<div class="toggle-area" data-current="">
+<button class="copy-btn">Copy</button>
+<span class="copy-toast">Copied!</span>
+<div class="panel-label">—</div>
+<div class="content"></div>
+</div>
+<div style="display:none;">
+<div class="payload-abstract">NA</div>
+<div class="payload-dataset_info">NA</div>
+<div class="payload-bibtex">@article{pante2015inter,
+  author = {Eric Pante and Scott C France and Delphine Gey and Corinne Cruaud and Sarah Samadi},
+  journal = {Journal of Biogeography},
+  number = {10},
+  pages = {1907--1918},
+  title = {An inter-ocean comparison of coral endemism on seamounts: the case of Chrysogorgia},
+  volume = {42},
+  year = {2015}
+}</div>
+</div>
+</div>
+<div class="pub-card" data-key="pante2015integrative">
+<div class="pub-title">
+<a href="https://doi.org/NA" target="_blank" rel="noopener">From integrative taxonomy to species description: one step beyond</a>
+</div>
+<div class="pub-meta">
+Pante, Schoelinck &amp; Puillandre
+<br>
+<em>Systematic Biology</em>
+</div>
+<div class="pub-actions">
+<a href="#" data-action="abstract" role="button">Abstract</a>
+<a href="#" data-action="dataset_info" role="button">Data</a>
+<a href="#" data-action="citation" role="button">Citation</a>
+<a href="#" data-action="bib" role="button">BibTeX</a>
+</div>
+<div class="toggle-area" data-current="">
+<button class="copy-btn">Copy</button>
+<span class="copy-toast">Copied!</span>
+<div class="panel-label">—</div>
+<div class="content"></div>
+</div>
+<div style="display:none;">
+<div class="payload-abstract">NA</div>
+<div class="payload-dataset_info">NA</div>
+<div class="payload-bibtex">@article{pante2015integrative,
+  author = {Eric Pante and Charlotte Schoelinck and Nicolas Puillandre},
+  journal = {Systematic Biology},
+  number = {1},
+  pages = {152--160},
+  publisher = {Oxford University Press},
+  title = {From integrative taxonomy to species description: one step beyond},
+  volume = {64},
+  year = {2015}
+}</div>
+</div>
+</div>
+<div class="pub-card" data-key="samadi2015patchiness">
+<div class="pub-title">
+<a href="https://doi.org/NA" target="_blank" rel="noopener">Patchiness of deep-sea communities in Papua New Guinea and potential susceptibility to anthropogenic disturbances illustrated by seep organisms</a>
+</div>
+<div class="pub-meta">
+Samadi, Puillandre, Pante, Boisselier, Corbari, Chen, Maestrati, Mana, Thubaut, Zuccon &amp; others
+<br>
+<em>Marine Ecology</em>
+</div>
+<div class="pub-actions">
+<a href="#" data-action="abstract" role="button">Abstract</a>
+<a href="#" data-action="dataset_info" role="button">Data</a>
+<a href="#" data-action="citation" role="button">Citation</a>
+<a href="#" data-action="bib" role="button">BibTeX</a>
+</div>
+<div class="toggle-area" data-current="">
+<button class="copy-btn">Copy</button>
+<span class="copy-toast">Copied!</span>
+<div class="panel-label">—</div>
+<div class="content"></div>
+</div>
+<div style="display:none;">
+<div class="payload-abstract">NA</div>
+<div class="payload-dataset_info">NA</div>
+<div class="payload-bibtex">@article{samadi2015patchiness,
+  author = {Sarah Samadi and Nicolas Puillandre and Eric Pante and Marie-Catherine Boisselier and Laure Corbari and Wei-Jen Chen and Philippe Maestrati and Ralph Mana and Justine Thubaut and Dario Zuccon and {others}},
+  journal = {Marine Ecology},
+  pages = {109--132},
+  title = {Patchiness of deep-sea communities in Papua New Guinea and potential susceptibility to anthropogenic disturbances illustrated by seep organisms},
+  volume = {36},
+  year = {2015}
+}</div>
+</div>
+</div>
+<div class="pub-card" data-key="pante2015species">
+<div class="pub-title">
+<a href="https://doi.org/NA" target="_blank" rel="noopener">Species are hypotheses: avoid connectivity assessments based on pillars of sand</a>
+</div>
+<div class="pub-meta">
+Pante, Puillandre, Viricel, Arnaud-Haond, Aurelle, Castelin, Chenuil, Destombe, Forcioli, Valero &amp; others
+<br>
+<em>Molecular ecology</em>
+</div>
+<div class="pub-actions">
+<a href="#" data-action="abstract" role="button">Abstract</a>
+<a href="#" data-action="dataset_info" role="button">Data</a>
+<a href="#" data-action="citation" role="button">Citation</a>
+<a href="#" data-action="bib" role="button">BibTeX</a>
+</div>
+<div class="toggle-area" data-current="">
+<button class="copy-btn">Copy</button>
+<span class="copy-toast">Copied!</span>
+<div class="panel-label">—</div>
+<div class="content"></div>
+</div>
+<div style="display:none;">
+<div class="payload-abstract">NA</div>
+<div class="payload-dataset_info">NA</div>
+<div class="payload-bibtex">@article{pante2015species,
+  author = {Eric Pante and Nicolas Puillandre and Am{\a'e}lia Viricel and Sophie Arnaud-Haond and Didier Aurelle and Magalie Castelin and Anne Chenuil and Christophe Destombe and Didier Forcioli and Myriam Valero and {others}},
+  journal = {Molecular ecology},
+  number = {3},
+  pages = {525--544},
+  title = {Species are hypotheses: avoid connectivity assessments based on pillars of sand},
+  volume = {24},
+  year = {2015}
+}</div>
+</div>
+</div>
+<div class="pub-card" data-key="pante2015use">
+<div class="pub-title">
+<a href="https://doi.org/NA" target="_blank" rel="noopener">Use of RAD sequencing for delimiting species</a>
+</div>
+<div class="pub-meta">
+Pante, Abdelkrim, Viricel, Gey, France, Boisselier &amp; Samadi
+<br>
+<em>Heredity</em>
+</div>
+<div class="pub-actions">
+<a href="#" data-action="abstract" role="button">Abstract</a>
+<a href="#" data-action="dataset_info" role="button">Data</a>
+<a href="#" data-action="citation" role="button">Citation</a>
+<a href="#" data-action="bib" role="button">BibTeX</a>
+</div>
+<div class="toggle-area" data-current="">
+<button class="copy-btn">Copy</button>
+<span class="copy-toast">Copied!</span>
+<div class="panel-label">—</div>
+<div class="content"></div>
+</div>
+<div style="display:none;">
+<div class="payload-abstract">NA</div>
+<div class="payload-dataset_info">NA</div>
+<div class="payload-bibtex">@article{pante2015use,
+  author = {Eric Pante and Jawad Abdelkrim and Am{\a'e}lia Viricel and Delphine Gey and SC France and Marie-Catherine Boisselier and Sarah Samadi},
+  journal = {Heredity},
+  number = {5},
+  pages = {450--459},
+  publisher = {Nature Publishing Group},
+  title = {Use of RAD sequencing for delimiting species},
+  volume = {114},
+  year = {2015}
+}</div>
+</div>
+</div>
+</div>
+</div>
+<div class="year-group">
+<h2 class="year-title anchored" id="y-2014">2014</h2>
+<div>
+<div class="pub-card" data-key="viricel2014applicability">
+<div class="pub-title">
+<a href="https://doi.org/NA" target="_blank" rel="noopener">Applicability of RAD-tag genotyping for interfamilial comparisons: empirical data from two cetaceans</a>
+</div>
+<div class="pub-meta">
+Viricel, Pante, Dabin &amp; Simon-Bouhet
+<br>
+<em>Molecular ecology resources</em>
+</div>
+<div class="pub-actions">
+<a href="#" data-action="abstract" role="button">Abstract</a>
+<a href="#" data-action="dataset_info" role="button">Data</a>
+<a href="#" data-action="citation" role="button">Citation</a>
+<a href="#" data-action="bib" role="button">BibTeX</a>
+</div>
+<div class="toggle-area" data-current="">
+<button class="copy-btn">Copy</button>
+<span class="copy-toast">Copied!</span>
+<div class="panel-label">—</div>
+<div class="content"></div>
+</div>
+<div style="display:none;">
+<div class="payload-abstract">NA</div>
+<div class="payload-dataset_info">NA</div>
+<div class="payload-bibtex">@article{viricel2014applicability,
+  author = {Am{\a'e}lia Viricel and Eric Pante and Willy Dabin and Benoit Simon-Bouhet},
+  journal = {Molecular ecology resources},
+  number = {3},
+  pages = {597--605},
+  title = {Applicability of RAD-tag genotyping for interfamilial comparisons: empirical data from two cetaceans},
+  volume = {14},
+  year = {2014}
+}</div>
+</div>
+</div>
+<div class="pub-card" data-key="pante2014evaluating">
+<div class="pub-title">
+<a href="https://doi.org/NA" target="_blank" rel="noopener">Evaluating the genetic effects of the invasive Ocenebra inornata on the native oyster drill Ocenebra erinacea</a>
+</div>
+<div class="pub-meta">
+Pante, Pascal, Becquet, Viricel, Simon-Bouhet, Garcia &amp; others
+<br>
+<em>Marine Ecology</em>
+</div>
+<div class="pub-actions">
+<a href="#" data-action="abstract" role="button">Abstract</a>
+<a href="#" data-action="dataset_info" role="button">Data</a>
+<a href="#" data-action="citation" role="button">Citation</a>
+<a href="#" data-action="bib" role="button">BibTeX</a>
+</div>
+<div class="toggle-area" data-current="">
+<button class="copy-btn">Copy</button>
+<span class="copy-toast">Copied!</span>
+<div class="panel-label">—</div>
+<div class="content"></div>
+</div>
+<div style="display:none;">
+<div class="payload-abstract">NA</div>
+<div class="payload-dataset_info">NA</div>
+<div class="payload-bibtex">@article{pante2014evaluating,
+  author = {Eric Pante and Pierre-Yves Pascal and Vanessa Becquet and Am{\a'e}lia Viricel and Benoit Simon-Bouhet and Pascale Garcia and {others}},
+  journal = {Marine Ecology},
+  pages = {1--11},
+  title = {Evaluating the genetic effects of the invasive Ocenebra inornata on the native oyster drill Ocenebra erinacea},
+  year = {2014}
+}</div>
+</div>
+</div>
+<div class="pub-card" data-key="sabatier2014genetic">
+<div class="pub-title">
+<a href="https://doi.org/NA" target="_blank" rel="noopener">Genetic monitoring of pilot whales, Globicephala spp.(Cetacea: Delphinidae), stranded on French coasts</a>
+</div>
+<div class="pub-meta">
+Sabatier, Pante, Dussud, Van Canneyt, Simon-Bouhet &amp; Viricel
+<br>
+<em>Mammalia</em>
+</div>
+<div class="pub-actions">
+<a href="#" data-action="abstract" role="button">Abstract</a>
+<a href="#" data-action="dataset_info" role="button">Data</a>
+<a href="#" data-action="citation" role="button">Citation</a>
+<a href="#" data-action="bib" role="button">BibTeX</a>
+</div>
+<div class="toggle-area" data-current="">
+<button class="copy-btn">Copy</button>
+<span class="copy-toast">Copied!</span>
+<div class="panel-label">—</div>
+<div class="content"></div>
+</div>
+<div style="display:none;">
+<div class="payload-abstract">NA</div>
+<div class="payload-dataset_info">NA</div>
+<div class="payload-bibtex">@article{sabatier2014genetic,
+  author = {Etienne Sabatier and Eric Pante and Claire Dussud and Olivier {Van Canneyt} and Benoit Simon-Bouhet and Am{\a'e}lia Viricel},
+  journal = {Mammalia},
+  title = {Genetic monitoring of pilot whales, Globicephala spp.(Cetacea: Delphinidae), stranded on French coasts},
+  year = {2014}
+}</div>
+</div>
+</div>
+<div class="pub-card" data-key="saunier2014mitochondrial">
+<div class="pub-title">
+<a href="https://doi.org/NA" target="_blank" rel="noopener">Mitochondrial genomes of the Baltic clam Macoma balthica (Bivalvia: Tellinidae): setting the stage for studying mito-nuclear incompatibilities</a>
+</div>
+<div class="pub-meta">
+Saunier, Garcia, Becquet, Marsaud, Escudié &amp; Pante
+<br>
+<em>BMC Evolutionary Biology</em>
+</div>
+<div class="pub-actions">
+<a href="#" data-action="abstract" role="button">Abstract</a>
+<a href="#" data-action="dataset_info" role="button">Data</a>
+<a href="#" data-action="citation" role="button">Citation</a>
+<a href="#" data-action="bib" role="button">BibTeX</a>
+</div>
+<div class="toggle-area" data-current="">
+<button class="copy-btn">Copy</button>
+<span class="copy-toast">Copied!</span>
+<div class="panel-label">—</div>
+<div class="content"></div>
+</div>
+<div style="display:none;">
+<div class="payload-abstract">NA</div>
+<div class="payload-dataset_info">NA</div>
+<div class="payload-bibtex">@article{saunier2014mitochondrial,
+  author = {Alice Saunier and Pascale Garcia and Vanessa Becquet and Nathalie Marsaud and Frederic Escudi{\a'e} and Eric Pante},
+  journal = {BMC Evolutionary Biology},
+  number = {1},
+  pages = {259},
+  publisher = {BioMed Central Ltd},
+  title = {Mitochondrial genomes of the Baltic clam Macoma balthica (Bivalvia: Tellinidae): setting the stage for studying mito-nuclear incompatibilities},
+  volume = {14},
+  year = {2014}
+}</div>
+</div>
+</div>
+</div>
+</div>
+<div class="year-group">
+<h2 class="year-title anchored" id="y-2013">2013</h2>
+<div>
+<div class="pub-card" data-key="becquet2013effects">
+<div class="pub-title">
+<a href="https://doi.org/NA" target="_blank" rel="noopener">Effects of fine-scale environmental heterogeneity on local genetic structure in Macoma balthica from the Gulf of Gda\~nsk (southern Baltic Sea)</a>
+</div>
+<div class="pub-meta">
+Becquet, Lasota, Pante, Sokolowski, Wolowicz &amp; Garcia
+<br>
+<em>Hydrobiologia</em>
+</div>
+<div class="pub-actions">
+<a href="#" data-action="abstract" role="button">Abstract</a>
+<a href="#" data-action="dataset_info" role="button">Data</a>
+<a href="#" data-action="citation" role="button">Citation</a>
+<a href="#" data-action="bib" role="button">BibTeX</a>
+</div>
+<div class="toggle-area" data-current="">
+<button class="copy-btn">Copy</button>
+<span class="copy-toast">Copied!</span>
+<div class="panel-label">—</div>
+<div class="content"></div>
+</div>
+<div style="display:none;">
+<div class="payload-abstract">NA</div>
+<div class="payload-dataset_info">NA</div>
+<div class="payload-bibtex">@article{becquet2013effects,
+  author = {Vanessa Becquet and Rafal Lasota and Eric Pante and Adam Sokolowski and Maciej Wolowicz and Pascale Garcia},
+  journal = {Hydrobiologia},
+  number = {1},
+  pages = {61--70},
+  publisher = {Springer Netherlands},
+  title = {Effects of fine-scale environmental heterogeneity on local genetic structure in Macoma balthica from the Gulf of Gda{\~n}sk (southern Baltic Sea)},
+  volume = {714},
+  year = {2013}
+}</div>
+</div>
+</div>
+<div class="pub-card" data-key="pante2013molecular">
+<div class="pub-title">
+<a href="https://doi.org/NA" target="_blank" rel="noopener">Molecular and morphological data support reclassification of the octocoral genus Isidoides</a>
+</div>
+<div class="pub-meta">
+Pante, Saucier &amp; France
+<br>
+<em>Invertebrate Systematics</em>
+</div>
+<div class="pub-actions">
+<a href="#" data-action="abstract" role="button">Abstract</a>
+<a href="#" data-action="dataset_info" role="button">Data</a>
+<a href="#" data-action="citation" role="button">Citation</a>
+<a href="#" data-action="bib" role="button">BibTeX</a>
+</div>
+<div class="toggle-area" data-current="">
+<button class="copy-btn">Copy</button>
+<span class="copy-toast">Copied!</span>
+<div class="panel-label">—</div>
+<div class="content"></div>
+</div>
+<div style="display:none;">
+<div class="payload-abstract">NA</div>
+<div class="payload-dataset_info">NA</div>
+<div class="payload-bibtex">@article{pante2013molecular,
+  author = {Eric Pante and Esprit Heestand Saucier and Scott C France},
+  journal = {Invertebrate Systematics},
+  number = {4},
+  pages = {365--378},
+  publisher = {CSIRO PUBLISHING},
+  title = {Molecular and morphological data support reclassification of the octocoral genus Isidoides},
+  volume = {27},
+  year = {2013}
+}</div>
+</div>
+</div>
+<div class="pub-card" data-key="pante2013marmap">
+<div class="pub-title">
+<a href="https://doi.org/NA" target="_blank" rel="noopener">marmap: A Package for Importing, Plotting and Analyzing Bathymetric and Topographic Data in R</a>
+</div>
+<div class="pub-meta">
+Pante &amp; Simon-Bouhet
+<br>
+<em>PLoS One</em>
+</div>
+<div class="pub-actions">
+<a href="#" data-action="abstract" role="button">Abstract</a>
+<a href="#" data-action="dataset_info" role="button">Data</a>
+<a href="#" data-action="citation" role="button">Citation</a>
+<a href="#" data-action="bib" role="button">BibTeX</a>
+</div>
+<div class="toggle-area" data-current="">
+<button class="copy-btn">Copy</button>
+<span class="copy-toast">Copied!</span>
+<div class="panel-label">—</div>
+<div class="content"></div>
+</div>
+<div style="display:none;">
+<div class="payload-abstract">NA</div>
+<div class="payload-dataset_info">NA</div>
+<div class="payload-bibtex">@article{pante2013marmap,
+  author = {Eric Pante and Benoit Simon-Bouhet},
+  journal = {PLoS One},
+  number = {9},
+  pages = {e73051},
+  title = {marmap: A Package for Importing, Plotting and Analyzing Bathymetric and Topographic Data in R},
+  volume = {8},
+  year = {2013}
+}</div>
+</div>
+</div>
+</div>
+</div>
+<div class="year-group">
+<h2 class="year-title anchored" id="y-2012">2012</h2>
+<div>
+<div class="pub-card" data-key="pante2012chrysogorgia">
+<div class="pub-title">
+<a href="https://doi.org/NA" target="_blank" rel="noopener">Chrysogorgia from the New England and Corner Seamounts: Atlantic-Pacific connections</a>
+</div>
+<div class="pub-meta">
+Pante &amp; Watling
+<br>
+<em>Journal of the Marine Biological Association of the United Kingdom</em>
+</div>
+<div class="pub-actions">
+<a href="#" data-action="abstract" role="button">Abstract</a>
+<a href="#" data-action="dataset_info" role="button">Data</a>
+<a href="#" data-action="citation" role="button">Citation</a>
+<a href="#" data-action="bib" role="button">BibTeX</a>
+</div>
+<div class="toggle-area" data-current="">
+<button class="copy-btn">Copy</button>
+<span class="copy-toast">Copied!</span>
+<div class="panel-label">—</div>
+<div class="content"></div>
+</div>
+<div style="display:none;">
+<div class="payload-abstract">NA</div>
+<div class="payload-dataset_info">NA</div>
+<div class="payload-bibtex">@article{pante2012chrysogorgia,
+  author = {Eric Pante and Les Watling},
+  journal = {Journal of the Marine Biological Association of the United Kingdom},
+  number = {5},
+  pages = {911--927},
+  publisher = {Cambridge University Press},
+  title = {Chrysogorgia from the New England and Corner Seamounts: Atlantic-Pacific connections},
+  volume = {92},
+  year = {2012}
+}</div>
+</div>
+</div>
+<div class="pub-card" data-key="pante2012deep">
+<div class="pub-title">
+<a href="https://doi.org/NA" target="_blank" rel="noopener">Deep-sea origin and in-situ diversification of chrysogorgiid octocorals</a>
+</div>
+<div class="pub-meta">
+Pante, France, Couloux, Cruaud, McFadden, Samadi &amp; Watling
+<br>
+<em>Plos One</em>
+</div>
+<div class="pub-actions">
+<a href="#" data-action="abstract" role="button">Abstract</a>
+<a href="#" data-action="dataset_info" role="button">Data</a>
+<a href="#" data-action="citation" role="button">Citation</a>
+<a href="#" data-action="bib" role="button">BibTeX</a>
+</div>
+<div class="toggle-area" data-current="">
+<button class="copy-btn">Copy</button>
+<span class="copy-toast">Copied!</span>
+<div class="panel-label">—</div>
+<div class="content"></div>
+</div>
+<div style="display:none;">
+<div class="payload-abstract">NA</div>
+<div class="payload-dataset_info">NA</div>
+<div class="payload-bibtex">@article{pante2012deep,
+  author = {Eric Pante and Scott C France and Arnaud Couloux and Corinne Cruaud and Catherine S McFadden and Sarah Samadi and Les Watling},
+  journal = {Plos One},
+  number = {6},
+  pages = {e38357},
+  publisher = {Public Library of Science},
+  title = {Deep-sea origin and in-situ diversification of chrysogorgiid octocorals},
+  volume = {7},
+  year = {2012}
+}</div>
+</div>
+</div>
+<div class="pub-card" data-key="pante2012exploration">
+<div class="pub-title">
+<a href="https://doi.org/NA" target="_blank" rel="noopener">Exploration of the deep-sea fauna of Papua New Guinea</a>
+</div>
+<div class="pub-meta">
+Pante, Corbari, Thubaut, Chan, Mana, Boisselier, Bouchet &amp; Samadi
+<br>
+<em>Oceanography</em>
+</div>
+<div class="pub-actions">
+<a href="#" data-action="abstract" role="button">Abstract</a>
+<a href="#" data-action="dataset_info" role="button">Data</a>
+<a href="#" data-action="citation" role="button">Citation</a>
+<a href="#" data-action="bib" role="button">BibTeX</a>
+</div>
+<div class="toggle-area" data-current="">
+<button class="copy-btn">Copy</button>
+<span class="copy-toast">Copied!</span>
+<div class="panel-label">—</div>
+<div class="content"></div>
+</div>
+<div style="display:none;">
+<div class="payload-abstract">NA</div>
+<div class="payload-dataset_info">NA</div>
+<div class="payload-bibtex">@article{pante2012exploration,
+  author = {Eric Pante and Laure Corbari and Justine Thubaut and Tin-Yam Chan and Ralph Mana and Marie-Catherine Boisselier and Philippe Bouchet and Sarah Samadi},
+  journal = {Oceanography},
+  number = {3},
+  pages = {214--225},
+  title = {Exploration of the deep-sea fauna of Papua New Guinea},
+  volume = {25},
+  year = {2012}
+}</div>
+</div>
+</div>
+<div class="pub-card" data-key="pante2012getting">
+<div class="pub-title">
+<a href="https://doi.org/NA" target="_blank" rel="noopener">Getting to the Point: Accuracy of Point Count in Monitoring Ecosystem Change</a>
+</div>
+<div class="pub-meta">
+Pante &amp; Dustan
+<br>
+<em>Journal of Marine Biology</em>
+</div>
+<div class="pub-actions">
+<a href="#" data-action="abstract" role="button">Abstract</a>
+<a href="#" data-action="dataset_info" role="button">Data</a>
+<a href="#" data-action="citation" role="button">Citation</a>
+<a href="#" data-action="bib" role="button">BibTeX</a>
+</div>
+<div class="toggle-area" data-current="">
+<button class="copy-btn">Copy</button>
+<span class="copy-toast">Copied!</span>
+<div class="panel-label">—</div>
+<div class="content"></div>
+</div>
+<div style="display:none;">
+<div class="payload-abstract">NA</div>
+<div class="payload-dataset_info">NA</div>
+<div class="payload-bibtex">@article{pante2012getting,
+  author = {Eric Pante and Phillip Dustan},
+  journal = {Journal of Marine Biology},
+  publisher = {Hindawi Publishing Corporation},
+  title = {Getting to the Point: Accuracy of Point Count in Monitoring Ecosystem Change},
+  volume = {2012},
+  year = {2012}
+}</div>
+</div>
+</div>
+<div class="pub-card" data-key="becquet2012glacial">
+<div class="pub-title">
+<a href="https://doi.org/NA" target="_blank" rel="noopener">Glacial refugium versus range limit: Conservation genetics of Macoma balthica, a key species in the Bay of Biscay (France)</a>
+</div>
+<div class="pub-meta">
+Becquet, Simon-Bouhet, Pante, Hummel &amp; Garcia
+<br>
+<em>Journal of Experimental Marine Biology and Ecology</em>
+</div>
+<div class="pub-actions">
+<a href="#" data-action="abstract" role="button">Abstract</a>
+<a href="#" data-action="dataset_info" role="button">Data</a>
+<a href="#" data-action="citation" role="button">Citation</a>
+<a href="#" data-action="bib" role="button">BibTeX</a>
+</div>
+<div class="toggle-area" data-current="">
+<button class="copy-btn">Copy</button>
+<span class="copy-toast">Copied!</span>
+<div class="panel-label">—</div>
+<div class="content"></div>
+</div>
+<div style="display:none;">
+<div class="payload-abstract">NA</div>
+<div class="payload-dataset_info">NA</div>
+<div class="payload-bibtex">@article{becquet2012glacial,
+  author = {V Becquet and B Simon-Bouhet and E Pante and H Hummel and P Garcia},
+  journal = {Journal of Experimental Marine Biology and Ecology},
+  pages = {73--82},
+  publisher = {Elsevier},
+  title = {Glacial refugium versus range limit: Conservation genetics of Macoma balthica, a key species in the Bay of Biscay (France)},
+  volume = {432},
+  year = {2012}
+}</div>
+</div>
+</div>
+<div class="pub-card" data-key="pante2012snp">
+<div class="pub-title">
+<a href="https://doi.org/NA" target="_blank" rel="noopener">SNP Detection from De Novo Transcriptome Sequencing in the Bivalve Macoma balthica: Marker Development for Evolutionary Studies</a>
+</div>
+<div class="pub-meta">
+Pante, Rohfritsch, Becquet, Belkhir, Bierne &amp; Garcia
+<br>
+<em>PloS one</em>
+</div>
+<div class="pub-actions">
+<a href="#" data-action="abstract" role="button">Abstract</a>
+<a href="#" data-action="dataset_info" role="button">Data</a>
+<a href="#" data-action="citation" role="button">Citation</a>
+<a href="#" data-action="bib" role="button">BibTeX</a>
+</div>
+<div class="toggle-area" data-current="">
+<button class="copy-btn">Copy</button>
+<span class="copy-toast">Copied!</span>
+<div class="panel-label">—</div>
+<div class="content"></div>
+</div>
+<div style="display:none;">
+<div class="payload-abstract">NA</div>
+<div class="payload-dataset_info">NA</div>
+<div class="payload-bibtex">@article{pante2012snp,
+  author = {Eric Pante and Audrey Rohfritsch and Vanessa Becquet and Khalid Belkhir and Nicolas Bierne and Pascale Garcia},
+  journal = {PloS one},
+  number = {12},
+  pages = {e52302},
+  publisher = {Public Library of Science},
+  title = {SNP Detection from De Novo Transcriptome Sequencing in the Bivalve Macoma balthica: Marker Development for Evolutionary Studies},
+  volume = {7},
+  year = {2012}
+}</div>
+</div>
+</div>
+</div>
+</div>
+<div class="year-group">
+<h2 class="year-title anchored" id="y-2011">2011</h2>
+<div>
+<div class="pub-card" data-key="pante2011biogeography">
+<div class="pub-title">
+<a href="https://doi.org/NA" target="_blank" rel="noopener">Biogeography and Evolution of Chrysogorgiid Corals</a>
+</div>
+<div class="pub-meta">
+Pante
+<br>
+</div>
+<div class="pub-actions">
+<a href="#" data-action="abstract" role="button">Abstract</a>
+<a href="#" data-action="dataset_info" role="button">Data</a>
+<a href="#" data-action="citation" role="button">Citation</a>
+<a href="#" data-action="bib" role="button">BibTeX</a>
+</div>
+<div class="toggle-area" data-current="">
+<button class="copy-btn">Copy</button>
+<span class="copy-toast">Copied!</span>
+<div class="panel-label">—</div>
+<div class="content"></div>
+</div>
+<div style="display:none;">
+<div class="payload-abstract">NA</div>
+<div class="payload-dataset_info">NA</div>
+<div class="payload-bibtex">@phdthesis{pante2011biogeography,
+  author = {Eric Gilles Pante},
+  school = {University of Louisiana at Lafayette},
+  title = {Biogeography and Evolution of Chrysogorgiid Corals},
+  year = {2011}
+}</div>
+</div>
+</div>
+<div class="pub-card" data-key="watling2011biology">
+<div class="pub-title">
+<a href="https://doi.org/NA" target="_blank" rel="noopener">Biology of deep-water octocorals</a>
+</div>
+<div class="pub-meta">
+Watling, France, Pante, Simpson &amp; others
+<br>
+<em>Advances in marine biology</em>
+</div>
+<div class="pub-actions">
+<a href="#" data-action="abstract" role="button">Abstract</a>
+<a href="#" data-action="dataset_info" role="button">Data</a>
+<a href="#" data-action="citation" role="button">Citation</a>
+<a href="#" data-action="bib" role="button">BibTeX</a>
+</div>
+<div class="toggle-area" data-current="">
+<button class="copy-btn">Copy</button>
+<span class="copy-toast">Copied!</span>
+<div class="panel-label">—</div>
+<div class="content"></div>
+</div>
+<div style="display:none;">
+<div class="payload-abstract">NA</div>
+<div class="payload-dataset_info">NA</div>
+<div class="payload-bibtex">@article{watling2011biology,
+  author = {Les Watling and Scott C France and Eric Pante and Anne Simpson and {others}},
+  journal = {Advances in marine biology},
+  pages = {41--122},
+  publisher = {Academic Press},
+  title = {Biology of deep-water octocorals},
+  volume = {60},
+  year = {2011}
+}</div>
+</div>
+</div>
+<div class="pub-card" data-key="mcfadden2011limitations">
+<div class="pub-title">
+<a href="https://doi.org/NA" target="_blank" rel="noopener">Limitations of mitochondrial gene barcoding in Octocorallia</a>
+</div>
+<div class="pub-meta">
+McFadden, Benayahu, Pante, Thoma, Nevarez &amp; France
+<br>
+<em>Molecular ecology resources</em>
+</div>
+<div class="pub-actions">
+<a href="#" data-action="abstract" role="button">Abstract</a>
+<a href="#" data-action="dataset_info" role="button">Data</a>
+<a href="#" data-action="citation" role="button">Citation</a>
+<a href="#" data-action="bib" role="button">BibTeX</a>
+</div>
+<div class="toggle-area" data-current="">
+<button class="copy-btn">Copy</button>
+<span class="copy-toast">Copied!</span>
+<div class="panel-label">—</div>
+<div class="content"></div>
+</div>
+<div style="display:none;">
+<div class="payload-abstract">NA</div>
+<div class="payload-dataset_info">NA</div>
+<div class="payload-bibtex">@article{mcfadden2011limitations,
+  author = {Catherine S McFadden and Yehuda Benayahu and Eric Pante and Jana N Thoma and P Andrew Nevarez and Scott C France},
+  journal = {Molecular ecology resources},
+  number = {1},
+  pages = {19--31},
+  publisher = {Wiley Online Library},
+  title = {Limitations of mitochondrial gene barcoding in Octocorallia},
+  volume = {11},
+  year = {2011}
+}</div>
+</div>
+</div>
+</div>
+</div>
+<div class="year-group">
+<h2 class="year-title anchored" id="y-2010">2010</h2>
+<div>
+<div class="pub-card" data-key="france2010evolution">
+<div class="pub-title">
+<a href="https://doi.org/NA" target="_blank" rel="noopener">On the evolution of deep-sea octocorals and antipatharians: Patterns revealed from molecular phylogenies</a>
+</div>
+<div class="pub-meta">
+France, Pante, Brugler &amp; Van der Ham
+<br>
+<em>INTEGRATIVE AND COMPARATIVE BIOLOGY</em>
+</div>
+<div class="pub-actions">
+<a href="#" data-action="abstract" role="button">Abstract</a>
+<a href="#" data-action="dataset_info" role="button">Data</a>
+<a href="#" data-action="citation" role="button">Citation</a>
+<a href="#" data-action="bib" role="button">BibTeX</a>
+</div>
+<div class="toggle-area" data-current="">
+<button class="copy-btn">Copy</button>
+<span class="copy-toast">Copied!</span>
+<div class="panel-label">—</div>
+<div class="content"></div>
+</div>
+<div style="display:none;">
+<div class="payload-abstract">NA</div>
+<div class="payload-dataset_info">NA</div>
+<div class="payload-bibtex">@inproceedings{france2010evolution,
+  author = {SC France and E Pante and MR Brugler and JL {Van der Ham}},
+  booktitle = {INTEGRATIVE AND COMPARATIVE BIOLOGY},
+  organization = {OXFORD UNIV PRESS INC JOURNALS DEPT, 2001 EVANS RD, CARY, NC 27513 USA},
+  pages = {E56--E56},
+  title = {On the evolution of deep-sea octocorals and antipatharians: Patterns revealed from molecular phylogenies},
+  volume = {50},
+  year = {2010}
+}</div>
+</div>
+</div>
+<div class="pub-card" data-key="pante2010pseudochrysogorgia">
+<div class="pub-title">
+<a href="https://doi.org/NA" target="_blank" rel="noopener">Pseudochrysogorgia bellona n. gen., n. sp.: a new genus and species of chrysogorgiid octocoral (Coelenterata, Anthozoa) from the Coral Sea</a>
+</div>
+<div class="pub-meta">
+Pante &amp; France
+<br>
+<em>Zoosystema</em>
+</div>
+<div class="pub-actions">
+<a href="#" data-action="abstract" role="button">Abstract</a>
+<a href="#" data-action="dataset_info" role="button">Data</a>
+<a href="#" data-action="citation" role="button">Citation</a>
+<a href="#" data-action="bib" role="button">BibTeX</a>
+</div>
+<div class="toggle-area" data-current="">
+<button class="copy-btn">Copy</button>
+<span class="copy-toast">Copied!</span>
+<div class="panel-label">—</div>
+<div class="content"></div>
+</div>
+<div style="display:none;">
+<div class="payload-abstract">NA</div>
+<div class="payload-dataset_info">NA</div>
+<div class="payload-bibtex">@article{pante2010pseudochrysogorgia,
+  author = {Eric Pante and Scott C France},
+  journal = {Zoosystema},
+  number = {4},
+  pages = {595--612},
+  publisher = {Mus{\'e}um national d'Histoire naturelle, Paris},
+  title = {Pseudochrysogorgia bellona n. gen., n. sp.: a new genus and species of chrysogorgiid octocoral (Coelenterata, Anthozoa) from the Coral Sea},
+  volume = {32},
+  year = {2010}
+}</div>
+</div>
+</div>
+</div>
+</div>
+<div class="year-group">
+<h2 class="year-title anchored" id="y-2009">2009</h2>
+<div>
+<div class="pub-card" data-key="thoma2009deep">
+<div class="pub-title">
+<a href="https://doi.org/NA" target="_blank" rel="noopener">Deep-sea octocorals and antipatharians show no evidence of seamount-scale endemism in the NW Atlantic</a>
+</div>
+<div class="pub-meta">
+Thoma, Pante, Brugler &amp; France
+<br>
+<em>Marine Ecology Progress Series</em>
+</div>
+<div class="pub-actions">
+<a href="#" data-action="abstract" role="button">Abstract</a>
+<a href="#" data-action="dataset_info" role="button">Data</a>
+<a href="#" data-action="citation" role="button">Citation</a>
+<a href="#" data-action="bib" role="button">BibTeX</a>
+</div>
+<div class="toggle-area" data-current="">
+<button class="copy-btn">Copy</button>
+<span class="copy-toast">Copied!</span>
+<div class="panel-label">—</div>
+<div class="content"></div>
+</div>
+<div style="display:none;">
+<div class="payload-abstract">NA</div>
+<div class="payload-dataset_info">NA</div>
+<div class="payload-bibtex">@article{thoma2009deep,
+  author = {Jana N Thoma and Eric Pante and Mercer R Brugler and Scott C France},
+  journal = {Marine Ecology Progress Series},
+  pages = {25--35},
+  title = {Deep-sea octocorals and antipatharians show no evidence of seamount-scale endemism in the NW Atlantic},
+  volume = {397},
+  year = {2009}
+}</div>
+</div>
+</div>
+<div class="pub-card" data-key="pante2009randonnee">
+<div class="pub-title">
+<a href="https://doi.org/NA" target="_blank" rel="noopener">Randonn\'ee au fond des oc\'eans : l'exploration des monts sous-marins</a>
+</div>
+<div class="pub-meta">
+Pante &amp; France
+<br>
+<em>Le Courrier de la nature</em>
+</div>
+<div class="pub-actions">
+<a href="#" data-action="abstract" role="button">Abstract</a>
+<a href="#" data-action="dataset_info" role="button">Data</a>
+<a href="#" data-action="citation" role="button">Citation</a>
+<a href="#" data-action="bib" role="button">BibTeX</a>
+</div>
+<div class="toggle-area" data-current="">
+<button class="copy-btn">Copy</button>
+<span class="copy-toast">Copied!</span>
+<div class="panel-label">—</div>
+<div class="content"></div>
+</div>
+<div style="display:none;">
+<div class="payload-abstract">NA</div>
+<div class="payload-dataset_info">NA</div>
+<div class="payload-bibtex">@article{pante2009randonnee,
+  author = {Eric Pante and Scott France},
+  journal = {Le Courrier de la nature},
+  pages = {34--41},
+  publisher = {Soci{\'e}t{\'e} nationale de protection de la nature},
+  title = {Randonn{\'e}e au fond des oc{\'e}ans : l'exploration des monts sous-marins},
+  volume = {247},
+  year = {2009}
+}</div>
+</div>
+</div>
+</div>
+</div>
+<div class="year-group">
+<h2 class="year-title anchored" id="y-2008">2008</h2>
+<div>
+<div class="pub-card" data-key="baker2008metamicrocotyla">
+<div class="pub-title">
+<a href="https://doi.org/NA" target="_blank" rel="noopener">Metamicrocotyla macracantha, a polyopisthocotylid gill parasite of the striped mullet, Mugil cephalus: population dynamics in South Carolina estuaries</a>
+</div>
+<div class="pub-meta">
+Baker, Pante, Levesque, Roumillat &amp; de Buron
+<br>
+<em>Parasitology research</em>
+</div>
+<div class="pub-actions">
+<a href="#" data-action="abstract" role="button">Abstract</a>
+<a href="#" data-action="dataset_info" role="button">Data</a>
+<a href="#" data-action="citation" role="button">Citation</a>
+<a href="#" data-action="bib" role="button">BibTeX</a>
+</div>
+<div class="toggle-area" data-current="">
+<button class="copy-btn">Copy</button>
+<span class="copy-toast">Copied!</span>
+<div class="panel-label">—</div>
+<div class="content"></div>
+</div>
+<div style="display:none;">
+<div class="payload-abstract">NA</div>
+<div class="payload-dataset_info">NA</div>
+<div class="payload-bibtex">@article{baker2008metamicrocotyla,
+  author = {Tiffany G Baker and Eric Pante and Erin M Levesque and William A Roumillat and Isaure {de Buron}},
+  journal = {Parasitology research},
+  number = {5},
+  pages = {1085--1088},
+  publisher = {Springer},
+  title = {Metamicrocotyla macracantha, a polyopisthocotylid gill parasite of the striped mullet, Mugil cephalus: population dynamics in South Carolina estuaries},
+  volume = {102},
+  year = {2008}
+}</div>
+</div>
+</div>
+<div class="pub-card" data-key="pante2008short">
+<div class="pub-title">
+<a href="https://doi.org/NA" target="_blank" rel="noopener">Short-term decline of a Bahamian patch reef coral community: Rainbow Gardens Reef 1991--2004</a>
+</div>
+<div class="pub-meta">
+Pante, King &amp; Dustan
+<br>
+<em>Hydrobiologia</em>
+</div>
+<div class="pub-actions">
+<a href="#" data-action="abstract" role="button">Abstract</a>
+<a href="#" data-action="dataset_info" role="button">Data</a>
+<a href="#" data-action="citation" role="button">Citation</a>
+<a href="#" data-action="bib" role="button">BibTeX</a>
+</div>
+<div class="toggle-area" data-current="">
+<button class="copy-btn">Copy</button>
+<span class="copy-toast">Copied!</span>
+<div class="panel-label">—</div>
+<div class="content"></div>
+</div>
+<div style="display:none;">
+<div class="payload-abstract">NA</div>
+<div class="payload-dataset_info">NA</div>
+<div class="payload-bibtex">@article{pante2008short,
+  author = {Eric Pante and Allison King and Phillip Dustan},
+  journal = {Hydrobiologia},
+  number = {1},
+  pages = {121--132},
+  publisher = {Springer},
+  title = {Short-term decline of a Bahamian patch reef coral community: Rainbow Gardens Reef 1991--2004},
+  volume = {596},
+  year = {2008}
+}</div>
+</div>
+</div>
+<div class="pub-card" data-key="dustan2008using">
+<div class="pub-title">
+<a href="https://doi.org/NA" target="_blank" rel="noopener">Using Cellular Diagnostics To Link Land-Based Sources Of Pollution With Coral Reef Degradation in South Florida</a>
+</div>
+<div class="pub-meta">
+Dustan, Fauth, Pante, Banks, Vargas-Angel &amp; Downs
+<br>
+<em>Proceedings of the 11th International Coral Reef Symposium, Ft. Lauderdale Florida</em>
+</div>
+<div class="pub-actions">
+<a href="#" data-action="abstract" role="button">Abstract</a>
+<a href="#" data-action="dataset_info" role="button">Data</a>
+<a href="#" data-action="citation" role="button">Citation</a>
+<a href="#" data-action="bib" role="button">BibTeX</a>
+</div>
+<div class="toggle-area" data-current="">
+<button class="copy-btn">Copy</button>
+<span class="copy-toast">Copied!</span>
+<div class="panel-label">—</div>
+<div class="content"></div>
+</div>
+<div style="display:none;">
+<div class="payload-abstract">NA</div>
+<div class="payload-dataset_info">NA</div>
+<div class="payload-bibtex">@inproceedings{dustan2008using,
+  author = {Phillip Dustan and JE Fauth and E Pante and K Banks and B Vargas-Angel and CA Downs},
+  booktitle = {Proceedings of the 11th International Coral Reef Symposium, Ft. Lauderdale Florida},
+  title = {Using Cellular Diagnostics To Link Land-Based Sources Of Pollution With Coral Reef Degradation in South Florida},
+  year = {2008}
+}</div>
+</div>
+</div>
+</div>
+</div>
+<div class="year-group">
+<h2 class="year-title anchored" id="y-2007">2007</h2>
+<div>
+<div class="pub-card" data-key="viricel2007utiliser">
+<div class="pub-title">
+<a href="https://doi.org/NA" target="_blank" rel="noopener">Utiliser la genetique pour mieux decrire, comprendre et proteger la nature</a>
+</div>
+<div class="pub-meta">
+Viricel &amp; Pante
+<br>
+<em>Le Courrier de la nature</em>
+</div>
+<div class="pub-actions">
+<a href="#" data-action="abstract" role="button">Abstract</a>
+<a href="#" data-action="dataset_info" role="button">Data</a>
+<a href="#" data-action="citation" role="button">Citation</a>
+<a href="#" data-action="bib" role="button">BibTeX</a>
+</div>
+<div class="toggle-area" data-current="">
+<button class="copy-btn">Copy</button>
+<span class="copy-toast">Copied!</span>
+<div class="panel-label">—</div>
+<div class="content"></div>
+</div>
+<div style="display:none;">
+<div class="payload-abstract">NA</div>
+<div class="payload-dataset_info">NA</div>
+<div class="payload-bibtex">@article{viricel2007utiliser,
+  author = {Amelia Viricel and Eric Pante},
+  journal = {Le Courrier de la nature},
+  pages = {22--27},
+  publisher = {Soci{\'e}t{\'e} nationale de protection de la nature},
+  title = {Utiliser la genetique pour mieux decrire, comprendre et proteger la nature},
+  volume = {235},
+  year = {2007}
+}</div>
+</div>
+</div>
+</div>
+</div>
+<div class="year-group">
+<h2 class="year-title anchored" id="y-2006">2006</h2>
+<div>
+<div class="pub-card" data-key="pante2006spatial">
+<div class="pub-title">
+<a href="https://doi.org/NA" target="_blank" rel="noopener">Spatial patterns of benthic invertebrate assemblages within atoll lagoons: importance of habitat heterogeneity and considerations for marine protected area design in French Polynesia</a>
+</div>
+<div class="pub-meta">
+Pante, Adjeroud, Dustan, Penin &amp; Schrimm
+<br>
+<em>Aquatic Living Resources</em>
+</div>
+<div class="pub-actions">
+<a href="#" data-action="abstract" role="button">Abstract</a>
+<a href="#" data-action="dataset_info" role="button">Data</a>
+<a href="#" data-action="citation" role="button">Citation</a>
+<a href="#" data-action="bib" role="button">BibTeX</a>
+</div>
+<div class="toggle-area" data-current="">
+<button class="copy-btn">Copy</button>
+<span class="copy-toast">Copied!</span>
+<div class="panel-label">—</div>
+<div class="content"></div>
+</div>
+<div style="display:none;">
+<div class="payload-abstract">NA</div>
+<div class="payload-dataset_info">NA</div>
+<div class="payload-bibtex">@article{pante2006spatial,
+  author = {Eric Pante and Mehdi Adjeroud and Phillip Dustan and Lucie Penin and Muriel Schrimm},
+  journal = {Aquatic Living Resources},
+  number = {3},
+  pages = {207--217},
+  publisher = {EDP Sciences},
+  title = {Spatial patterns of benthic invertebrate assemblages within atoll lagoons: importance of habitat heterogeneity and considerations for marine protected area design in French Polynesia},
+  volume = {19},
+  year = {2006}
+}</div>
+</div>
+</div>
+</div>
+</div>
+<div class="year-group">
+<h2 class="year-title anchored" id="y-2005">2005</h2>
+<div>
+<div class="pub-card" data-key="baker2005co">
+<div class="pub-title">
+<a href="https://doi.org/NA" target="_blank" rel="noopener">Co-occurrence of Naobranchia lizae (Copepoda) and Metamicrocotyla macracantha (Monogenea), gill parasites of the striped mullet Mugil cephalus.</a>
+</div>
+<div class="pub-meta">
+Baker, Pante &amp; de Buron
+<br>
+<em>Parasitology research</em>
+</div>
+<div class="pub-actions">
+<a href="#" data-action="abstract" role="button">Abstract</a>
+<a href="#" data-action="dataset_info" role="button">Data</a>
+<a href="#" data-action="citation" role="button">Citation</a>
+<a href="#" data-action="bib" role="button">BibTeX</a>
+</div>
+<div class="toggle-area" data-current="">
+<button class="copy-btn">Copy</button>
+<span class="copy-toast">Copied!</span>
+<div class="panel-label">—</div>
+<div class="content"></div>
+</div>
+<div style="display:none;">
+<div class="payload-abstract">NA</div>
+<div class="payload-dataset_info">NA</div>
+<div class="payload-bibtex">@article{baker2005co,
+  author = {Tiffany G Baker and Eric Pante and Isaure {de Buron}},
+  journal = {Parasitology research},
+  number = {6},
+  pages = {515--520},
+  publisher = {Springer},
+  title = {Co-occurrence of Naobranchia lizae (Copepoda) and Metamicrocotyla macracantha (Monogenea), gill parasites of the striped mullet Mugil cephalus.},
+  volume = {97},
+  year = {2005}
+}</div>
+</div>
+</div>
+<div class="pub-card" data-key="pante2005temporal">
+<div class="pub-title">
+<a href="https://doi.org/NA" target="_blank" rel="noopener">Temporal variation in a Bahamian patch reef community: the decline of Rainbow Gardens Reef</a>
+</div>
+<div class="pub-meta">
+Pante
+<br>
+</div>
+<div class="pub-actions">
+<a href="#" data-action="abstract" role="button">Abstract</a>
+<a href="#" data-action="dataset_info" role="button">Data</a>
+<a href="#" data-action="citation" role="button">Citation</a>
+<a href="#" data-action="bib" role="button">BibTeX</a>
+</div>
+<div class="toggle-area" data-current="">
+<button class="copy-btn">Copy</button>
+<span class="copy-toast">Copied!</span>
+<div class="panel-label">—</div>
+<div class="content"></div>
+</div>
+<div style="display:none;">
+<div class="payload-abstract">NA</div>
+<div class="payload-dataset_info">NA</div>
+<div class="payload-bibtex">@phdthesis{pante2005temporal,
+  author = {Eric Pante},
+  school = {Graduate School of the College of Charleston},
+  title = {Temporal variation in a Bahamian patch reef community: the decline of Rainbow Gardens Reef},
+  year = {2005}
+}</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 
 
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-aurelle2019advances" class="csl-entry" role="listitem">
+Aurelle, E. A. L., Didier And Pante. (2019). Advances on the phylogenetic placement of the enigmatic octocoral dendrobrachia brook 1889. <em>Zootaxa</em>, <em>4674</em>(1), 117–126.
+</div>
+<div id="ref-baker2005co" class="csl-entry" role="listitem">
+Baker, T. G., Pante, E., &amp; Buron, I. de. (2005). Co-occurrence of naobranchia lizae (copepoda) and metamicrocotyla macracantha (monogenea), gill parasites of the striped mullet mugil cephalus. <em>Parasitology Research</em>, <em>97</em>(6), 515–520.
+</div>
+<div id="ref-baker2008metamicrocotyla" class="csl-entry" role="listitem">
+Baker, T. G., Pante, E., Levesque, E. M., Roumillat, W. A., &amp; Buron, I. de. (2008). Metamicrocotyla macracantha, a polyopisthocotylid gill parasite of the striped mullet, mugil cephalus: Population dynamics in south carolina estuaries. <em>Parasitology Research</em>, <em>102</em>(5), 1085–1088.
+</div>
+<div id="ref-becquet2013effects" class="csl-entry" role="listitem">
+Becquet, V., Lasota, R., Pante, E., Sokolowski, A., Wolowicz, M., &amp; Garcia, P. (2013). Effects of fine-scale environmental heterogeneity on local genetic structure in macoma balthica from the gulf of gda<span>ñ</span>sk (southern baltic sea). <em>Hydrobiologia</em>, <em>714</em>(1), 61–70.
+</div>
+<div id="ref-becquet2012glacial" class="csl-entry" role="listitem">
+Becquet, V., Simon-Bouhet, B., Pante, E., Hummel, H., &amp; Garcia, P. (2012). Glacial refugium versus range limit: Conservation genetics of macoma balthica, a key species in the bay of biscay (france). <em>Journal of Experimental Marine Biology and Ecology</em>, <em>432</em>, 73–82.
+</div>
+<div id="ref-bellec2024fish" class="csl-entry" role="listitem">
+Bellec, L., Milinkovitch, T., Dubillot, E., Pante, E., Tran, D., &amp; Lefrancois, C. (2024). Fish gut and skin microbiota dysbiosis induced by exposure to commercial sunscreen formulations. <em>Aquatic Toxicology</em>, <em>266</em>, 106799. <a href="https://doi.org/10.1016/j.aquatox.2023.106799">https://doi.org/10.1016/j.aquatox.2023.106799</a>
+</div>
+<div id="ref-breitwieser2016short" class="csl-entry" role="listitem">
+<span class="nocase">Breitwieser, M., Viricel, A., Graber, M., Murillo, L., Becquet, V., Churlaud, C., Fruitier-Arnaudin, I., Huet, V., Lacroix, C., Pante, E., et al.</span> (2016). Short-term and long-term biological effects of chronic chemical contamination on natural populations of a marine bivalve. <em>PLOS ONE</em>, <em>11</em>(3), e0150184.
+</div>
+<div id="ref-breton2020evolution" class="csl-entry" role="listitem">
+Breton, S., Pante, E., Xue, X.-F., &amp; Sun, J.-T. (2020). Evolution of mitochondrial genomes. <em>Frontiers in Ecology and Evolution</em>, <em>8</em>, 615233. <a href="https://doi.org/10.3389/fevo.2020.615233">https://doi.org/10.3389/fevo.2020.615233</a>
+</div>
+<div id="ref-capt2020unorthodox" class="csl-entry" role="listitem">
+Capt, C., Bouvet, K., Guerra, D., Robicheau, B. M., Stewart, D. T., Pante, E., &amp; Breton, S. (2020). Unorthodox features in two venerid bivalves with doubly uniparental inheritance of mitochondria. <em>Scientific Reports</em>, <em>10</em>(1), 1087. <a href="https://doi.org/10.1038/s41598-020-57975-y">https://doi.org/10.1038/s41598-020-57975-y</a>
+</div>
+<div id="ref-castelin2016new" class="csl-entry" role="listitem">
+Castelin, M., Van Steenkiste, N., Pante, E., Harbo, R., Lowe, G., Gilmore, S., Therriault, T., &amp; Abbott, C. (2016). A new integrative framework for large-scale assessments of biodiversity and community dynamics, using littoral gastropods and crabs of british columbia, canada. <em>Molecular Ecology Resources</em>, <em>16</em>(6), 1322–1339.
+</div>
+<div id="ref-cook2023growth" class="csl-entry" role="listitem">
+Cook, I., Okanishi, M., &amp; Pante, E. (2023). Growth in two deep-sea associates: The octocoral pseudogorgia bellona and the euryalid snake star asteroschema ajax. <em>Zootaxa</em>, <em>5336</em>(1), 82–94. <a href="https://doi.org/10.11646/zootaxa.5336.1.3">https://doi.org/10.11646/zootaxa.5336.1.3</a>
+</div>
+<div id="ref-dartois2021molecular" class="csl-entry" role="listitem">
+Dartois, M., Pante, E., Viricel, A., Becquet, V., &amp; Sauriau, P.-G. (2021). Molecular genetic diversity of seaweeds morphologically related to ulva rigida at three sites along the french atlantic coast. <em>PeerJ</em>, <em>9</em>, e11966. <a href="https://doi.org/10.7717/peerj.11966">https://doi.org/10.7717/peerj.11966</a>
+</div>
+<div id="ref-dustan2008using" class="csl-entry" role="listitem">
+Dustan, P., Fauth, J., Pante, E., Banks, K., Vargas-Angel, B., &amp; Downs, C. (2008). Using cellular diagnostics to link land-based sources of pollution with coral reef degradation in south florida. <em>Proceedings of the 11th International Coral Reef Symposium, Ft. Lauderdale Florida</em>.
+</div>
+<div id="ref-france2010evolution" class="csl-entry" role="listitem">
+France, S., Pante, E., Brugler, M., &amp; Van der Ham, J. (2010). On the evolution of deep-sea octocorals and antipatharians: Patterns revealed from molecular phylogenies. <em>INTEGRATIVE AND COMPARATIVE BIOLOGY</em>, <em>50</em>, E56–E56.
+</div>
+<div id="ref-hanafi2025image" class="csl-entry" role="listitem">
+Hanafi-Portier, M., Samadi, S., Cárdenas, P., Pante, E., &amp; Olu, K. (preprint). Image-based ecological assessment of deep-sea sponge, coral and other cnidarian assemblages through a morpho-functional approach. <em>bioRxiv</em>, 2025–2008. <a href="https://doi.org/10.1101/2025.08.18.670867">https://doi.org/10.1101/2025.08.18.670867</a>
+</div>
+<div id="ref-hill2025exploring" class="csl-entry" role="listitem">
+<span class="nocase">Hill-Spanik, K. M., Rothkopf, H., Strand, A. E., Carnegie, R. B., Carlton, J. T., Couceiro, L., Crooks, J. A., Endo, H., Hori, M., Kamiya, M., et al.</span> (2025). Exploring the impact of the widely introduced pacific oyster magallana gigas on the dispersal of bonamia (haplosporida): A global snapshot. <em>Diseases of Aquatic Organisms</em>, <em>161</em>, 39–46. <a href="https://doi.org/10.3354/dao03834">https://doi.org/10.3354/dao03834</a>
+</div>
+<div id="ref-leCam2025discordant" class="csl-entry" role="listitem">
+Le Cam, S., Brémaud, J., Becquet, V., Huet, V., Dubillot, E., Garcia, P., Viricel, A., Breton, S., &amp; Pante, E. (2025). Discordant population structure inferred from male-and female-type mtDNAs from macoma balthica, a bivalve species characterized by doubly uniparental inheritance of mitochondria. <em>Peer Community Journal</em>, <em>5</em>. <a href="https://doi.org/10.24072/pcjournal.529">https://doi.org/10.24072/pcjournal.529</a>
+</div>
+<div id="ref-le2023lamp" class="csl-entry" role="listitem">
+Le Cam, S., Brémaud, J., Malkócs, T., Kreckelbergh, E., Becquet, V., Dubillot, E., Garcia, P., Breton, S., &amp; Pante, E. (2023). LAMP-based molecular sexing in a gonochoric marine bivalve (macoma balthica rubra) with divergent sex-specific mitochondrial genomes. <em>Ecology and Evolution</em>, <em>13</em>(8), e10320. <a href="https://doi.org/10.1002/ece3.10320">https://doi.org/10.1002/ece3.10320</a>
+</div>
+<div id="ref-le2025population" class="csl-entry" role="listitem">
+Le Gall, R., Chauvaud, P., Viricel, A., Roussel, S., Pante, E., Boudry, P., &amp; Charrier, G. (2025). Population genetic diversity and structure of wild and hatchery-raised populations of european abalone haliotis tuberculata tuberculata: Guidelines for future restocking and stock-enhancement programs. <em>Canadian Journal of Fisheries and Aquatic Sciences</em>, <em>82</em>, 1–16. <a href="https://doi.org/10.1139/cjfas-2024-0369">https://doi.org/10.1139/cjfas-2024-0369</a>
+</div>
+<div id="ref-lucas2022translocation" class="csl-entry" role="listitem">
+Lucas, T., Vincent, B., &amp; Eric, P. (2022). Translocation of mitochondrial DNA into the nuclear genome blurs phylogeographic and conservation genetic studies in seabirds. <em>Royal Society Open Science</em>, <em>9</em>(6), 211888. <a href="https://doi.org/10.1098/rsos.211888">https://doi.org/10.1098/rsos.211888</a>
+</div>
+<div id="ref-malkocs2022complex" class="csl-entry" role="listitem">
+Malkócs, T., Viricel, A., Becquet, V., Evin, L., Dubillot, E., &amp; Pante, E. (2022). Complex mitogenomic rearrangements within the pectinidae (mollusca: bivalvia). <em>BMC Ecology and Evolution</em>, <em>22</em>(1), 29. <a href="https://doi.org/10.1186/s12862-022-01976-0">https://doi.org/10.1186/s12862-022-01976-0</a>
+</div>
+<div id="ref-mcfadden2011limitations" class="csl-entry" role="listitem">
+McFadden, C. S., Benayahu, Y., Pante, E., Thoma, J. N., Nevarez, P. A., &amp; France, S. C. (2011). Limitations of mitochondrial gene barcoding in octocorallia. <em>Molecular Ecology Resources</em>, <em>11</em>(1), 19–31.
+</div>
+<div id="ref-muller2025capacity" class="csl-entry" role="listitem">
+<span class="nocase">Muller-Karger, F. E., Tan, A. S. H., Allcock, A. L., Appeltans, W., Aguilar, C. B., Blanco, A., Bograd, S. J., Costello, M. J., Darnaude, A. M., Dupuis, B., et al.</span> (2025). Capacity sharing to protect and restore ecosystems and biodiversity. <em>ICES Journal of Marine Science</em>, <em>82</em>(1), fsae187. <a href="https://doi.org/10.1093/icesjms/fsae187">https://doi.org/10.1093/icesjms/fsae187</a>
+</div>
+<div id="ref-muller2024ocean" class="csl-entry" role="listitem">
+<span class="nocase">Muller-Karger, F., AS, H. T., Allcock, L., Appeltans, W., Aguilar, C. B., Blanco, A., Buttigieg, P., Darnaude, A., Dupuis, B., Friedman, K., et al.</span> (2024). <em>Ocean decade vision 2030 white papers–challenge 2: Protect and restore ecosystems and biodiversity.</em> <a href="https://unesdoc.unesco.org/ark:/48223/pf0000390108?posInSet=1&amp;queryId=c9d2b97b-04e4-41ec-84ed-9415b99ab029">https://unesdoc.unesco.org/ark:/48223/pf0000390108?posInSet=1&amp;queryId=c9d2b97b-04e4-41ec-84ed-9415b99ab029</a>
+</div>
+<div id="ref-pante2005temporal" class="csl-entry" role="listitem">
+Pante, E. (2005). <em>Temporal variation in a bahamian patch reef community: The decline of rainbow gardens reef</em> [PhD thesis]. Graduate School of the College of Charleston.
+</div>
+<div id="ref-pante2016nomenclatural" class="csl-entry" role="listitem">
+Pante, E. (2016). Nomenclatural note on the homonymy between the octocoral genus dendrobrachia brook 1889 and the entoproct phylum dendrobrachia xian-guan, bergstr<span>ö</span>m, xio-ya and jie 2006. <em>Zootaxa</em>, <em>4107</em>(4), 598–598.
+</div>
+<div id="ref-pante2023difficult" class="csl-entry" role="listitem">
+Pante, E. (2023). The difficult task of partitioning the effects of vicariance and isolation by distance in poor dispersers. <em>Peer Community in Evolutionary Biology</em>, <em>1</em>, 100634. <a href="https://doi.org/10.24072/pci.evolbiol.100634">https://doi.org/10.24072/pci.evolbiol.100634</a>
+</div>
+<div id="ref-pante2024common" class="csl-entry" role="listitem">
+Pante, E. (2024). How common cryptic coral diversity can blur biodiversity metrics and challenge management. <em>Peer Community in Evolutionary Biology</em>, <em>1</em>, 100783. <a href="https://doi.org/10.24072/pci.evolbiol.100783">https://doi.org/10.24072/pci.evolbiol.100783</a>
+</div>
+<div id="ref-pante2011biogeography" class="csl-entry" role="listitem">
+Pante, E. G. (2011). <em>Biogeography and evolution of chrysogorgiid corals</em> [PhD thesis]. University of Louisiana at Lafayette.
+</div>
+<div id="ref-pante2015use" class="csl-entry" role="listitem">
+Pante, E., Abdelkrim, J., Viricel, A., Gey, D., France, S., Boisselier, M.-C., &amp; Samadi, S. (2015). Use of RAD sequencing for delimiting species. <em>Heredity</em>, <em>114</em>(5), 450–459.
+</div>
+<div id="ref-pante2006spatial" class="csl-entry" role="listitem">
+Pante, E., Adjeroud, M., Dustan, P., Penin, L., &amp; Schrimm, M. (2006). Spatial patterns of benthic invertebrate assemblages within atoll lagoons: Importance of habitat heterogeneity and considerations for marine protected area design in french polynesia. <em>Aquatic Living Resources</em>, <em>19</em>(3), 207–217.
+</div>
+<div id="ref-pante2019investigation" class="csl-entry" role="listitem">
+Pante, E., Becquet, V., Viricel, A., &amp; Garcia, P. (2019). Investigation of the molecular signatures of selection on ATP synthase genes in the marine bivalve limecola balthica. <em>Aquatic Living Resources</em>, <em>32</em>, 3.
+</div>
+<div id="ref-pante2012exploration" class="csl-entry" role="listitem">
+Pante, E., Corbari, L., Thubaut, J., Chan, T.-Y., Mana, R., Boisselier, M.-C., Bouchet, P., &amp; Samadi, S. (2012). Exploration of the deep-sea fauna of papua new guinea. <em>Oceanography</em>, <em>25</em>(3), 214–225.
+</div>
+<div id="ref-pante2012getting" class="csl-entry" role="listitem">
+Pante, E., &amp; Dustan, P. (2012). Getting to the point: Accuracy of point count in monitoring ecosystem change. <em>Journal of Marine Biology</em>, <em>2012</em>.
+</div>
+<div id="ref-pante2009randonnee" class="csl-entry" role="listitem">
+Pante, E., &amp; France, S. (2009). Randonn<span>é</span>e au fond des oc<span>é</span>ans : L’exploration des monts sous-marins. <em>Le Courrier de La Nature</em>, <em>247</em>, 34–41.
+</div>
+<div id="ref-pante2010pseudochrysogorgia" class="csl-entry" role="listitem">
+Pante, E., &amp; France, S. C. (2010). Pseudochrysogorgia bellona n. Gen., n. Sp.: A new genus and species of chrysogorgiid octocoral (coelenterata, anthozoa) from the coral sea. <em>Zoosystema</em>, <em>32</em>(4), 595–612.
+</div>
+<div id="ref-pante2012deep" class="csl-entry" role="listitem">
+Pante, E., France, S. C., Couloux, A., Cruaud, C., McFadden, C. S., Samadi, S., &amp; Watling, L. (2012). Deep-sea origin and in-situ diversification of chrysogorgiid octocorals. <em>Plos One</em>, <em>7</em>(6), e38357.
+</div>
+<div id="ref-pante2015inter" class="csl-entry" role="listitem">
+Pante, E., France, S. C., Gey, D., Cruaud, C., &amp; Samadi, S. (2015). An inter-ocean comparison of coral endemism on seamounts: The case of chrysogorgia. <em>Journal of Biogeography</em>, <em>42</em>(10), 1907–1918.
+</div>
+<div id="ref-pante2008short" class="csl-entry" role="listitem">
+Pante, E., King, A., &amp; Dustan, P. (2008). Short-term decline of a bahamian patch reef coral community: Rainbow gardens reef 1991–2004. <em>Hydrobiologia</em>, <em>596</em>(1), 121–132.
+</div>
+<div id="ref-pante2014evaluating" class="csl-entry" role="listitem">
+<span class="nocase">Pante, E., Pascal, P.-Y., Becquet, V., Viricel, A., Simon-Bouhet, B., Garcia, P., et al.</span> (2014). Evaluating the genetic effects of the invasive ocenebra inornata on the native oyster drill ocenebra erinacea. <em>Marine Ecology</em>, 1–11.
+</div>
+<div id="ref-pante2017putative" class="csl-entry" role="listitem">
+Pante, E., Poitrimol, C., Saunier, A., Becquet, V., &amp; Garcia, P. (2017). Putative sex-linked heteroplasmy in the tellinid bivalve limecola balthica (linnaeus, 1758). <em>Journal of Molluscan Studies</em>, <em>83</em>(2), 226–228.
+</div>
+<div id="ref-pante2015species" class="csl-entry" role="listitem">
+<span class="nocase">Pante, E., Puillandre, N., Viricel, A., Arnaud-Haond, S., Aurelle, D., Castelin, M., Chenuil, A., Destombe, C., Forcioli, D., Valero, M., et al.</span> (2015). Species are hypotheses: Avoid connectivity assessments based on pillars of sand. <em>Molecular Ecology</em>, <em>24</em>(3), 525–544.
+</div>
+<div id="ref-pante2012snp" class="csl-entry" role="listitem">
+Pante, E., Rohfritsch, A., Becquet, V., Belkhir, K., Bierne, N., &amp; Garcia, P. (2012). SNP detection from de novo transcriptome sequencing in the bivalve macoma balthica: Marker development for evolutionary studies. <em>PloS One</em>, <em>7</em>(12), e52302.
+</div>
+<div id="ref-pante2013molecular" class="csl-entry" role="listitem">
+Pante, E., Saucier, E. H., &amp; France, S. C. (2013). Molecular and morphological data support reclassification of the octocoral genus isidoides. <em>Invertebrate Systematics</em>, <em>27</em>(4), 365–378.
+</div>
+<div id="ref-pante2015integrative" class="csl-entry" role="listitem">
+Pante, E., Schoelinck, C., &amp; Puillandre, N. (2015). From integrative taxonomy to species description: One step beyond. <em>Systematic Biology</em>, <em>64</em>(1), 152–160.
+</div>
+<div id="ref-pante2013marmap" class="csl-entry" role="listitem">
+Pante, E., &amp; Simon-Bouhet, B. (2013). Marmap: A package for importing, plotting and analyzing bathymetric and topographic data in r. <em>PLoS One</em>, <em>8</em>(9), e73051.
+</div>
+<div id="ref-pante2012chrysogorgia" class="csl-entry" role="listitem">
+Pante, E., &amp; Watling, L. (2012). Chrysogorgia from the new england and corner seamounts: Atlantic-pacific connections. <em>Journal of the Marine Biological Association of the United Kingdom</em>, <em>92</em>(5), 911–927.
+</div>
+<div id="ref-sabatier2014genetic" class="csl-entry" role="listitem">
+Sabatier, E., Pante, E., Dussud, C., Van Canneyt, O., Simon-Bouhet, B., &amp; Viricel, A. (2014). Genetic monitoring of pilot whales, globicephala spp.(cetacea: Delphinidae), stranded on french coasts. <em>Mammalia</em>.
+</div>
+<div id="ref-samadi2015patchiness" class="csl-entry" role="listitem">
+<span class="nocase">Samadi, S., Puillandre, N., Pante, E., Boisselier, M.-C., Corbari, L., Chen, W.-J., Maestrati, P., Mana, R., Thubaut, J., Zuccon, D., et al.</span> (2015). Patchiness of deep-sea communities in papua new guinea and potential susceptibility to anthropogenic disturbances illustrated by seep organisms. <em>Marine Ecology</em>, <em>36</em>, 109–132.
+</div>
+<div id="ref-saunier2014mitochondrial" class="csl-entry" role="listitem">
+Saunier, A., Garcia, P., Becquet, V., Marsaud, N., Escudié, F., &amp; Pante, E. (2014). Mitochondrial genomes of the baltic clam macoma balthica (bivalvia: Tellinidae): Setting the stage for studying mito-nuclear incompatibilities. <em>BMC Evolutionary Biology</em>, <em>14</em>(1), 259.
+</div>
+<div id="ref-sauriau2021multiple" class="csl-entry" role="listitem">
+Sauriau, P.-G., Dartois, M., Becquet, V., Aubert, F., Huet, V., Bréret, M., Viricel, A., &amp; Pante, E. (2021). Multiple genetic marker analysis challenges the introduction history of ulva australis (ulvales, chlorophyta) on french coasts. <em>European Journal of Phycology</em>, <em>56</em>(4), 455–467. <a href="https://doi.org/10.1080/09670262.2021.1876249">https://doi.org/10.1080/09670262.2021.1876249</a>
+</div>
+<div id="ref-sauriau2023quelques" class="csl-entry" role="listitem">
+<span class="nocase">Sauriau, P.-G., De Montaudouin, X., Aubert, F., Charpentier, P., De Casamajor, M.-N., Fichet, D., Guyot, T., Jourde, J., Le Duigou, M., Masse, C., et al.</span> (2023). Sur quelques curiosit<span>é</span>s d’histoire naturelle dans les pertuis charentais: Faune des invert<span>é</span>br<span>é</span>s marins. <em>Annales de La Soci<span>é</span>t<span>é</span> Des Sciences Naturelles de Charente-Maritime</em>, 533–548.
+</div>
+<div id="ref-soldourdinsepia2026" class="csl-entry" role="listitem">
+Sol Dourdin, T., Minet, A., Pante, E., &amp; Lacoue-Labarthe, T. (2026). Two de novo transcriptome assemblies and functional annotations from juvenile cuttlefish (sepia officinalis) under various metal and CO2 exposure conditions. <em>Peer Community Journal</em>, <em>6</em>(article no. e28). <a href="https://doi.org/10.24072/pcjournal.703">https://doi.org/10.24072/pcjournal.703</a>
+</div>
+<div id="ref-sotka2025genetic" class="csl-entry" role="listitem">
+<span class="nocase">Sotka, E. E., Carnegie, R. B., Carlton, J. T., Couceiro, L., Crooks, J. A., Endo, H., Hayford, H., Hori, M., Kamiya, M., Kanaya, G., et al.</span> (2025). The genetic legacy of a global marine invader. <em>Proceedings of the National Academy of Sciences</em>, <em>122</em>(15), e2418730122. <a href="https://doi.org/10.1073/pnas.2418730122">https://doi.org/10.1073/pnas.2418730122</a>
+</div>
+<div id="ref-stewart2020unusual" class="csl-entry" role="listitem">
+Stewart, D. T., Breton, S., Chase, E. E., Robicheau, B. M., Bettinazzi, S., Pante, E., Youssef, N., &amp; Garrido-Ramos, M. A. (2020). An unusual evolutionary strategy: The origins, genetic repertoire, and implications of doubly uniparental inheritance of mitochondrial DNA in bivalves. <em>Evolutionary Biology—A Transdisciplinary Approach</em>, 301–323. <a href="https://doi.org/10.1007/978-3-030-57246-4_12">https://doi.org/10.1007/978-3-030-57246-4_12</a>
+</div>
+<div id="ref-tasse2022longest" class="csl-entry" role="listitem">
+Tassé, M., Choquette, T., Angers, A., Stewart, D. T., Pante, E., &amp; Breton, S. (2022). The longest mitochondrial protein in metazoans is encoded by the male-transmitted mitogenome of the bivalve scrobicularia plana. <em>Biology Letters</em>, <em>18</em>(6), 20220122. <a href="https://doi.org/10.1098/rsbl.2022.0122">https://doi.org/10.1098/rsbl.2022.0122</a>
+</div>
+<div id="ref-thoma2009deep" class="csl-entry" role="listitem">
+Thoma, J. N., Pante, E., Brugler, M. R., &amp; France, S. C. (2009). Deep-sea octocorals and antipatharians show no evidence of seamount-scale endemism in the NW atlantic. <em>Marine Ecology Progress Series</em>, <em>397</em>, 25–35.
+</div>
+<div id="ref-torres2021sea" class="csl-entry" role="listitem">
+<span class="nocase">Torres, L., Pante, E., González-Solı́s, J., Viricel, A., Ribout, C., Zino, F., MacKin, W., Precheur, C., Tourmetz, J., Calabrese, L., et al.</span> (2021). Sea surface temperature, rather than land mass or geographic distance, may drive genetic differentiation in a species complex of highly dispersive seabirds. <em>Ecology and Evolution</em>, <em>11</em>(21), 14960–14976. <a href="https://doi.org/10.1002/ece3.8180">https://doi.org/10.1002/ece3.8180</a>
+</div>
+<div id="ref-torres2019evidence" class="csl-entry" role="listitem">
+Torres, L., Welch, A. J., Zanchetta, C., Chesser, R. T., Manno, M., Donnadieu, C., Bretagnolle, V., &amp; Pante, E. (2019). Evidence for a duplicated mitochondrial region in audubon’s shearwater based on MinION sequencing. <em>Mitochondrial DNA Part A</em>, <em>30</em>(2), 256–263.
+</div>
+<div id="ref-untiedt2021phylogenetic" class="csl-entry" role="listitem">
+Untiedt, C. B., Quattrini, A. M., McFadden, C. S., Alderslade, P. A., Pante, E., &amp; Burridge, C. P. (2021). Phylogenetic relationships within chrysogorgia (alcyonacea: Octocorallia), a morphologically diverse genus of octocoral, revealed using a target enrichment approach. <em>Frontiers in Marine Science</em>, <em>7</em>, 599984. <a href="https://doi.org/10.3389/fmars.2020.599984">https://doi.org/10.3389/fmars.2020.599984</a>
+</div>
+<div id="ref-vagner2019ocean" class="csl-entry" role="listitem">
+<span class="nocase">Vagner, M., Pante, E., Viricel, A., Lacoue-Labarthe, T., Zambonino-Infante, J.-L., Quazuguel, P., Dubillot, E., Huet, V., Le Delliou, H., Lefrançois, C., et al.</span> (2019). Ocean warming combined with lower omega-3 nutritional availability impairs the cardio-respiratory function of a marine fish. <em>Journal of Experimental Biology</em>, <em>222</em>(8), jeb187179.
+</div>
+<div id="ref-viricel2018novo" class="csl-entry" role="listitem">
+Viricel, A., Becquet, V., Dubillot, E., &amp; Pante, E. (2018). De novo assembly and functional annotation of the transcriptome of mimachlamys varia, a bioindicator marine bivalve. <em>Marine Genomics</em>, <em>41</em>, 42–45.
+</div>
+<div id="ref-viricel2007utiliser" class="csl-entry" role="listitem">
+Viricel, A., &amp; Pante, E. (2007). Utiliser la genetique pour mieux decrire, comprendre et proteger la nature. <em>Le Courrier de La Nature</em>, <em>235</em>, 22–27.
+</div>
+<div id="ref-viricel2014applicability" class="csl-entry" role="listitem">
+Viricel, A., Pante, E., Dabin, W., &amp; Simon-Bouhet, B. (2014). Applicability of RAD-tag genotyping for interfamilial comparisons: Empirical data from two cetaceans. <em>Molecular Ecology Resources</em>, <em>14</em>(3), 597–605.
+</div>
+<div id="ref-watling2011biology" class="csl-entry" role="listitem">
+<span class="nocase">Watling, L., France, S. C., Pante, E., Simpson, A., et al.</span> (2011). Biology of deep-water octocorals. <em>Advances in Marine Biology</em>, <em>60</em>, 41–122.
+</div>
+<div id="ref-xu2025unexpected" class="csl-entry" role="listitem">
+Xu, Y., Bilewitch, J., Pante, E., Zhan, Z., Mills, S., Clark, M., &amp; Xu, K. (preprint). Unexpected diversity of isidoides (anthozoa: Octocorallia: Isidoidae) revealed by morphology and phylogenomics analysis with descriptions of three new species. <em>bioRxiv</em>, 2025–2009. <a href="https://doi.org/10.1101/2025.09.11.675584">https://doi.org/10.1101/2025.09.11.675584</a>
+</div>
+<div id="ref-zaharias2020data" class="csl-entry" role="listitem">
+Zaharias, P., Pante, E., Gey, D., Fedosov, A. E., &amp; Puillandre, N. (2020). Data, time and money: Evaluating the best compromise for inferring molecular phylogenies of non-model animal taxa. <em>Molecular Phylogenetics and Evolution</em>, <em>142</em>, 106660. <a href="https://doi.org/10.1016/j.ympev.2019.106660">https://doi.org/10.1016/j.ympev.2019.106660</a>
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -193,13 +3113,14 @@ ul.task-list li input[type="checkbox"] {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
@@ -542,6 +3463,19 @@ ul.task-list li input[type="checkbox"] {
   });
   </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>made with <a href="https://quarto.org/">quarto</a>, an open source scientific publishing system. To see the code, click <a href="https://github.com/ericpante/ericpante.github.io">here</a></p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
 
 
 
