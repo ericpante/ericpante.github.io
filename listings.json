@@ -9,5 +9,16 @@
       "/projects/ocean2.html",
       "/projects/resilience.html"
     ]
+  },
+  {
+    "listing": "/projects/biodiversity3.html",
+    "items": [
+      "/projects/biodiversity3/biodiversity3_scoping_plenary.html",
+      "/projects/biodiversity3/biodiversity3_scoping_BioMonWeek.html",
+      "/projects/biodiversity3/biodiversity3_scoping_IDSSD.html",
+      "/projects/biodiversity3/biodiversity3_scoping_IMCC8.html",
+      "/projects/biodiversity3/biodiversity3_scoping_SRI.html",
+      "/projects/biodiversity3/biodiversity3_scoping_WBF.html"
+    ]
   }
 ]
