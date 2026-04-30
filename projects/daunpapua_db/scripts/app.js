@@ -31,9 +31,12 @@ function normalizeStation(d) {
 
 function normalizePhoto(p) {
   const keywordText = p.caption || p.keywords || p.KEYWORDS || p.Keyword || p.keyword || "";
+
+  const rawPhoto = String(p.photo || p.PHOTO || "").trim();
+
   return {
     station: String(p.STATION || "").trim(),
-    photo: String(p.photo || p.PHOTO || "").trim(),
+    photo: rawPhoto ? `photos/${rawPhoto.replace(/^\/+/, "")}` : "",
     caption: String(keywordText || "").trim(),
     keywords: String(keywordText || "").trim()
   };
