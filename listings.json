@@ -5,20 +5,8 @@
       "/projects/biodiversity3.html",
       "/projects/dui.html",
       "/projects/daunpapua.html",
-      "/projects/marmap.html",
       "/projects/ocean2.html",
-      "/projects/resilience.html"
-    ]
-  },
-  {
-    "listing": "/projects/biodiversity3.html",
-    "items": [
-      "/projects/biodiversity3/biodiversity3_scoping_plenary.html",
-      "/projects/biodiversity3/biodiversity3_scoping_BioMonWeek.html",
-      "/projects/biodiversity3/biodiversity3_scoping_IDSSD.html",
-      "/projects/biodiversity3/biodiversity3_scoping_IMCC8.html",
-      "/projects/biodiversity3/biodiversity3_scoping_SRI.html",
-      "/projects/biodiversity3/biodiversity3_scoping_WBF.html"
+      "/projects/marmap.html"
     ]
   },
   {
@@ -43,6 +31,17 @@
       "/projects/daunpapua/2025-07-09-rain-canoes-and-chocolate-in-alotau.html",
       "/projects/daunpapua/2025-06-25-raising-a-glass.html",
       "/projects/daunpapua/2025-06-29-spiny-teeth-and-soft-bodies-meet-the-mysterious-penis-worms.html"
+    ]
+  },
+  {
+    "listing": "/projects/biodiversity3.html",
+    "items": [
+      "/projects/biodiversity3/biodiversity3_scoping_plenary.html",
+      "/projects/biodiversity3/biodiversity3_scoping_BioMonWeek.html",
+      "/projects/biodiversity3/biodiversity3_scoping_IDSSD.html",
+      "/projects/biodiversity3/biodiversity3_scoping_IMCC8.html",
+      "/projects/biodiversity3/biodiversity3_scoping_SRI.html",
+      "/projects/biodiversity3/biodiversity3_scoping_WBF.html"
     ]
   }
 ]
