@@ -284,7 +284,7 @@
     "href": "projects/marmap.html",
     "title": "marmap",
     "section": "",
-    "text": "Import bathymetric and hypsometric data from the NOAA (National Oceanic and Atmospheric Administration, https://www.ncei.noaa.gov/products/etopo-global-relief-model), GEBCO (General Bathymetric Chart of the Oceans, https://www.gebco.net) and other sources, plot xyz data to prepare publication-ready figures, analyze xyz data to extract transects, get depth / altitude based on geographical coordinates, or calculate z-constrained least-cost paths.\n\n\n\nmarmap has its dev page on github and is available on CRAN.\nTo install marmap from github:\n\n# Install marmap from CRAN (example using package 'pak')\npak::pak(\"marmap\")\n\n# Or the development version from GitHub:\npak::pak(\"ericpante/marmap\")\n\n\n\n\nFrom its birth to the last rendering event, here are the cumulative download stats.\n\nlibrary(ggplot2)\nlibrary(plotly)\nlibrary(cranlogs)\n\nx   &lt;- cran_downloads(package = \"marmap\", from = \"2013-04-03\", to = Sys.Date())\ndownloads   &lt;- cumsum(x$count)\ntab &lt;- cbind(x, downloads)\n\np &lt;- ggplot(data=tab, aes(date, downloads, group=package, color=package)) +\n  geom_line() \nggplotly(p)"
+    "text": "Import bathymetric and hypsometric data from the NOAA (National Oceanic and Atmospheric Administration, https://www.ncei.noaa.gov/products/etopo-global-relief-model), GEBCO (General Bathymetric Chart of the Oceans, https://www.gebco.net) and other sources, plot xyz data to prepare publication-ready figures, analyze xyz data to extract transects, get depth / altitude based on geographical coordinates, or calculate z-constrained least-cost paths.\n\n\n\nmarmap has its development page on github and is available on CRAN. The current version of marmap is 1.0.12 .\nTo install marmap from github:\n\n# Install marmap from CRAN (example using package 'pak')\npak::pak(\"marmap\")\n\n# Or the development version from GitHub:\npak::pak(\"ericpante/marmap\")\n\n\n\n\n\nquery the ETOPO1 bathymetry / topography database hosted on the NOAA website\nimport netCDF data from the GEBCO database\nimport and manipulate xyz data for analysis\nbuild an SQL database of bathymetric data for easy query and subsetting\n2D and 3D plotting of marine and land charts\nanalysis and data summaries on bathymetric and / or topographic data\ncompute 2D and 3D cross sections\nget least-cost distances based on bathymetry and topography, for multiple points\ncalculate projected surface areas\ninteract with the package raster and sp to project maps\nCheck out vignettes on CRAN.\n\n\n\n\n\nPante E, Simon-Bouhet B (2013) marmap: a package for importing, plotting and analyzing bathymetric and topographic data in R. PLoS ONE  8(9): e73051. doi: 10.1371/journal.pone.0073051\n\n @article{marmap_paper, \n  Author = {Pante, E. and Simon-Bouhet, B.}, \n  Journal = {PLoS ONE},\n  Number = {9}, Pages = {e73051}, \n  Title = {{marmap: a package for importing, plotting and analyzing bathymetric and topographic data in R}}, \n  Volume = {8}, \n  Year = {2013}} \n\n@Manual{marmap_manual,\n title = {marmap: Import, plot and analyze bathymetric and topographic data},\n author = {Eric Pante and Benoit Simon-Bouhet},\n year = {2025},\n note = {R package version 1.0.12},\n }"
   },
   {
     "objectID": "projects/marmap.html#presentation",
@@ -298,14 +298,21 @@
     "href": "projects/marmap.html#installing-marmap",
     "title": "marmap",
     "section": "",
-    "text": "marmap has its dev page on github and is available on CRAN.\nTo install marmap from github:\n\n# Install marmap from CRAN (example using package 'pak')\npak::pak(\"marmap\")\n\n# Or the development version from GitHub:\npak::pak(\"ericpante/marmap\")"
+    "text": "marmap has its development page on github and is available on CRAN. The current version of marmap is 1.0.12 .\nTo install marmap from github:\n\n# Install marmap from CRAN (example using package 'pak')\npak::pak(\"marmap\")\n\n# Or the development version from GitHub:\npak::pak(\"ericpante/marmap\")"
   },
   {
-    "objectID": "projects/marmap.html#marmap-download-stats",
-    "href": "projects/marmap.html#marmap-download-stats",
+    "objectID": "projects/marmap.html#some-things-marmap-can-help-with",
+    "href": "projects/marmap.html#some-things-marmap-can-help-with",
     "title": "marmap",
     "section": "",
-    "text": "From its birth to the last rendering event, here are the cumulative download stats.\n\nlibrary(ggplot2)\nlibrary(plotly)\nlibrary(cranlogs)\n\nx   &lt;- cran_downloads(package = \"marmap\", from = \"2013-04-03\", to = Sys.Date())\ndownloads   &lt;- cumsum(x$count)\ntab &lt;- cbind(x, downloads)\n\np &lt;- ggplot(data=tab, aes(date, downloads, group=package, color=package)) +\n  geom_line() \nggplotly(p)"
+    "text": "query the ETOPO1 bathymetry / topography database hosted on the NOAA website\nimport netCDF data from the GEBCO database\nimport and manipulate xyz data for analysis\nbuild an SQL database of bathymetric data for easy query and subsetting\n2D and 3D plotting of marine and land charts\nanalysis and data summaries on bathymetric and / or topographic data\ncompute 2D and 3D cross sections\nget least-cost distances based on bathymetry and topography, for multiple points\ncalculate projected surface areas\ninteract with the package raster and sp to project maps\nCheck out vignettes on CRAN."
+  },
+  {
+    "objectID": "projects/marmap.html#how-to-cite-marmap",
+    "href": "projects/marmap.html#how-to-cite-marmap",
+    "title": "marmap",
+    "section": "",
+    "text": "Pante E, Simon-Bouhet B (2013) marmap: a package for importing, plotting and analyzing bathymetric and topographic data in R. PLoS ONE  8(9): e73051. doi: 10.1371/journal.pone.0073051\n\n @article{marmap_paper, \n  Author = {Pante, E. and Simon-Bouhet, B.}, \n  Journal = {PLoS ONE},\n  Number = {9}, Pages = {e73051}, \n  Title = {{marmap: a package for importing, plotting and analyzing bathymetric and topographic data in R}}, \n  Volume = {8}, \n  Year = {2013}} \n\n@Manual{marmap_manual,\n title = {marmap: Import, plot and analyze bathymetric and topographic data},\n author = {Eric Pante and Benoit Simon-Bouhet},\n year = {2025},\n note = {R package version 1.0.12},\n }"
   },
   {
     "objectID": "projects/dui.html",
