@@ -164,7 +164,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="marmap-download-stats" class="level1">
 <h1>marmap download stats</h1>
 <p>From its birth to the last rendering event, here are the cumulative download stats.</p>
-<p>{r} #| label: downloads #| echo: true #| message: false #| warning: false #| paged-print: false</p>
+<p>#| label: downloads #| echo: true #| message: false #| warning: false #| paged-print: false</p>
 <p>library(ggplot2) library(plotly) library(cranlogs)</p>
 <p>x &lt;- cran_downloads(package = “marmap”, from = “2013-04-03”, to = Sys.Date()) downloads &lt;- cumsum(x$count) tab &lt;- cbind(x, downloads)</p>
 <p>p &lt;- ggplot(data=tab, aes(date, downloads, group=package, color=package)) + geom_line() ggplotly(p)</p>
