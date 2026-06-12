@@ -90,3 +90,49 @@ topics <- ggplot(df, aes(x = n,
     x = "Number of topic occurrences in openalex",
     y = paste0("Top topics (n>",SIZE,")")
   )
+
+# types of citation citing marmap
+
+marmap_types <- unnest(
+  marmap_cites,
+  type,
+  names_sep = "_type"
+)
+
+type_counts <- marmap_types$type |>
+  as_tibble() |> 
+  count(value) |>
+  arrange(desc(n)) 
+
+types <- ggplot(type_counts, aes(x = n, 
+                         y = reorder(value, n), 
+                         text = paste0(value, "<br>", n)
+)
+) +
+  geom_col(fill = "#49788C") +
+  labs(
+    x = "Number of occurrences in openalex",
+    y = "Publication type"
+  )
+
+
+# types of institutions citing marmap
+
+affiliations <- marmap_cites |>
+  select(work_id = id, authorships) |>
+  unnest(authorships) |>
+  unnest(affiliations, names_sep = "_aff") |>
+  filter(!is.na(affiliations_afftype)) |>
+  count(affiliations_afftype, sort = TRUE)
+
+aff <- ggplot(affiliations, aes(x = n, 
+                                 y = reorder(affiliations_afftype, n), 
+                                 text = paste0(affiliations_afftype, "<br>", n)
+)
+) +
+  geom_col(fill = "#49788C") +
+  labs(
+    x = "Number of occurrences in openalex",
+    y = "Affiliation type"
+  )
+

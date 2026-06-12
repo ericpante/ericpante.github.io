@@ -98,8 +98,6 @@ ggplotly(topics, tooltip = "text")
 
 # map
 
-## row
-
 ```{r}
 #| label: map
 #| title: "map of authors citing marmap"
@@ -128,6 +126,22 @@ leaflet(polygons) %>%
   )
 
 
+```
+
+# types 
+
+## row
+
+```{r}
+#| title: "types of affiliations of authors citing marmap"
+
+ggplotly(aff, tooltip = "text")
+```
+
+```{r}
+#| title: "types of publications citing marmap"
+
+ggplotly(types, tooltip = "text")
 ```
 
 # downloads
