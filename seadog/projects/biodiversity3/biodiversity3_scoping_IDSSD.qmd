@@ -1,0 +1,46 @@
+---
+title: "IDSSD"
+date: "2026-04-26"
+categories: [international,workshop,in person]
+image: biodiversity3_scoping_IDSSD.png
+description: 2026 Global Conference on the International Decade of Sciences for Sustainable Development (2024-2033)
+---
+
+# Presentation of Biodiversity 3: Enhancing Long-Term Biodiversity Monitoring through Transdisciplinary Approaches for Holistic Ecosystem protection
+
+```{r}
+#| column: margin
+#| echo: false
+library(leaflet) 
+leaflet() %>% 
+  addTiles() %>% 
+  addMarkers(lng=2.30645, lat=48.84981, popup="IDSSD")
+```
+
+| Date | Time | Event | Venue | Room | Mode |
+|----|----|----|----|----|----|
+| 2026-07-15 to 2026-07-17 (precise date TBD) | TBD | [Global Conference on the International Decade of Sciences for Sustainable Development](https://www.unesco.org/en/articles/2026-global-conference-international-decade-sciences-sustainable-development-2024-2033?hub=79845) | UNESCO, Paris, France | TDB | in person |
+
+: Event Details
+
+::: {.callout-note icon="false"}
+## Scoping Documents
+
+coming soon ...
+:::
+
+::: {.callout-note icon="false"}
+## Contacts
+
+[Laurent Bernadou](mailto:laurent.bernadou@belmontforum.org) (Belmont Forum \| CNRS) · [Eric Pante](mailto:eric.pante@cnrs.fr) (CNRS)
+:::
+
+::: {.callout-tip icon="false"}
+## Abstract
+
+Biological conservation increasingly depends on biodiversity monitoring systems capable of detecting ecological change across large spatial and temporal scales. Many monitoring initiatives remain fragmented, short-term, or limited to species inventories, constraining their capacity to reveal the mechanisms driving biodiversity responses to global change.
+
+This workshop will be a platform to introduce and co-construct the emerging BIODIVERSITY III initiative of the Belmont Forum, an international partnership of funding agencies, international scientific councils, and regional consortia dedicated to promoting transdisciplinary and transnational research to help understand, mitigate, and adapt to global environmental change. Belmont Forum funding opportunities —known as Collaborative Research Actions (CRAs)— are co-designed with the global research community and societal actors to identify research priorities addressing major sustainability challenges.
+
+The goal of this workshop is to ensure that the biodiversity community (natural sciences, social sciences and humanities, societal actors) is heard in shaping the scientific priorities of the BIODIVERSITY III CRA. Panellists and participants will discuss key needs for biodiversity monitoring in marine ecosystems, including long-term observations, integration across biological levels of organisation, emerging technologies, and connections between biodiversity science, policy, and societal action. Insights from this workshop will help inform the co-design of future international research initiatives supporting biodiversity conservation
+:::

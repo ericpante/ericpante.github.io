@@ -1,0 +1,27 @@
+---
+title: "marmap"
+subtitle: "marmap"
+date: "2026-04-09"
+author: "Pante E"
+---
+
+# marmap download stats
+
+From its birth to the last rendering event, here are the cumulative download stats.
+
+```{r}
+#\| label: downloads
+#\| echo: true
+#\| message: false
+#\| warning: false
+#\| paged-print: false
+
+library(ggplot2)
+library(plotly)
+library(cranlogs)
+
+x <- cran_downloads(package = "marmap", from = "2013-04-03", to = Sys.Date())
+downloads <- cumsum(x$count) tab <- cbind(x, downloads)
+
+p <- ggplot(data=tab, aes(date, downloads, group=package, color=package)) + geom_line() 
+ggplotly(p)

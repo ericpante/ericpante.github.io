@@ -3,7 +3,11 @@
         {
             "columnIndex": 2,
             "ascending": true
+        },
+        {
+            "columnIndex": 4,
+            "ascending": false
         }
     ],
-    "path": "~/sdrive/GitHub/ericpante.github.io/seadog"
+    "path": "~/Documents/GitHub/ericpante.github.io/seadog"
 }

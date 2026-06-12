@@ -1,0 +1,20 @@
+---
+title: "DAUNPAPUA in the news"
+date: 2025-06-18
+author: "Eric Pante"
+image: 2025-06-18-daunpapua-in-the-news.png
+categories: [data]
+description: "DAUNPAPUA in the press and on the radio"
+resources: 
+  - "radiofrance.mp4"
+---
+
+- Co-PI Sarah Samadi, from the National Museum of Natural History, was interviewed by France Info. You can find the [article here](https://www.franceinfo.fr/environnement/biodiversite/mission-daunpapua-une-expedition-francaise-lancee-pour-mieux-connaitre-les-grands-fonds-marins-du-pacifique_7320204.html).
+
+- the audio is [here](radiofrance.mp4)
+
+- And here is the [joint CNRS-MNHN press release](https://www.cnrs.fr/fr/presse/daunpapua-une-mission-dexploration-dans-les-eaux-profondes-de-papouasie-nouvelle-guinee). 
+
+- On the 20th, [La Marseillaise published the following article](https://www.lamarseillaise.fr/environnement/onsemelespoir-au-cur-des-abysses-de-la-papouasie-NC18381851) on Daunpapua. 
+
+- Here is an article dated 27/06 from [Mer et Marine](https://www.meretmarine.com/fr/science-et-environnement/l-antea-en-papouasie-nouvelle-guinee-pour-une-campagne-sur-les-especes-des-grands-fonds-marins).

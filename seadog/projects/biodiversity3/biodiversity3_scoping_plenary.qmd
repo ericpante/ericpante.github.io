@@ -1,0 +1,42 @@
+---
+title: "Belmont Forum Plenary"
+date: "2026-04-26"
+categories: [international,presentation,in person]
+image: biodiversity3_scoping_plenary.png
+description: Belmont Forum Plenary
+---
+
+# Biodiversity 3: presentation of first scoping outcomes to Belmont Forum Members and Associates
+
+```{r}
+#| column: margin
+#| echo: false
+library(leaflet) 
+leaflet() %>% 
+  addTiles() %>% 
+  addMarkers(lng=100.51513, lat=13.72429, popup="SRI2026")
+```
+
+| Date | Time | Event | Venue | Room | Mode |
+|----|----|----|----|----|----|
+| 2026-06-30 to 2026-07-02 | TDB | Belmont Furom Plenary | Mandarin Hotel, Bangkok, Thailand | TBD | in person |
+
+: Event Details
+
+::: {.callout-note icon="false"}
+## Presentation Documents
+
+coming soon ...
+:::
+
+::: {.callout-note icon="false"}
+## Contacts
+
+[Laurent Bernadou](mailto:laurent.bernadou@belmontforum.org) (Belmont Forum \| CNRS) · [Eric Pante](mailto:eric.pante@cnrs.fr) (CNRS)
+:::
+
+::: {.callout-tip icon="false"}
+## Information
+
+During this closed event, we will present the results of first scoping workshops to Belmont Forum Members and Associates.
+:::

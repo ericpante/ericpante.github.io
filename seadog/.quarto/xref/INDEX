@@ -25,5 +25,150 @@
   },
   "projects/resilience.qmd": {
     "resilience.html": "8e6141f6"
+  },
+  "projects/biodiversity3/biodiversity3_scoping_SRI.qmd": {
+    "biodiversity3_scoping_SRI.html": "1898f71d"
+  },
+  "biodiversity3.qmd": {
+    "biodiversity3.html": "80581942"
+  },
+  "projects/biodiversity3/biodiversity3_scoping_IMCC8.qmd": {
+    "biodiversity3_scoping_IMCC8.html": "56e7651d"
+  },
+  "projects/biodiversity3/biodiversity3_scoping_BioMonWeek.qmd": {
+    "biodiversity3_scoping_BioMonWeek.html": "456ca7e9"
+  },
+  "projects/biodiversity3/biodiversity3_scoping_WBF.qmd": {
+    "biodiversity3_scoping_WBF.html": "43bb4dee"
+  },
+  "projects/biodiversity3/biodiversity3_scoping_IDSSD.qmd": {
+    "biodiversity3_scoping_IDSSD.html": "3ff05817"
+  },
+  "projects/biodiversity3/biodiversity3_scoping_plenary.qmd": {
+    "biodiversity3_scoping_plenary.html": "9ca995c5"
+  },
+  "daunpapua.qmd": {
+    "daunpapua.html": "f13793fc"
+  },
+  "projects/daunpapua/2025-06-23-meet-the-scientific-team.qmd": {
+    "2025-06-23-meet-the-scientific-team.html": "217a7371"
+  },
+  "projects/daunpapua/2025-07-14-polynoid-worms-as-models-to-study-the-adaptation-to-life-in-the-sea.qmd": {
+    "2025-07-14-polynoid-worms-as-models-to-study-the-adaptation-to-life-in-the-sea.html": "ea82e5c6"
+  },
+  "projects/daunpapua/2025-07-16-bathymetric-maps-to-help-sampling-operations-2-2.qmd": {
+    "2025-07-16-bathymetric-maps-to-help-sampling-operations-2-2.html": "10d4022c"
+  },
+  "projects/daunpapua/2025-07-01-meet-the-underrated-sea-cucumber.qmd": {
+    "2025-07-01-meet-the-underrated-sea-cucumber.html": "06275cc3"
+  },
+  "projects/daunpapua/2025-07-10-crew-changes-and-new-faces-on-board.qmd": {
+    "2025-07-10-crew-changes-and-new-faces-on-board.html": "0cd57d14"
+  },
+  "projects/daunpapua/2025-06-19-flying-foxes-welcome-antea-in-the-early-morning.qmd": {
+    "2025-06-19-flying-foxes-welcome-antea-in-the-early-morning.html": "438370fe"
+  },
+  "projects/daunpapua/2025-06-29-spiny-teeth-and-soft-bodies-meet-the-mysterious-penis-worms.qmd": {
+    "2025-06-29-spiny-teeth-and-soft-bodies-meet-the-mysterious-penis-worms.html": "ca436ece"
+  },
+  "projects/daunpapua/2025-07-15-bathymetric-maps-to-help-sampling-operations-1-2.qmd": {
+    "2025-07-15-bathymetric-maps-to-help-sampling-operations-1-2.html": "a4b1b046"
+  },
+  "projects/daunpapua/2025-07-09-encounters-with-nautilus-in-the-coral-sea.qmd": {
+    "2025-07-09-encounters-with-nautilus-in-the-coral-sea.html": "40c5af34"
+  },
+  "projects/daunpapua/2025-07-09-rain-canoes-and-chocolate-in-alotau.qmd": {
+    "2025-07-09-rain-canoes-and-chocolate-in-alotau.html": "5aa0ae67"
+  },
+  "projects/daunpapua/2025-06-17-no-antea-arrives-in-port-moresby.qmd": {
+    "2025-06-17-no-antea-arrives-in-port-moresby.html": "67768130"
+  },
+  "projects/daunpapua/2025-07-20-daunpapua-goes-to-school-a-deep-sea-dive-into-curiosity.qmd": {
+    "2025-07-20-daunpapua-goes-to-school-a-deep-sea-dive-into-curiosity.html": "be8bb005"
+  },
+  "projects/daunpapua/2025-07-20-an-unexpected-end-to-daunpapua-at-sea.qmd": {
+    "2025-07-20-an-unexpected-end-to-daunpapua-at-sea.html": "5e35f33b"
+  },
+  "2025-07-20-an-unexpected-end-to-daunpapua-at-sea.qmd": {
+    "2025-07-20-an-unexpected-end-to-daunpapua-at-sea.html": "9fe501b7"
+  },
+  "2025-07-16-bathymetric-maps-to-help-sampling-operations-2-2.qmd": {
+    "2025-07-16-bathymetric-maps-to-help-sampling-operations-2-2.html": "6b3da8c2"
+  },
+  "2025-07-10-crew-changes-and-new-faces-on-board.qmd": {
+    "2025-07-10-crew-changes-and-new-faces-on-board.html": "6d6225ab"
+  },
+  "2025-07-09-encounters-with-nautilus-in-the-coral-sea.qmd": {
+    "2025-07-09-encounters-with-nautilus-in-the-coral-sea.html": "ceb918dd"
+  },
+  "2025-06-19-flying-foxes-welcome-antea-in-the-early-morning.qmd": {
+    "2025-06-19-flying-foxes-welcome-antea-in-the-early-morning.html": "4fcfbc1b"
+  },
+  "2025-05-27-about-daunpapua.qmd": {
+    "2025-05-27-about-daunpapua.html": "263e6719"
+  },
+  "projects/daunpapua/2025-05-27-about-daunpapua.qmd": {
+    "2025-05-27-about-daunpapua.html": "dc98cea5"
+  },
+  "2025-05-27-cruise-plan.qmd": {
+    "2025-05-27-cruise-plan.html": "31c7ed13"
+  },
+  "2025-06-18-daunpapua-in-the-news.qmd": {
+    "2025-06-18-daunpapua-in-the-news.html": "c5a18a0d"
+  },
+  "projects/daunpapua/2025-05-27-cruise-plan.qmd": {
+    "2025-05-27-cruise-plan.html": "d96969e2"
+  },
+  "projects/daunpapua/2025-06-18-daunpapua-in-the-news.qmd": {
+    "2025-06-18-daunpapua-in-the-news.html": "b6b0bd6d"
+  },
+  "projects/daunpapua/2025-06-25-raising-a-glass.qmd": {
+    "2025-06-25-raising-a-glass.html": "cb9b0161"
+  },
+  "2025-06-28-challenging-the-swell.qmd": {
+    "2025-06-28-challenging-the-swell.html": "8114d279"
+  },
+  "2025-06-28-back-to-Port.qmd": {
+    "2025-06-28-back-to-Port.html": "f148c0a4"
+  },
+  "projects/daunpapua/2025-06-28-back-to-Port.qmd": {
+    "2025-06-28-back-to-Port.html": "4cf7635b"
+  },
+  "projects/daunpapua/2025-06-28-challenging-the-swell.qmd": {
+    "2025-06-28-challenging-the-swell.html": "5831ca47"
+  },
+  "daunpapua_db.qmd": {
+    "daunpapua_db.html": "b62a8be6"
+  },
+  "projects/daunpapua_db/daunpapua_db.qmd": {
+    "daunpapua_db.html": "c3396ee1"
+  },
+  "dui.qmd": {
+    "dui.html": "4ab47e30"
+  },
+  "ocean2.qmd": {
+    "ocean2.html": "6ce5100c"
+  },
+  "refrigerator/resilience.qmd": {
+    "resilience.html": "7701c2e0"
+  },
+  "refrigerator/marmap_downloads.qmd": {
+    "marmap_downloads.html": "3d031cf6"
+  },
+  "marmap_downloads.qmd": {
+    "marmap_downloads.html": "bc200f44"
+  },
+  "projects/biodiversity3/biodiversity3_scoping_ICES.qmd": {
+    "biodiversity3_scoping_ICES.html": "c177ec91"
+  },
+  "projects/biodiversity3/biodiversity3_scoping_CBC.qmd": {
+    "biodiversity3_scoping_CBC.html": "5993edac"
+  },
+  "projects/marmap_data/marmap_data.qmd": {
+    "marmap_data.html": "17c9d1d8",
+    "index.html": "bb01ed88"
+  },
+  "projects/marmap_data/index.qmd": {
+    "index.html": "1984492c"
   }
 }

@@ -1,18 +1,124 @@
 ---
-title: "daunpapua"
+title: "DaunPapua"
 date: "2026-04-09"
 author: "Pante E"
 categories: [biodiversity,deep-sea,corals]
 image: daunpapua_logo.png
-description: oceanographic cruise aimed at exploring the deep-sea benthic biodiversity of Papua New Guinea
+
+listing:
+- id: blog-entries
+  contents: daunpapua/*.qmd
+  sort-ui: [title, date]
+  type: grid
+  filter-ui: [title, date]
+  categories: true
+  image-height: 230px
 ---
 
-SCG link: <http://dx.doi.org/10.17600/18002418>
+# Exploration of the deep-sea benthic biodiversity of Papua New Guinea
 
-SEANOE ?
+## Objectives
 
-SISMER?
+DAUNPAPUA is an oceanographic cruise co-organised by the [Laboratory of Environmental Marine Sciences](https://www-iuem.univ-brest.fr/lemar/?lang=en) (LEMAR, France) and the [National Museum of Natural History](https://www.mnhn.fr/en) in Paris (MNHN), and supported by the [Department of Biological Sciences at the University of Papua New Guinea](https://www.upng.ac.pg/) (UPNG). Its goal is to inventory and study the deep-sea benthic fauna of Papua New Guinea and is part of the Tropical Deep Sea Benthos research program.
 
-blog
+## Sampling
 
-press
+Interactive sampling map, isobaths printed between 100 and 1000m (the working range of NO Antea during DAUNPAPUA), every 50 m. Bathymetric data from GEBCO 2026. Click on the markers to get the sampling station name (CP for trawl, DW for dredge) and its depth range.
+
+```{r}
+#| label: leaflet_map
+#| echo: false
+#| message: false
+#| warning: false
+#| paged-print: false
+
+library(marmap)
+library(sf)
+library(leaflet)
+library(readxl)
+library(tibble)
+library(dplyr)
+library(stringr)
+
+readGEBCO.bathy('~/sdrive/DAUNPAPUA/plannification_2024/16_seadog/GEBCO_28_Apr_2026_3333a9345578/gebco_2026_n-7.0_s-12.0_w145.0_e154.0.nc') -> bathy
+
+source ("~/sdrive/DAUNPAPUA/plannification_2024/11_treatment_onboard/maps/convert_coordinates_v2.r")
+
+stations <- read_excel("~/sdrive/DAUNPAPUA/plannification_2024/15_SCG/allOperations_DAUNPAPUA_EP_2026-04-28.xlsx", sheet = 1)
+
+# convert coordinate system
+st <- stations %>%
+  mutate(
+    decimal_lat = convert_to_decimal_vec(stations$LATITUDE_START),
+    decimal_lon = convert_to_decimal_vec(stations$LONGITUDE_START),
+  )
+
+# Convert marmap bathymetry object to x/y/z for contourLines()
+xyz <- as.xyz(bathy)
+
+x <- sort(unique(xyz$V1))  # lon
+y <- sort(unique(xyz$V2))  # lat
+z <- matrix(xyz$V3, nrow = length(x), ncol = length(y))
+
+iso <- contourLines(
+  x = x,
+  y = y,
+  z = z[, ncol(z):1],
+  levels =  - seq(100,1000,by=50)
+)
+
+iso_sf <- st_sf(
+  level = sapply(iso, `[[`, "level"),
+  geometry = st_sfc(
+    lapply(iso, function(line) {
+      st_linestring(cbind(line$x, line$y))
+    }),
+    crs = 4326
+  )
+)
+
+# elaborate plot
+leaflet() %>%
+  addProviderTiles(
+    providers$Esri.WorldImagery,
+    options = providerTileOptions(opacity = 0.8)
+    ) %>%
+  addProviderTiles(
+    providers$CartoDB.VoyagerOnlyLabels
+    ) %>%
+  addPolylines(
+    data = iso_sf,
+    color = "white",
+    weight = 0.2,
+    opacity = 0.8,
+    label = ~paste0(level, " m")
+    ) %>%
+  addMarkers(
+    lng=st$decimal_lon, 
+    lat=st$decimal_lat,
+    popup=st$METADATA
+    ) 
+```
+
+## Open science
+
+::: callout-tip
+## DAUNPAPUA sample database
+
+- You can look at all the sampling information from the cruise in the [searchable database here](daunpapua_db/daunpapua_db.qmd). This is a work-in-progress, if you want to add information to the database (eg taxon information), please contact me!
+:::
+
+- Cruise details are [published on the French Oceanographic Cruise](http://dx.doi.org/10.17600/18002418) website; please cite the associated DOI if you use scientific material and/or data from DAUNPAPUA. This page has links to the SISMER database.
+
+- Cruise information (eg permits), sampling information (date, time, coordinates, depth, gear, etc) for each station along with deck photos are published in SEANOE \[coming soon\].
+
+## Funding information
+
+DAUNPAPUA was funded by the [French Oceanographic Fleet](https://www.flotteoceanographique.fr/en), the [CNRS Institute for Ecology and the Environment](https://www.inee.cnrs.fr/fr/cbox/ontheweb), the [ISBlue interdisciplinary graduate school](https://isblue.fr/en/), and the [French National Museum of Natural History](https://www.mnhn.fr/en).
+
+## Cruise blog
+
+::: {#blog-entries}
+:::
+
+# 

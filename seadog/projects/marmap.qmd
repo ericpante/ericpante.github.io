@@ -5,5 +5,81 @@ date: "2026-04-09"
 author: "Pante E"
 categories: [R]
 image: marmap_logo.png
-description: R package to fetch, plot and analyse bathymetric and topographic data
 ---
+
+# An R package to fetch, plot and analyse bathymetric and topographic data
+
+![](marmap_logo.png){fig-align="center" width="200"}
+
+## Presentation
+
+Import bathymetric and hypsometric data from the NOAA (National Oceanic and Atmospheric Administration, <https://www.ncei.noaa.gov/products/etopo-global-relief-model>), GEBCO (General Bathymetric Chart of the Oceans, [https://www.gebco.net](https://www.gebco.net/)) and other sources, plot xyz data to prepare publication-ready figures, analyze xyz data to extract transects, get depth / altitude based on geographical coordinates, or calculate z-constrained least-cost paths.
+
+## Installing `marmap`
+
+```{r}
+#| echo: false
+marmap.version <- as.character(utils::packageVersion("marmap"))
+```
+
+`marmap` has its development page on [github](https://github.com/ericpante/marmap) and is available on [CRAN](https://cran.r-project.org/web/packages/marmap/index.html). The current version of marmap is `{r} marmap.version` .
+
+To install marmap from github:
+
+```{r}
+#| eval: false
+# Install marmap from CRAN (example using package 'pak')
+pak::pak("marmap")
+
+# Or the development version from GitHub:
+pak::pak("ericpante/marmap")
+```
+
+## Some things `marmap` can help with
+
+- query the ETOPO1 bathymetry / topography database hosted on the NOAA website
+
+- import netCDF data from the GEBCO database
+
+- import and manipulate xyz data for analysis
+
+- build an SQL database of bathymetric data for easy query and subsetting
+
+- 2D and 3D plotting of marine and land charts
+
+- analysis and data summaries on bathymetric and / or topographic data
+
+- compute 2D and 3D cross sections
+
+- get least-cost distances based on bathymetry and topography, for multiple points
+
+- calculate projected surface areas
+
+- interact with the package raster and sp to project maps
+
+  Check out [vignettes](https://cran.r-project.org/web/packages/marmap/index.html) on CRAN.
+
+## How to cite `marmap`
+
+- Pante E, Simon-Bouhet B (**2013**) [marmap: a package for importing, plotting and analyzing bathymetric and topographic data in R](http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0073051 "PLoS ONE paper"). PLoS ONE  8(9): e73051. doi: 10.1371/journal.pone.0073051
+
+  ```{latex}
+   @article{marmap_paper, 
+    Author = {Pante, E. and Simon-Bouhet, B.}, 
+    Journal = {PLoS ONE},
+    Number = {9}, Pages = {e73051}, 
+    Title = {{marmap: a package for importing, plotting and analyzing bathymetric and topographic data in R}}, 
+    Volume = {8}, 
+    Year = {2013}} 
+    
+  @Manual{marmap_manual,
+   title = {marmap: Import, plot and analyze bathymetric and topographic data},
+   author = {Eric Pante and Benoit Simon-Bouhet},
+   year = {2025},
+   note = {R package version 1.0.12},
+   }
+  ```
+
+## `marmap` useage
+
+Here is a [dahsboard](marmap_data/index.qmd) summirizing marmap stats and how marmap it is used by the community (this is to help us justify the time we spend developing the package).

@@ -2,13 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.36">
+<meta name="generator" content="quarto-1.9.37">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Pante E">
 <meta name="dcterms.date" content="2026-04-09">
-<meta name="description" content="R package to fetch, plot and analyse bathymetric and topographic data">
 
 <title>marmap – seadog</title>
 <style>
@@ -26,6 +25,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -42,7 +76,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap-158031087360bce0ff56dc785ce39e06.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
@@ -78,7 +112,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-sidebar floating nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -100,7 +134,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../projects.html"> 
+    <a class="nav-link active" href="../projects.html" aria-current="page"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
@@ -113,31 +147,161 @@ ul.task-list li input[type="checkbox"] {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <a class="flex-grow-1 no-decor" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+          <h1 class="quarto-secondary-nav-title">marmap</h1>
+        </a>     
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../projects.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Projects</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../projects/biodiversity3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Biodiversity 3</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../projects/biodiversity3/biodiversity3_scoping_BioMonWeek.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">BioMonWeek</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../projects/biodiversity3/biodiversity3_scoping_CBC.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CBC2026</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../projects/biodiversity3/biodiversity3_scoping_ICES.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ICES2026</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../projects/biodiversity3/biodiversity3_scoping_IDSSD.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">IDSSD</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../projects/biodiversity3/biodiversity3_scoping_IMCC8.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">IMCC8</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../projects/biodiversity3/biodiversity3_scoping_plenary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Belmont Forum Plenary</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../projects/biodiversity3/biodiversity3_scoping_SRI.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SRI2026</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../projects/biodiversity3/biodiversity3_scoping_WBF.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">World Biodiversity Forum</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../projects/ocean2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ocean 2</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../projects/dui.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Drive</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../projects/marmap.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">marmap</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../projects/daunpapua.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">DaunPapua</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../projects/daunpapua_db/daunpapua_db.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">DAUNPAPUA sampling database</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#an-r-package-to-fetch-plot-and-analyse-bathymetric-and-topographic-data" id="toc-an-r-package-to-fetch-plot-and-analyse-bathymetric-and-topographic-data" class="nav-link active" data-scroll-target="#an-r-package-to-fetch-plot-and-analyse-bathymetric-and-topographic-data">An R package to fetch, plot and analyse bathymetric and topographic data</a>
+  <ul class="collapse">
+  <li><a href="#presentation" id="toc-presentation" class="nav-link" data-scroll-target="#presentation">Presentation</a></li>
+  <li><a href="#installing-marmap" id="toc-installing-marmap" class="nav-link" data-scroll-target="#installing-marmap">Installing <code>marmap</code></a></li>
+  <li><a href="#some-things-marmap-can-help-with" id="toc-some-things-marmap-can-help-with" class="nav-link" data-scroll-target="#some-things-marmap-can-help-with">Some things <code>marmap</code> can help with</a></li>
+  <li><a href="#how-to-cite-marmap" id="toc-how-to-cite-marmap" class="nav-link" data-scroll-target="#how-to-cite-marmap">How to cite <code>marmap</code></a></li>
+  <li><a href="#marmap-useage" id="toc-marmap-useage" class="nav-link" data-scroll-target="#marmap-useage"><code>marmap</code> useage</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">marmap</h1>
+<h1 class="title d-none d-lg-block">marmap</h1>
 <p class="subtitle lead">marmap</p>
   <div class="quarto-categories">
     <div class="quarto-category">R</div>
   </div>
   </div>
 
-<div>
-  <div class="description">
-    R package to fetch, plot and analyse bathymetric and topographic data
-  </div>
-</div>
 
 
 <div class="quarto-title-meta">
@@ -164,8 +328,74 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="an-r-package-to-fetch-plot-and-analyse-bathymetric-and-topographic-data" class="level1">
+<h1>An R package to fetch, plot and analyse bathymetric and topographic data</h1>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="marmap_logo.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="200"></p>
+</figure>
+</div>
+<section id="presentation" class="level2">
+<h2 class="anchored" data-anchor-id="presentation">Presentation</h2>
+<p>Import bathymetric and hypsometric data from the NOAA (National Oceanic and Atmospheric Administration,&nbsp;<a href="https://www.ncei.noaa.gov/products/etopo-global-relief-model" class="uri">https://www.ncei.noaa.gov/products/etopo-global-relief-model</a>), GEBCO (General Bathymetric Chart of the Oceans,&nbsp;<a href="https://www.gebco.net/">https://www.gebco.net</a>) and other sources, plot xyz data to prepare publication-ready figures, analyze xyz data to extract transects, get depth / altitude based on geographical coordinates, or calculate z-constrained least-cost paths.</p>
+</section>
+<section id="installing-marmap" class="level2">
+<h2 class="anchored" data-anchor-id="installing-marmap">Installing <code>marmap</code></h2>
+<p><code>marmap</code> has its development page on <a href="https://github.com/ericpante/marmap">github</a> and is available on <a href="https://cran.r-project.org/web/packages/marmap/index.html">CRAN</a>. The current version of marmap is 1.0.12 .</p>
+<p>To install marmap from github:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Install marmap from CRAN (example using package 'pak')</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>pak<span class="sc">::</span><span class="fu">pak</span>(<span class="st">"marmap"</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Or the development version from GitHub:</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>pak<span class="sc">::</span><span class="fu">pak</span>(<span class="st">"ericpante/marmap"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+<section id="some-things-marmap-can-help-with" class="level2">
+<h2 class="anchored" data-anchor-id="some-things-marmap-can-help-with">Some things <code>marmap</code> can help with</h2>
+<ul>
+<li><p>query the ETOPO1 bathymetry / topography database hosted on the NOAA website</p></li>
+<li><p>import netCDF data from the GEBCO database</p></li>
+<li><p>import and manipulate xyz data for analysis</p></li>
+<li><p>build an SQL database of bathymetric data for easy query and subsetting</p></li>
+<li><p>2D and 3D plotting of marine and land charts</p></li>
+<li><p>analysis and data summaries on bathymetric and / or topographic data</p></li>
+<li><p>compute 2D and 3D cross sections</p></li>
+<li><p>get least-cost distances based on bathymetry and topography, for multiple points</p></li>
+<li><p>calculate projected surface areas</p></li>
+<li><p>interact with the package raster and sp to project maps</p>
+<p>Check out <a href="https://cran.r-project.org/web/packages/marmap/index.html">vignettes</a> on CRAN.</p></li>
+</ul>
+</section>
+<section id="how-to-cite-marmap" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-cite-marmap">How to cite <code>marmap</code></h2>
+<ul>
+<li><p>Pante E, Simon-Bouhet B (<strong>2013</strong>)&nbsp;<a href="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0073051" title="PLoS ONE paper">marmap: a package for importing, plotting and analyzing bathymetric and topographic data in R</a>. PLoS ONE &nbsp;8(9): e73051.&nbsp;doi:&nbsp;10.1371/journal.pone.0073051</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode latex code-with-copy"><code class="sourceCode latex"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a> @article{marmap_paper, </span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  Author = {Pante, E. and Simon-Bouhet, B.}, </span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  Journal = {PLoS ONE},</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  Number = {9}, Pages = {e73051}, </span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  Title = {{marmap: a package for importing, plotting and analyzing bathymetric and topographic data in R}}, </span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  Volume = {8}, </span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  Year = {2013}} </span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>@Manual{marmap_manual,</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a> title = {marmap: Import, plot and analyze bathymetric and topographic data},</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a> author = {Eric Pante and Benoit Simon-Bouhet},</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a> year = {2025},</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a> note = {R package version 1.0.12},</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a> }</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div></li>
+</ul>
+</section>
+<section id="marmap-useage" class="level2">
+<h2 class="anchored" data-anchor-id="marmap-useage"><code>marmap</code> useage</h2>
+<p>Here is a <a href="../projects/marmap_data/index.html">dahsboard</a> summirizing marmap stats and how marmap it is used by the community (this is to help us justify the time we spend developing the package).</p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -241,7 +471,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/ericpante\.github\.io");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

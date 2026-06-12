@@ -1,0 +1,15 @@
+---
+title: "Meet the scientific team"
+date: 2025-06-23
+author: "Eric Pante"
+image: 2025-07-20-an-unexpected-end-to-daunpapua-at-sea.png
+categories: [team]
+description: "Meet the scientific team behind Leg 1 of the DAUNPAPUA expedition."
+source: "https://epante.wordpress.com/2025/06/23/meet-the-scientific-team/"
+---
+
+Meet the scientific team behind Leg 1 of the DAUNPAPUA expedition—a dynamic crew blending early-career energy with deep-sea expertise. PhD students Dero Wang and Brice Morhain are diving into the depths of biodiversity, with Dero focusing on the taxonomy and evolution of black corals, and Brice specializing in annelid worms. Claire Laguionie, a lecturer at CNAM-Intechmer, brings her expertise in echinoderms and annelids, while Laure Corbari, faculty member at the French National Museum of Natural History (MNHN), contributes her deep knowledge of crustaceans and deep-sea sampling. The expedition is co-led by Sarah Samadi (MNHN), an expert in mollusks and corals, and Eric Pante (CNRS), a marine molecular ecologist working on the evolution of deep-sea corals. Rounding out the team is Jean-François “Jeff” Barazer, a retired ship captain and long-time MNHN volunteer with extensive experience from past Tropical Deep-Sea Benthos expeditions. Together, this passionate team is exploring the hidden biodiversity of the Gulf of Papua and the southern Solomon Sea.
+
+![from left to right : Brice, Sarah, Dero, Claire and Laure. moving ship = blurry picture 🙂](2025-06-23-meet-the-scientific-team_1.jpeg){fig-align="center"}
+
+![Jeff repairing the trawl net between two operations](2025-06-23-meet-the-scientific-team_2.jpeg){fig-align="center"}

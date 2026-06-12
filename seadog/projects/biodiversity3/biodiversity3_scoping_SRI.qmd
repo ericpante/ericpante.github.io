@@ -1,0 +1,48 @@
+---
+title: "SRI2026"
+date: "2026-04-25"
+categories: [international,workshop,in person]
+image: biodiversity3_scoping_SRI.png
+description: Sustainability Research and Innovation Congress 2026
+resources:
+- biodiversity3_scoping_SRI.ics
+---
+
+# Scoping the Future of Long-Term Ecological Data for Biodiversity Action into a Collaborative Research Action (CRA)
+
+```{r}
+#| column: margin
+#| echo: false
+library(leaflet) 
+leaflet() %>% 
+  addTiles() %>% 
+  addMarkers(lng=18.42279, lat=-33.92130, popup="SRI2026")
+```
+
+| Date | Time | Event | Venue | Room | Mode |
+|----|----|----|----|----|----|
+| 2026-06-25 | 11:45–13:00 GMT+2 | [Sustainability Research and Innovation (SRI) Congress](https://sricongress.org) | Southern Sun Cape Town, 23 Strand Street, Cape Town, Western Cape, South Africa | Stellenbosch (Cape Sun) | in person |
+
+: Event Details
+
+::: {.callout-note icon="false"}
+## Scoping Documents
+
+[Summary](biodiversity3_2p_summary.pdf) \| [Full Concept Note](biodiversity3_full_conceptnote.pdf) \| [Wooclap questionnaire](https://app.wooclap.com/XLFDHI?from=banner&utm_source=google&utm_medium=paid-search&utm_campaign=mix-fr-french-brand&utm_term=outil+wooclap&session_first_page_url=https%3A%2F%2Fapp.wooclap.com%2Fauth%2Flogin%3FredirectTo%3D%252Fhome&referring_domain=app.wooclap.com) \| [.ics cal file](biodiversity3_scoping_SRI.ics)
+:::
+
+::: {.callout-note icon="false"}
+## Contacts
+
+[Laurent Bernadou](mailto:laurent.bernadou@belmontforum.org) (Belmont Forum \| CNRS, remote participant) · [Eric Pante](mailto:eric.pante@cnrs.fr) (CNRS, remote participant) \| [Emmanuel Chitechi](mailto:emmanuel.chitechi@belmontforum.org) (Belmont Forum, on site) \| Nicole Arbour (Belmont Forum, on site)
+:::
+
+::: {.callout-tip icon="false"}
+## Abstract
+
+The objective of this scoping session is to **create a collective space for reflection and exchange** to inform and enrich the call text. The session will enable participants to share perspectives on research gaps, societal needs, data challenges and opportunities, and to ensure that the call reflects the diversity of contexts, disciplines and realities.
+
+By fostering dialogue between researchers, policymakers, practitioners and societal actors from all around the world, the session will contribute to making the call more relevant, distinctive and responsive to real-world biodiversity challenges, while being firmly grounded in local realities.
+
+Duration: 75 minutes.
+:::

@@ -1,7 +1,7 @@
 ---
 title: "Eric Pante, PhD"
 description: "molecular marine biologist"
-image: sea.png
+image: iridogorgia.png
 about:
   template: trestles
   image-shape: round
@@ -25,6 +25,17 @@ about:
       icon: binoculars
       href: "https://www.inaturalist.org/people/7034264"
 comments: false
+sidebar: false
 ---
 
-I am a [CNRS](http://www.cnrs.fr/) researcher based at the [LABORATOIRE DES SCIENCES](https://www-iuem.univ-brest.fr/lemar/) [DE L’ENVIRONNEMENT MARIN](#0) (LEMAR) in Plouzané, France. I am broadly interested in the molecular ecology of marine organisms, with particular fondness for corals and mollusks. You can learn more on my research here.
+I am a [CNRS](http://www.cnrs.fr/) researcher based at the [Laboratoire des Sciences de l'Environnement Marin (LEMAR)](https://www-iuem.univ-brest.fr/lemar/) in Plouzané, France.
+
+I am broadly interested in the molecular ecology of marine organisms, with particular fondness for corals and mollusks. You can learn more on my research here.
+
+Aside from research, I help develop Collaborative Research Actions with the [Belmont Forum](https://belmontforum.org), an international partnership of funders, scientific councils and consortia interested in promoting transdisciplinary, transnational research to help understand, mitigate, and adapt to global environmental change. Check out the project section to find out more.
+
+::: callout-note
+## about the illustration
+
+drawing of *Iridogorgia pourtalesii* Verrill, 1883 by Alex Agassiz ([1888, Fig 456a](https://www.biodiversitylibrary.org/bibliography/26524)) from a specimen collected in the 1880s.
+:::

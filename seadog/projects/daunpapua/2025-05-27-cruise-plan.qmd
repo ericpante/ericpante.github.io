@@ -1,0 +1,18 @@
+---
+title: "Cruise Plan"
+date: 2025-05-27
+author: "Eric Pante"
+image: 2025-05-27-cruise-plan.png
+categories: [data]
+description: ""
+---
+
+DAUNPAPUA is organised in two legs. It will leave from Port Moresby to explore the Gulf of Papua and the skirt of the big island towards d’Encastreaux Islands (leg 1; in red on the map below. numbers are cruise days). It will stop over in Alotau to fill up in material, rotate the scientific team, and take the opportunity to connect with people in Alotau.
+
+![](/projects/daunpapua/2025-05-27-cruise-plan_1.jpeg){fig-align="center"}
+
+Then, we will leave Alotau to explore the sedimentary bays along the eastern coast of PNG (points s, 7, 8, 9) and the d’Encastreaux island group. 
+
+Our gear allow us to sample from about 100 m to 1000 m ; this depth range is illustrated on the map by fine blue lines, called isobaths. These lines follow a certain depth (eg. 100 m isobath). 
+
+Of course, the cruise plan can change, depending on local conditions, weather, etc. One goal of this blog is to serve as a cruise journal and update you on the discoveries made along the way.

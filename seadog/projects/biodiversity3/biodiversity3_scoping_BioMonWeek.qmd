@@ -1,0 +1,44 @@
+---
+title: "BioMonWeek"
+date: "2026-04-26"
+categories: [international,presentation,in person]
+image: biodiversity3_scoping_BioMonWeek.png
+description: The European Conference for Biodiversity Monitoring
+---
+
+# Presentation of Biodiversity 3: Enhancing Long-Term Biodiversity Monitoring through Transdisciplinary Approaches for Holistic Ecosystem protection
+
+```{r}
+#| column: margin
+#| echo: false
+library(leaflet) 
+leaflet() %>% 
+  addTiles() %>% 
+  addMarkers(lng=3.88211, lat=43.61284, popup="SRI2026")
+```
+
+| Date | Time | Event | Venue | Presentation | Mode |
+|----|----|----|----|----|----|
+| 2026-05-05 | 15h30-16h30 | [BioMonWeek](https://2026.biomonweek.eu/page/home/) | Le Corum congress centre, Place Charles de Gaulle, 34000 Montpellier, France | poster | in person |
+| 2026-05-06 | 15h30-16h30 | [BioMonWeek](https://2026.biomonweek.eu/page/home/) | same | poster | in person |
+| 2026-05-07 | 9h-10h | [BioMonWeek](https://2026.biomonweek.eu/page/home/) | same | talk | in person |
+
+: Event Details
+
+::: {.callout-note icon="false"}
+## Presentation Documents
+
+[poster in pdf](biomonweek_poster.pdf)
+:::
+
+::: {.callout-note icon="false"}
+## Contacts
+
+[Laurent Bernadou](mailto:laurent.bernadou@belmontforum.org) (Belmont Forum \| CNRS) · [Eric Pante](mailto:eric.pante@cnrs.fr) (CNRS)
+:::
+
+::: {.callout-tip icon="false"}
+## Abstract
+
+Main challenge addressed: Biodiversity loss continues due to anthropic activities, including land use, pollution and ocean acidification. While Europe benefits from substantial long-term ecological monitoring infrastructures, responses remain fragmented across disciplines, countries and sectors. Integration of ecological, social and economic dimensions, as well as alignment with policy priorities, remains limited. Coordinated, transdisciplinary and inclusive approaches are needed to translate knowledge into actionable strategies and to inform the design of a future international Collaborative Research Action (CRA). Session objectives - Identify priority research gaps and needs for long-term biodiversity monitoring across Europe - Foster dialogue between European researchers, funders, practitioners and non-academic partners to co-design a solution-oriented transdisciplinary call for proposals - Provide inputs to the development of a multilateral, transdisciplinary CRA call for global biodiversity monitoring • Strengthen links between science, policy and society to support evidence-based decision-making Expected outcomes - Shared understanding of key challenges and opportunities for integrating long-term biodiversity data across Europe - Concrete recommendations and priority themes to refine the CRA concept note and future call text - Identification of European data, infrastructure and capacity-building needs to inform international coordination - Strengthened cross-sectoral and international partnerships - Enhanced alignment between European research agendas and global policy needs The session contributes to process innovation and supports the UN Sustainable Development Goals (SDG 7, 8, 9, 10, 11, 13, 14, 15) by linking long-term biodiversity monitoring with actionable policy and societal outcomes.
+:::

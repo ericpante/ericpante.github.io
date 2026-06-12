@@ -3,6 +3,8 @@ project:
 
 website:
   title: "seadog"
+  site-url: https://ericpante.github.io
+
   navbar:
     right:
       - href: index.qmd
@@ -11,9 +13,32 @@ website:
         text: Projects
       - href: publications.qmd
         text: Publications
+  
+  sidebar:
+   contents:
+    - section: "Projects"
+      href: projects.qmd
+      contents:
+        - section: Biodiversity 3
+          href: projects/biodiversity3.qmd
+          contents:
+            - auto: "projects/biodiversity3/*scoping*.qmd"
+        - text: Ocean 2
+          href: projects/ocean2.qmd
+        - text: Drive
+          href: projects/dui.qmd
+        - text: marmap
+          href: projects/marmap.qmd
+        - section: DaunPapua
+          href: projects/daunpapua.qmd
+          contents:
+            - auto: "projects/daunpapua_db/*.qmd"
+
   page-footer:
     center: "made with [quarto](https://quarto.org/), an open source scientific publishing system. To see the code, click [here](https://github.com/ericpante/ericpante.github.io)"
-
+ 
+  bread-crumbs: false
+  
 format:
   html:
     theme:

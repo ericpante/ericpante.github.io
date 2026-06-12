@@ -1,8 +1,80 @@
 ---
-title: "biodiversity 3"
+title: "Biodiversity 3"
 date: "2026-04-21"
 author: "Pante E"
 categories: [biodiversity,belmont forum]
 image: biodiversity3.png
-description: Enhancing Long-Term Biodiversity Monitoring through Transdisciplinary Approaches for Holistic Ecosystem protection
+
+listing:
+- id: event-listing
+  contents: biodiversity3/*scoping*.qmd
+  sort-ui: [title, date]
+  type: grid
+  filter-ui: [title, date]
+  categories: true
+  image-height: 230px
 ---
+
+# Enhancing Long-Term Biodiversity Monitoring through Transdisciplinary Approaches for Holistic Ecosystem protection
+
+## Ambition and Scope
+
+[BIODIVERSITY 3](https://belmontforum.org/archives/-future-opportunity/biodiversity-3/) is a [Belmont Forum](https://belmontforum.org) Collaborative Research Action currently in its co-construction phase. This means that everyone interested in the project can participate in co-construction (or "scoping") workshops to contribute.
+
+The main goal of BIODIVERSITY 3 is to complement and connect existing international long-term ecological research infrastructures at a broader transdisciplinary scale. It is designed to actively bridge the gap between the critical but short-term, co-designed projects fostered by the Belmont Forum and the establishment of durable, mechanistic long-term biodiversity monitoring programs.
+
+::: callout-tip
+You can receive information about the BIODIVERSITY 3 call and any capacity development events that may be taking place in advance of the official call launch, and to network with other interested parties by filling out [interest form](https://docs.google.com/forms/d/e/1FAIpQLSf5_B8SpoEpsh4uRT7qE94Ze8sfzJsPpeaJwiXKv3U3OLGq5w/viewform).
+:::
+
+## Documents
+
+The concept note details in a few pages the rational behind this Collaborative Research Action. The Executive summary is a one-page document for the impatient. As scoping events unfold, we will update these documents. \[links coming soon\]
+
+## Contacts
+
+[Laurent Bernadou](mailto:mailto:laurent.bernadou@belmontforum.org) (Belmont Forum \| CNRS) · [Eric Pante](mailto:eric.pante@cnrs.fr) (CNRS)
+
+## Confirmed events
+
+This list is composed of confirmed events. Check out our site of upcoming workshops!
+
+::: {#event-listing}
+:::
+
+## Event map
+
+```{r}
+#| echo: false 
+#| title: "events"
+library(leaflet) 
+
+greenLeafIcon <- makeIcon(
+  iconUrl = "https://leafletjs.com/examples/custom-icons/leaf-green.png",
+  iconWidth = 38, iconHeight = 95,
+  iconAnchorX = 22, iconAnchorY = 94,
+  shadowUrl = "https://leafletjs.com/examples/custom-icons/leaf-shadow.png",
+  shadowWidth = 50, shadowHeight = 64,
+  shadowAnchorX = 4, shadowAnchorY = 62
+)
+
+orangeLeafIcon <- makeIcon(
+  iconUrl = "https://leafletjs.com/examples/custom-icons/leaf-orange.png",
+  iconWidth = 38, iconHeight = 95,
+  iconAnchorX = 22, iconAnchorY = 94,
+  shadowUrl = "https://leafletjs.com/examples/custom-icons/leaf-shadow.png",
+  shadowWidth = 50, shadowHeight = 64,
+  shadowAnchorX = 4, shadowAnchorY = 62
+)
+
+leaflet() %>% 
+  addTiles() %>%
+  addMarkers(lng=18.42279, lat=-33.92130, popup="SRI2026", icon = greenLeafIcon)  %>%
+  addMarkers(lng=9.83220, lat=46.80056,   popup="World Biodiversity Forum", icon = greenLeafIcon) %>%
+  addMarkers(lng=100.51513, lat=13.72429, popup="Belmont Forum Plenary", icon = orangeLeafIcon) %>%
+  addMarkers(lng=3.88211, lat=43.61284,   popup="BioMonWeek", icon = greenLeafIcon) %>%
+  addMarkers(lng=2.30645, lat=48.84981,   popup="IDSSD", icon = greenLeafIcon) %>%
+  addMarkers(lng=-4.484717, lat=48.388751, popup="ICES ASC", icon = greenLeafIcon) %>%
+  addMarkers(lng=-3.20953, lat=55.94605, popup="IMCC8", icon = greenLeafIcon) %>%
+addMarkers(lng=12.431988990519253, lat=51.35176952416793, popup="CBC2026", icon = greenLeafIcon)
+```

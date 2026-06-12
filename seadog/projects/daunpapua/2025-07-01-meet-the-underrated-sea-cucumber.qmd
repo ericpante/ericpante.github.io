@@ -1,0 +1,33 @@
+---
+title: "Meet the underrated sea cucumber"
+date: 2025-07-01
+author: "Claire Laguionie"
+image: 2025-06-23-meet-the-scientific-team.png
+categories: [biodiversity, data]
+description: "A short post on the ecological importance of sea cucumbers collected during DAUNPAPUA."
+source: "https://epante.wordpress.com/2025/07/01/meet-the-underrated-sea-cucumber/"
+---
+
+![](2025-06-23-meet-the-scientific-team_1.jpeg)
+
+Sea cucumbers can represent a significant proportion of the fauna we retrieve with trawl nets, especially when sampling sedimentary environments such as muddy or sandy bottoms. My colleagues are not always delighted to see them appear, as some species are extremely fragile and, once out of the water, collapse into a viscous puddle that covers other specimens with sticky mucus. Others have a reflex to eviscerate when stressed or threatened, further soiling the rest of the catch.
+
+However, if one looks beyond this somewhat unappealing aspect, these animals reveal themselves to be both fascinating and ecologically important.
+
+Holothurians belong to the phylum Echinodermata, the same group as sea stars, sea urchins, brittle stars, feather stars and crinoids. They inhabit virtually all marine environments, from the intertidal zone down to the hadal trenches, and are found at all latitudes, from polar regions to the tropics. In certain habitats, they can even represent the dominant component of the benthic megafauna. To date, around 1,800 species of holothurians have been described, a number that continues to grow.
+
+This is largely driven by the increasing recognition of their fundamental ecological role in benthic ecosystem functioning, as well as their considerable economic importance.
+
+Most holothurians are deposit feeders, consuming organic matter contained within sediments. Each individual can process several tens of kilograms of sediment per year, playing an active role in bioturbation processes. Beyond their ecological role, holothurians also hold significant economic value. Widely harvested across many regions of the world, they are an essential food resource for millions of people and support the livelihoods of numerous coastal communities.
+
+However, some species are now overexploited and have become subject to protection measures.
+
+Despite the significant growth in research over recent years, the taxonomic diversity of holothurians and the phylogenetic relationships between groups remain only partially resolved. This is largely due to a lack of genetic data for many groups, as well as an imbalance in research efforts, which are often focused on species of commercial or regional interest. Our mission contributes to expanding knowledge on tropical bathyal species from the Indo-Pacific, which remain largely underexplored.
+
+The data we are collecting will help to reduce this knowledge gap and hopefully improve our understanding of the group as a whole.
+
+A useful (and recent!) reference:
+
+> Mercier, A., Hamel, J. F., Suhrbier, A., Pearce, C. (2024). *The World of Sea Cucumbers: Challenges, Advances, and Innovations*. Elsevier.
+
+by: Claire Laguionie, CNAM Intechmer

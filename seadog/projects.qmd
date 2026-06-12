@@ -1,13 +1,15 @@
 ---
 title: "Projects"
 listing:
-  contents: projects
+  contents: projects/!(scoping).qmd
   sort-ui: [title, date]
   type: grid
   filter-ui: [title, date]
   categories: true
   image-height: 230px
 ---
+
+Here are a few on-going or recent projects in which I have played a lead role.
 
 ::: {#project-listing}
 :::

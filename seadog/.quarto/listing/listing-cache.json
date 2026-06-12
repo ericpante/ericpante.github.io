@@ -1,7 +1,13 @@
 {
   "listingMap": {
+    "projects/daunpapua.qmd": [
+      "daunpapua/*.qmd"
+    ],
+    "projects/biodiversity3.qmd": [
+      "biodiversity3/*scoping*.qmd"
+    ],
     "projects.qmd": [
-      "projects"
+      "projects/!(scoping).qmd"
     ]
   }
 }
