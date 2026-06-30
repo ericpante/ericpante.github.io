@@ -45,3 +45,15 @@ mm_centrality$betweenness -> mm_betweenness
 round(length(centrality$degree[centrality$degree>mm_degree]) *100 / length(centrality$degree), 1)  -> mm_degree_p
 round(length(centrality$betweenness[centrality$betweenness>mm_betweenness]) *100 / length(centrality$betweenness), 1) -> mm_betweenness_p
 
+# packages using marmap
+
+# db <- tools::CRAN_package_db()
+# 
+# rev_deps <- db[grepl("marmap", db$Depends) |
+#                  grepl("marmap", db$Imports) |
+#                  grepl("marmap", db$Suggests), ]
+# 
+# install.packages("pkgsearch")
+# library(pkgsearch)
+# 
+# pkg_search("marmap")

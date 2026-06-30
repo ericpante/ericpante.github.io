@@ -29,7 +29,7 @@ You can receive information about the BIODIVERSITY 3 call and any capacity devel
 
 ## Documents
 
-The concept note details in a few pages the rational behind this Collaborative Research Action. The Executive summary is a one-page document for the impatient. As scoping events unfold, we will update these documents. \[links coming soon\]
+The [concept note](biodiversity3_full_conceptnote.pdf) details in a few pages the rational behind this Collaborative Research Action. The[Executive summary](biodiversity3_2p_summary.pdf)is a two-page document for the impatient. As scoping events unfold, we will update these documents.
 
 ## Contacts
 
@@ -76,5 +76,7 @@ leaflet() %>%
   addMarkers(lng=2.30645, lat=48.84981,   popup="IDSSD", icon = greenLeafIcon) %>%
   addMarkers(lng=-4.484717, lat=48.388751, popup="ICES ASC", icon = greenLeafIcon) %>%
   addMarkers(lng=-3.20953, lat=55.94605, popup="IMCC8", icon = greenLeafIcon) %>%
-addMarkers(lng=12.431988990519253, lat=51.35176952416793, popup="CBC2026", icon = greenLeafIcon)
+  addMarkers(lng=12.43198, lat=51.35176, popup="CBC2026", icon = greenLeafIcon) %>%
+  addMarkers(lng=-47.8960, lat=-15.7828, popup="CILAC (abstract submitted)", icon = orangeLeafIcon)
+
 ```
