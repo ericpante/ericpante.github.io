@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Pante E">
-<meta name="dcterms.date" content="2026-04-09">
+<meta name="dcterms.date" content="2026-07-17">
 
-<title>marmap – seadog</title>
+<title>PCI sustainability – seadog</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -24,41 +24,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -153,7 +118,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <a class="flex-grow-1 no-decor" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-          <h1 class="quarto-secondary-nav-title">marmap</h1>
+          <h1 class="quarto-secondary-nav-title">PCI sustainability</h1>
         </a>     
     </div>
   </nav>
@@ -246,7 +211,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../projects/marmap.html" class="sidebar-item-text sidebar-link active">
+  <a href="../projects/marmap.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">marmap</span></a>
   </div>
 </li>
@@ -269,7 +234,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../projects/PCIsustainability.html" class="sidebar-item-text sidebar-link">
+  <a href="../projects/PCIsustainability.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">PCI Sustainability</span></a>
   </div>
 </li>
@@ -285,13 +250,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#an-r-package-to-fetch-plot-and-analyse-bathymetric-and-topographic-data" id="toc-an-r-package-to-fetch-plot-and-analyse-bathymetric-and-topographic-data" class="nav-link active" data-scroll-target="#an-r-package-to-fetch-plot-and-analyse-bathymetric-and-topographic-data">An R package to fetch, plot and analyse bathymetric and topographic data</a>
+  <li><a href="#development-of-a-peer-community-in-sustainability" id="toc-development-of-a-peer-community-in-sustainability" class="nav-link active" data-scroll-target="#development-of-a-peer-community-in-sustainability">Development of a <em>Peer Community in Sustainability</em></a>
   <ul class="collapse">
-  <li><a href="#presentation" id="toc-presentation" class="nav-link" data-scroll-target="#presentation">Presentation</a></li>
-  <li><a href="#installing-marmap" id="toc-installing-marmap" class="nav-link" data-scroll-target="#installing-marmap">Installing <code>marmap</code></a></li>
-  <li><a href="#some-things-marmap-can-help-with" id="toc-some-things-marmap-can-help-with" class="nav-link" data-scroll-target="#some-things-marmap-can-help-with">Some things <code>marmap</code> can help with</a></li>
-  <li><a href="#how-to-cite-marmap" id="toc-how-to-cite-marmap" class="nav-link" data-scroll-target="#how-to-cite-marmap">How to cite <code>marmap</code></a></li>
-  <li><a href="#marmap-useage" id="toc-marmap-useage" class="nav-link" data-scroll-target="#marmap-useage"><code>marmap</code> useage</a></li>
+  <li><a href="#in-a-nutshell" id="toc-in-a-nutshell" class="nav-link" data-scroll-target="#in-a-nutshell">In a nutshell</a></li>
+  <li><a href="#ambition-and-scope-of-pci-sustainability" id="toc-ambition-and-scope-of-pci-sustainability" class="nav-link" data-scroll-target="#ambition-and-scope-of-pci-sustainability">Ambition and Scope of <em>PCI Sustainability</em></a></li>
+  <li><a href="#why-it-matters" id="toc-why-it-matters" class="nav-link" data-scroll-target="#why-it-matters">Why it matters</a></li>
+  <li><a href="#endorsements" id="toc-endorsements" class="nav-link" data-scroll-target="#endorsements">Endorsements</a></li>
+  <li><a href="#contacts" id="toc-contacts" class="nav-link" data-scroll-target="#contacts">Contacts</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -301,10 +266,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">marmap</h1>
-<p class="subtitle lead">marmap</p>
+<h1 class="title d-none d-lg-block">PCI sustainability</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">R</div>
+    <div class="quarto-category">transdisciplinarity</div>
+    <div class="quarto-category">belmont forum</div>
   </div>
   </div>
 
@@ -322,7 +287,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">April 9, 2026</p>
+      <p class="date">July 17, 2026</p>
     </div>
   </div>
   
@@ -334,70 +299,72 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="an-r-package-to-fetch-plot-and-analyse-bathymetric-and-topographic-data" class="level1">
-<h1>An R package to fetch, plot and analyse bathymetric and topographic data</h1>
+<section id="development-of-a-peer-community-in-sustainability" class="level1">
+<h1>Development of a <em>Peer Community in Sustainability</em></h1>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="marmap_logo.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="200"></p>
+<p><img src="PCIsustainability.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:30.0%"></p>
 </figure>
 </div>
-<section id="presentation" class="level2">
-<h2 class="anchored" data-anchor-id="presentation">Presentation</h2>
-<p>Import bathymetric and hypsometric data from the NOAA (National Oceanic and Atmospheric Administration,&nbsp;<a href="https://www.ncei.noaa.gov/products/etopo-global-relief-model" class="uri">https://www.ncei.noaa.gov/products/etopo-global-relief-model</a>), GEBCO (General Bathymetric Chart of the Oceans,&nbsp;<a href="https://www.gebco.net/">https://www.gebco.net</a>) and other sources, plot xyz data to prepare publication-ready figures, analyze xyz data to extract transects, get depth / altitude based on geographical coordinates, or calculate z-constrained least-cost paths.</p>
-</section>
-<section id="installing-marmap" class="level2">
-<h2 class="anchored" data-anchor-id="installing-marmap">Installing <code>marmap</code></h2>
-<p><code>marmap</code> has its development page on <a href="https://github.com/ericpante/marmap">github</a> and is available on <a href="https://cran.r-project.org/web/packages/marmap/index.html">CRAN</a>. The current version of marmap is 1.0.12 .</p>
-<p>To install marmap from github:</p>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Install marmap from CRAN (example using package 'pak')</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>pak<span class="sc">::</span><span class="fu">pak</span>(<span class="st">"marmap"</span>)</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Or the development version from GitHub:</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>pak<span class="sc">::</span><span class="fu">pak</span>(<span class="st">"ericpante/marmap"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="in-a-nutshell" class="level2">
+<h2 class="anchored" data-anchor-id="in-a-nutshell">In a nutshell</h2>
+<p>PCI stands for <em>Peer Community In</em> ; is it a system ran by scientists for scientists, for evaluating and recommending research papers. It’s detailed here:</p>
+<p><img src="PCIsustainability_flyer1.png" class="img-fluid"> <img src="PCIsustainability_flyer2.png" class="img-fluid"></p>
+<p><a href="https://peercommunityin.org/current-pcis/">Existing PCIs</a> are disciplinary ; we aim at creating a transdisciplinary PCI to offer a free, open, high-quality publication avenue for sustainability research without paywalls.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>To launch a new PCI, we need your support : <a href="https://framaforms.org/would-you-be-interested-in-participating-in-pci-sustainability-1781510237">sign in your interest in participating in PCI Sustainability here !</a> You can pledge to contribute as a future author and/or recommender. We need 50 pledges to launch.</p>
+</div>
 </div>
 </section>
-<section id="some-things-marmap-can-help-with" class="level2">
-<h2 class="anchored" data-anchor-id="some-things-marmap-can-help-with">Some things <code>marmap</code> can help with</h2>
+<section id="ambition-and-scope-of-pci-sustainability" class="level2">
+<h2 class="anchored" data-anchor-id="ambition-and-scope-of-pci-sustainability">Ambition and Scope of <em>PCI Sustainability</em></h2>
+<p><em>PCI Sustainability</em> is a project of thematic PCI, a peer-review platform for evaluating and recommending manuscripts in the field of sustainability research. The goal of sustainability research is to bridge scientific knowledge and action towards desirable futures for both humanity and the environment it lives in. P<em>CI sustainability</em> is intrinsically transdisciplinary and is therefore quite different from the other PCI’s in the fact that recommenders come from a wide variety of disciplines. <em>PCI Sustainability</em> is a place to submit your research on transformative transdisciplinary research in sustainability science at the interface between science and society. Contributions on the practice and challenges of sustainability science are welcome. While inclusivity and plurality are core elements of the field’s ethos, places to publish quality peer-reviewed sustainability research in diamond open access are solely lacking. <em>PCI Sustainability</em>, in combination with <em>Peer Community Journal</em>, is aimed to fill that gap.</p>
+<p><a href="https://peercommunityin.org">Find out more about PCI, PCJ and Recommenders here !</a></p>
+</section>
+<section id="why-it-matters" class="level2">
+<h2 class="anchored" data-anchor-id="why-it-matters">Why it matters</h2>
+<p>Together,&nbsp;<em>Peer Community In</em> and <em>Peer Community Journal</em>&nbsp;provide a publishing ecosystem that is free to read, free to publish, transparent, community-governed, and focused on scientific quality.</p>
+<p>It is therefore well aligned with the ethos of transdisciplinary sustainability research, where inclusivity, transparency, equity, and societal impact are central objectives.</p>
+<p>Here are some key benefits :</p>
 <ul>
-<li><p>query the ETOPO1 bathymetry / topography database hosted on the NOAA website</p></li>
-<li><p>import netCDF data from the GEBCO database</p></li>
-<li><p>import and manipulate xyz data for analysis</p></li>
-<li><p>build an SQL database of bathymetric data for easy query and subsetting</p></li>
-<li><p>2D and 3D plotting of marine and land charts</p></li>
-<li><p>analysis and data summaries on bathymetric and / or topographic data</p></li>
-<li><p>compute 2D and 3D cross sections</p></li>
-<li><p>get least-cost distances based on bathymetry and topography, for multiple points</p></li>
-<li><p>calculate projected surface areas</p></li>
-<li><p>interact with the package raster and sp to project maps</p>
-<p>Check out <a href="https://cran.r-project.org/web/packages/marmap/index.html">vignettes</a> on CRAN.</p></li>
+<li><p>Removes financial barriers for both authors and readers, enabling participation regardless of institutional or national resources.</p></li>
+<li><p>Supports equitable knowledge dissemination, particularly for researchers from low- and middle-income countries, Indigenous organizations, NGOs, and civil society partners.</p></li>
+<li><p>Ensures research outputs are immediately accessible to practitioners, policymakers, local communities, and environmental managers who often lack subscription access.</p></li>
+<li><p>Facilitates co-production of knowledge by making scientific findings available to all partners involved in transdisciplinary research, not just academics.</p></li>
+<li><p>Increases societal impact by allowing evidence to inform conservation, biodiversity, climate, and sustainability decisions without paywalls.</p></li>
+<li><p>Aligns with the principles of Open Science, which are increasingly required by research funders and international initiatives.</p></li>
+<li><p>Encourages transparency through open peer review (PCI), making the scientific evaluation process visible and accountable.</p></li>
+<li><p>Reflects the collaborative ethos of sustainability science, where knowledge is considered a public good rather than a commercial product.</p></li>
+<li><p>Improves trust in science by exposing reviewer comments and author responses, which helps non-academic stakeholders understand how conclusions were evaluated.</p></li>
+<li><p>Emphasizes scientific quality over journal prestige, as PCI recommends articles based on rigorous peer review rather than impact factor.</p></li>
+<li><p>Decouples peer review from commercial publishing, reducing dependence on profit-driven publication models.</p></li>
+<li><p>Makes negative, confirmatory, and replication studies more visible, helping build reliable evidence for sustainability policy.</p></li>
+<li><p>Fits well with Belmont Forum, Future Earth, IPBES, UNESCO and similar international initiatives, which emphasize open, inclusive, and actionable knowledge for addressing global environmental challenges.</p></li>
 </ul>
 </section>
-<section id="how-to-cite-marmap" class="level2">
-<h2 class="anchored" data-anchor-id="how-to-cite-marmap">How to cite <code>marmap</code></h2>
-<ul>
-<li><p>Pante E, Simon-Bouhet B (<strong>2013</strong>)&nbsp;<a href="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0073051" title="PLoS ONE paper">marmap: a package for importing, plotting and analyzing bathymetric and topographic data in R</a>. PLoS ONE &nbsp;8(9): e73051.&nbsp;doi:&nbsp;10.1371/journal.pone.0073051</p>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode latex code-with-copy"><code class="sourceCode latex"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a> @article{marmap_paper, </span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  Author = {Pante, E. and Simon-Bouhet, B.}, </span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  Journal = {PLoS ONE},</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  Number = {9}, Pages = {e73051}, </span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  Title = {{marmap: a package for importing, plotting and analyzing bathymetric and topographic data in R}}, </span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  Volume = {8}, </span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  Year = {2013}} </span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>@Manual{marmap_manual,</span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a> title = {marmap: Import, plot and analyze bathymetric and topographic data},</span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a> author = {Eric Pante and Benoit Simon-Bouhet},</span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a> year = {2025},</span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a> note = {R package version 1.0.12},</span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a> }</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div></li>
-</ul>
+<section id="endorsements" class="level2">
+<h2 class="anchored" data-anchor-id="endorsements">Endorsements</h2>
+<p>The project of creating a <em>PCI Sustainability</em> is supported by: CNRS Ecology and Environment, the Belmont Forum, the Inter-American Institute for Global Change Research (IAI).</p>
+<div class="quarto-layout-panel" data-layout="[1,1,1]" data-layout-nrow="1">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
+<p><img src="PCIsustainability_BF.png" class="img-fluid" width="200"> <img src="PCIsustainability_CNRS.svg" class="img-fluid" width="200"> <img src="PCIsustainability_IAI.png" class="img-fluid" width="100"></p>
+</div>
+</div>
+</div>
 </section>
-<section id="marmap-useage" class="level2">
-<h2 class="anchored" data-anchor-id="marmap-useage"><code>marmap</code> useage</h2>
-<p>Here is a <a href="../projects/marmap_data/index.html">dahsboard</a> summirizing marmap stats and how marmap it is used by the community (this is to help us justify the time we spend developing the package).</p>
+<section id="contacts" class="level2">
+<h2 class="anchored" data-anchor-id="contacts">Contacts</h2>
+<p><a href="mailto:eric.pante@cnrs.fr">Eric Pante</a> (CNRS)</p>
 
 
 </section>
