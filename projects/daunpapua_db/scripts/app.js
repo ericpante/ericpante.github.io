@@ -29,6 +29,16 @@ function normalizeStation(d) {
   };
 }
 
+function normalizeKeywords(keywordText) {
+  return [...new Map(
+    String(keywordText || "")
+      .split(";")
+      .map(x => x.trim())
+      .filter(Boolean)
+      .map(x => [x.toLowerCase(), x])
+  ).values()].join("; ");
+}
+
 function normalizePhoto(p) {
   const keywordText = p.caption || p.keywords || p.KEYWORDS || p.Keyword || p.keyword || "";
 
@@ -38,7 +48,7 @@ function normalizePhoto(p) {
     station: String(p.STATION || "").trim(),
     photo: rawPhoto ? `photos/${rawPhoto.replace(/^\/+/, "")}` : "",
     caption: String(keywordText || "").trim(),
-    keywords: String(keywordText || "").trim()
+    eywords: normalizeKeywords(keywordText)
   };
 }
 
@@ -51,10 +61,15 @@ function stationHasPhotos(stationCode) {
 }
 
 function keywordsForStation(stationCode) {
-  return photosForStation(stationCode)
-    .map(p => p.keywords || p.caption || "")
-    .filter(Boolean)
-    .join("; ");
+  return [...new Map(
+    photosForStation(stationCode)
+      .map(p => p.keywords || p.caption || "")
+      .join("; ")
+      .split(";")
+      .map(x => x.trim())
+      .filter(Boolean)
+      .map(x => [x.toLowerCase(), x])
+  ).values()].join("; ");
 }
 
 function parseKeywordTerms(keywordText) {
