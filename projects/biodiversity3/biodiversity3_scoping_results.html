@@ -264,7 +264,13 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#ongoing-analysis-of-scoping-outcomes-for-biodiversity3" id="toc-ongoing-analysis-of-scoping-outcomes-for-biodiversity3" class="nav-link active" data-scroll-target="#ongoing-analysis-of-scoping-outcomes-for-biodiversity3">Ongoing analysis of scoping outcomes for Biodiversity3</a>
   <ul class="collapse">
-  <li><a href="#notes-from-scoping-events" id="toc-notes-from-scoping-events" class="nav-link" data-scroll-target="#notes-from-scoping-events">Notes from scoping events</a></li>
+  <li><a href="#summary-from-scoping-events-as-of-2026-10-16" id="toc-summary-from-scoping-events-as-of-2026-10-16" class="nav-link" data-scroll-target="#summary-from-scoping-events-as-of-2026-10-16">Summary from scoping events (as of 2026-10-16)</a>
+  <ul class="collapse">
+  <li><a href="#wbf2026" id="toc-wbf2026" class="nav-link" data-scroll-target="#wbf2026">WBF2026</a></li>
+  <li><a href="#idssd" id="toc-idssd" class="nav-link" data-scroll-target="#idssd">IDSSD</a></li>
+  <li><a href="#sri2026" id="toc-sri2026" class="nav-link" data-scroll-target="#sri2026">SRI2026</a></li>
+  <li><a href="#cbc2026" id="toc-cbc2026" class="nav-link" data-scroll-target="#cbc2026">CBC2026</a></li>
+  </ul></li>
   <li><a href="#dashboard-on-scoping-participation-data" id="toc-dashboard-on-scoping-participation-data" class="nav-link" data-scroll-target="#dashboard-on-scoping-participation-data">Dashboard on scoping participation data</a></li>
   <li><a href="#photos" id="toc-photos" class="nav-link" data-scroll-target="#photos">Photos</a></li>
   </ul></li>
@@ -312,11 +318,325 @@ ul.task-list li input[type="checkbox"] {
 <h1>Ongoing analysis of scoping outcomes for Biodiversity3</h1>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="biodiversity3_scoping_results.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
+<p><img src="biodiversity3_scoping_results.jpg" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption>Implementation of the three-horizons co-construction method, applied on BIODIVERSITY3 at the World Biodiversity Forum in Davos</figcaption>
 </figure>
 </div>
-<section id="notes-from-scoping-events" class="level2">
-<h2 class="anchored" data-anchor-id="notes-from-scoping-events">Notes from scoping events</h2>
+<section id="summary-from-scoping-events-as-of-2026-10-16" class="level2">
+<h2 class="anchored" data-anchor-id="summary-from-scoping-events-as-of-2026-10-16">Summary from scoping events (as of 2026-10-16)</h2>
+<p>We consulted 60 researchers and practitioners from 27 countries (19 from the global North, 8 from the global South) during five co-construction workshops held at major international biodiversity conferences.</p>
+<p>Participants collectively recognised the merits and core components of the concept note ; 65% recognised that biodiversity monitoring is not adequately funded and 90% estimated that adding a transdisciplinary dimension to biodiversity monitoring is important <em>and</em> a priority.</p>
+<blockquote class="blockquote">
+<p><em>“Transdisciplinarity captures the intangible parts of biodiversity (spiritual, cultural, social)”</em></p>
+</blockquote>
+<p>The scoping has identified <em>three key knowledge gaps</em> (systemic fragmentation in monitoring, disciplinary silos, and data deficiencies for specific biological systems like soil health) and <em>major roadblocks</em> (lack of standardization, funding constraints, poor communication among stakeholders, and geographical biases in data collection).</p>
+<section id="wbf2026" class="level3">
+<h3 class="anchored" data-anchor-id="wbf2026">WBF2026</h3>
+<p>Two scoping workshops were done at the <a href="https://sricongress.org/">WBF</a>.</p>
+<ul>
+<li>the first was done as part of Sierra Deutsch’s training workshop for the Three Horizon and Two-Eye Seeing methods (photo above).</li>
+<li>the second was a more ‘classical’ scoping workshop, discussing the knowledge gaps, road blocks, societal needs, existing funding opportunities.</li>
+</ul>
+<p>The full report is <a href="https://docs.google.com/document/d/1oZO83wA86Ah0wKNJTza74Ugn8nHqjyVhK5q0EF5k8pg/edit?usp=sharing">here</a>.</p>
+<section id="three-horizon-method" class="level4">
+<h4 class="anchored" data-anchor-id="three-horizon-method">Three Horizon Method</h4>
+<p>This method is described <a href="https://sustainabilitymethods.org/index.php/Three_Horizons">here</a>. In short, it is a tool to visualize the current state of monitoring’s role in biodiversity conservation, attributes of desirable futures, and the way to get there. Below is a retranscription of what was worked on in Davos.</p>
+<div id="three-horizons"></div>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script>
+(function () {
+  const W = 900, H = 560;
+  const m = { top: 70, right: 50, bottom: 60, left: 60 };
+  const x = d3.scaleLinear([0, 1], [m.left, W - m.right]);
+  const y = d3.scaleLinear([0, 1], [H - m.bottom, m.top]);
+
+  const NOTE_W = 100, NOTE_H = 50;
+  const CARD_W = 440, CARD_H = 250;
+
+  // Horizons: three overlapping curves (prevalence of each pattern over time)
+  const sig = (t, c, k) => 1 / (1 + Math.exp(-k * (t - c)));
+  const horizons = [
+    { id: "H1", label: "Horizon 1: the current system", color: "#b7791f",
+      f: t => 0.05 + 0.85 * (1 - sig(t, 0.38, 9)), lx: 0.02, ly: 0.98, anchor: "start" },
+    { id: "H2", label: "Horizon 2: transition", color: "#2f855a",
+      f: t => 0.8 * Math.exp(-0.5 * Math.pow((t - 0.52) / 0.16, 2)), lx: 0.52, ly: 0.9, anchor: "middle" },
+    { id: "H3", label: "Horizon 3: the future vision", color: "#3b5bdb",
+      f: t => 0.05 + 0.85 * sig(t, 0.68, 8), lx: 0.99, ly: 0.95, anchor: "end" }
+  ];
+
+  // Sticky notes: just list them under their horizon. Placement is automatic.
+  // Optional: add t and v (each 0 to 1) to a note to pin it to a specific spot.
+  const content = [
+    [ // Horizon 1: the current system
+      { title: "short-term funding", detail: "too short to build TD and partnerships" },
+      { title: "short-term funding", detail: "too short to build TD and partnerships" },
+      { title: "lack of equity", detail: "designing transformations for equitable outcomes in process, governance, mutual and equitable interactions" },
+      { title: "lack of incentive", detail: "public section is not interested in implementing research into their policies" },
+      { title: "focus", detail: "focus on attractive species or recent trends" },
+      { title: "silos", detail: "biodiversity monitoring is mostly disciplinary" },
+      { title: "disconnected from nature", detail: "society is disconnected from nature ; no idea where their food comes from, etc" },
+      { title: "researcher bias", detail: "looking for instant / quick results that can be published (open for long term project)" },
+      { title: "knowledge production", detail: "traditional science as the standard (different understandings / conceptions of nature)" },
+      { title: "knowledge drain", detail: "Western scientists study biodiversity 'elsewhere' and drain that knowledge / expertise without profit for local / indigenous communities"}
+      ],
+    [ // Horizon 2: transition
+      { title: "decolonize", detail: "decolonize research & funding, give live access to methods" },
+      { title: "capacity building", detail: "" },
+      { title: "multi language & multi culture", detail: "funding + capacity building opportunities"},
+      { title: "funding & policy", detail: "making funding & natural polity to accompagny people and local communities" },
+      { title: "inclusivity", detail: "inclusion of local researchers in all outputs" }
+    ],
+    [ // Horizon 3: the future vision
+      { title: "knowledge systems", detail: "emerging interest in other systems of knowledge, biodiv measurements (3 stickies)" },
+      { title: "data", detail: "FAIR, CARE, TRUST enhanced" },
+      { title: "capacity building", detail: "capacity building in the places where research is done" },
+      { title: "relationship with nature", detail: "local community feels attached to local nature & know their nature well" },
+      { title: "insight from the long-term", detail: "transdisciplinary insights from long-term studies leading to action" },
+      { title: "species", detail: "make under-represented species visible" },
+      { title: "local knowledge", detail: "knowledge created stays in the area ; leads to expertise of local people" },
+      { title: "applied knowldge", detail: "inclusion of practices and local communities in research teams" },
+      { title: "systemic long-term", detail: "longer term outcomes lead to systemic changes and action" },
+      { title: "funding", detail: "decadal funding for biodiversity research" },
+      { title: "reward", detail: "acknowledge outputs and compensate different collaborators (not all want more publications)" }, 
+      { title: "public sector", detail: "including public sector as part of the project team - policy outputs" }, 
+      { title: "+ve feedback loop", detail: "aligning project goals with either public or private practitioner's project suggestions" }, 
+      { title: "paradigm shift", detail: "equitable, multistakeholder, transdisciplinary, bottom-up governance, considering intersectionality" }, 
+      { title: "weaving biological & social sciences", detail: "inclusion of both biological & social science researchers" }
+    ]
+  ];
+  const fills = ["#fff3b0", "#c9ecd3", "#c9d8ff"];
+  const notes = content.flatMap((list, h) => list.map(n => ({ ...n, h, fill: fills[h] })));
+
+  // Automatic layout: start each horizon's notes in a small grid around its anchor,
+  // then relax: notes drift toward the anchor but are pushed apart when they overlap.
+  function layout(notes) {
+    const anchors = [[0.17, 0.52], [0.5, 0.34], [0.83, 0.52]]; // (time, height) per horizon
+    const pad = 10;
+    const xMin = m.left + 8 + NOTE_W / 2, xMax = W - m.right - 8 - NOTE_W / 2;
+    const yMin = y(0.86) + NOTE_H / 2, yMax = H - m.bottom - 8 - NOTE_H / 2; // keep clear of curve labels
+    const clamp = (v, lo, hi) => Math.max(lo, Math.min(hi, v));
+
+    anchors.forEach(([at, av], h) => {
+      const group = notes.filter(n => n.h === h && n.t === undefined);
+      const rows = Math.ceil(group.length / 2);
+      group.forEach((n, i) => {
+        n.ax = x(at); n.ay = y(av);
+        n.cx = n.ax + ((i % 2) - 0.5) * (NOTE_W + pad);
+        n.cy = n.ay + (Math.floor(i / 2) - (rows - 1) / 2) * (NOTE_H + pad);
+      });
+    });
+    notes.forEach(n => { if (n.t !== undefined) { n.cx = x(n.t); n.cy = y(n.v); n.pinned = true; } });
+
+    for (let it = 0; it < 400; it++) {
+      notes.forEach(n => {
+        if (n.pinned) return;
+        n.cx += (n.ax - n.cx) * 0.02;
+        n.cy += (n.ay - n.cy) * 0.02;
+      });
+      for (let i = 0; i < notes.length; i++) {
+        for (let j = i + 1; j < notes.length; j++) {
+          const a = notes[i], b = notes[j];
+          const dx = b.cx - a.cx, dy = b.cy - a.cy;
+          const ox = NOTE_W + pad - Math.abs(dx), oy = NOTE_H + pad - Math.abs(dy);
+          if (ox <= 0 || oy <= 0) continue;
+          const wa = a.pinned ? 0 : (b.pinned ? 1 : 0.5), wb = b.pinned ? 0 : (a.pinned ? 1 : 0.5);
+          if (ox < oy) { const s = dx >= 0 ? 1 : -1; a.cx -= s * ox * wa; b.cx += s * ox * wb; }
+          else { const s = dy >= 0 ? 1 : -1; a.cy -= s * oy * wa; b.cy += s * oy * wb; }
+        }
+      }
+      notes.forEach(n => {
+        if (n.pinned) return;
+        n.cx = clamp(n.cx, xMin, xMax);
+        n.cy = clamp(n.cy, yMin, yMax);
+      });
+    }
+  }
+
+  // Scoped styles
+  const css = document.createElement("style");
+  css.textContent = `
+    #three-horizons { max-width: 900px; margin: 1.5rem auto; }
+    #three-horizons svg { width: 100%; height: auto; display: block;
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
+    #three-horizons .note { cursor: zoom-in; outline: none; }
+    #three-horizons .note rect.paper { filter: drop-shadow(1px 2px 3px rgba(0,0,0,.28)); transition: filter .15s; }
+    #three-horizons .note:hover rect.paper,
+    #three-horizons .note:focus-visible rect.paper { filter: drop-shadow(2px 4px 7px rgba(0,0,0,.4)); stroke: #222; stroke-width: 1.5; }
+    #three-horizons .overlay { cursor: zoom-out; }
+  `;
+  document.head.appendChild(css);
+
+  const svg = d3.select("#three-horizons").append("svg")
+    .attr("viewBox", `0 0 ${W} ${H}`)
+    .attr("role", "group")
+    .attr("aria-label", "Three Horizons diagram with sticky notes. Select a note to enlarge it.");
+
+  svg.append("rect").attr("width", W).attr("height", H).attr("rx", 8).attr("fill", "#fbfaf7");
+
+  // Axes
+  const axis = svg.append("g").attr("stroke", "#555").attr("stroke-width", 1.5).attr("fill", "none");
+  axis.append("path").attr("d", `M${m.left},${H - m.bottom} H${W - m.right + 10}`);
+  axis.append("path").attr("d", `M${m.left},${H - m.bottom} V${m.top - 20}`);
+  svg.append("text").attr("x", W - m.right).attr("y", H - m.bottom + 28).attr("text-anchor", "end")
+    .attr("fill", "#555").attr("font-size", 13).text("Time");
+  svg.append("text").attr("transform", `translate(${m.left - 36},${m.top + 120}) rotate(-90)`)
+    .attr("fill", "#555").attr("font-size", 13).text("Prevalence of the pattern");
+
+  // Curves (drawn first, so notes sit on top)
+  const ts = d3.range(0, 1.0001, 0.01);
+  horizons.forEach(h => {
+    const pts = ts.map(t => [x(t), y(h.f(t))]);
+    svg.append("path").datum(pts)
+      .attr("d", d3.area().x(d => d[0]).y0(H - m.bottom).y1(d => d[1]).curve(d3.curveBasis))
+      .attr("fill", h.color).attr("fill-opacity", 0.12);
+    svg.append("path").datum(pts)
+      .attr("d", d3.line().curve(d3.curveBasis))
+      .attr("fill", "none").attr("stroke", h.color).attr("stroke-width", 3.5).attr("stroke-linecap", "round");
+    svg.append("text").attr("x", x(h.lx)).attr("y", y(h.ly)).attr("text-anchor", h.anchor)
+      .attr("fill", h.color).attr("font-size", 15).attr("font-weight", 700).text(h.label);
+  });
+
+  // Text wrapping helper (character-count based)
+  function wrap(textSel, str, maxChars, lineH, x0, y0) {
+    const words = str.split(" ");
+    let line = [], lines = [];
+    words.forEach(w => {
+      if ((line.concat(w)).join(" ").length > maxChars && line.length) { lines.push(line.join(" ")); line = [w]; }
+      else line.push(w);
+    });
+    lines.push(line.join(" "));
+    lines.forEach((l, i) => textSel.append("tspan").attr("x", x0).attr("y", y0 + i * lineH).text(l));
+  }
+
+  // Sticky notes
+  const tilt = i => ((i * 7) % 5 - 2) * 0.9; // small, repeatable tilt
+  layout(notes);
+  const pos = n => ({ x: n.cx - NOTE_W / 2, y: n.cy - NOTE_H / 2 });
+
+  const noteG = svg.append("g").selectAll("g").data(notes).enter().append("g")
+    .attr("class", "note").attr("tabindex", 0).attr("role", "button")
+    .attr("aria-label", d => `${d.title}. Select to enlarge.`)
+    .attr("transform", (d, i) => `translate(${pos(d).x},${pos(d).y}) rotate(${tilt(i)} ${NOTE_W / 2} ${NOTE_H / 2})`)
+    .on("click", (e, d) => openNote(d))
+    .on("keydown", (e, d) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); openNote(d); } });
+
+  noteG.append("rect").attr("class", "paper").attr("width", NOTE_W).attr("height", NOTE_H)
+    .attr("rx", 3).attr("fill", d => d.fill).attr("stroke", d => horizons[d.h].color).attr("stroke-width", 1);
+  noteG.each(function (d) {
+    const t = d3.select(this).append("text").attr("text-anchor", "middle").attr("font-size", 13)
+      .attr("fill", "#2b2b2b").style("pointer-events", "none");
+    const lines = d.title.length > 16 ? 2 : 1;
+    wrap(t, d.title, 16, 16, NOTE_W / 2, NOTE_H / 2 + 5 - (lines - 1) * 8);
+  });
+
+  // Zoomed card
+  const overlay = svg.append("g").attr("class", "overlay");
+  let openNoteData = null;
+
+  function openNote(d) {
+    if (openNoteData) return;
+    openNoteData = d;
+    const p = pos(d), hz = horizons[d.h];
+    overlay.selectAll("*").remove();
+
+    overlay.append("rect").attr("width", W).attr("height", H).attr("rx", 8)
+      .attr("fill", "#000").attr("opacity", 0).transition().duration(200).attr("opacity", 0.45);
+
+    const card = overlay.append("g")
+      .attr("transform", `translate(${p.x},${p.y}) scale(${NOTE_W / CARD_W})`);
+    card.append("rect").attr("width", CARD_W).attr("height", CARD_H).attr("rx", 6)
+      .attr("fill", d.fill).attr("stroke", hz.color).attr("stroke-width", 3)
+      .style("filter", "drop-shadow(0 8px 20px rgba(0,0,0,.4))");
+    card.append("text").attr("x", 28).attr("y", 52).attr("font-size", 26).attr("font-weight", 700)
+      .attr("fill", "#222").text(d.title);
+    card.append("text").attr("x", 28).attr("y", 82).attr("font-size", 14).attr("font-weight", 600)
+      .attr("fill", hz.color).text(hz.label);
+    const body = card.append("text").attr("font-size", 17).attr("fill", "#333");
+    wrap(body, d.detail, 40, 25, 28, 124);
+    card.append("text").attr("x", 28).attr("y", CARD_H - 18).attr("font-size", 12)
+      .attr("fill", "#666").text("Click anywhere or press Esc to close");
+
+    card.transition().duration(280).ease(d3.easeCubicOut)
+      .attr("transform", `translate(${(W - CARD_W) / 2},${(H - CARD_H) / 2}) scale(1)`);
+
+    overlay.on("click", closeNote);
+  }
+
+  function closeNote() {
+    if (!openNoteData) return;
+    openNoteData = null;
+    overlay.on("click", null);
+    overlay.transition().duration(150).style("opacity", 0).on("end", () => {
+      overlay.selectAll("*").remove();
+      overlay.style("opacity", 1);
+    });
+  }
+  document.addEventListener("keydown", e => { if (e.key === "Escape") closeNote(); });
+})();
+</script>
+
+</section>
+<section id="data-and-knowledge-gaps" class="level4">
+<h4 class="anchored" data-anchor-id="data-and-knowledge-gaps">Data and Knowledge Gaps</h4>
+<p>Laurent’s group identified gaps in long-term programs, mechanistic understanding, and ecosystem functions, emphasizing the need to link observations to drivers of change. Eric’s group highlighted under-monitored areas: bacteria, agriculture, pollinators, soil health, and marine systems (underrepresented in GBIF), and noted mismatches between observation distributions and actual biodiversity patterns.</p>
+</section>
+<section id="societal-and-policy-challenges" class="level4">
+<h4 class="anchored" data-anchor-id="societal-and-policy-challenges">Societal and Policy Challenges</h4>
+<p>Trust and communication barriers dominate. Laurent’s group stressed data ownership (especially for Indigenous communities), mistrust of community-generated data, and policymakers’ demand for practical information over nature-based solutions. Eric’s group stated that stakeholders often overlook the value of genomic data (lack of understanding) and biodiversity economics, while communication lags persist among scientists, policymakers, and communities.</p>
+</section>
+<section id="research-paradigm-shifts" class="level4">
+<h4 class="anchored" data-anchor-id="research-paradigm-shifts">Research Paradigm Shifts</h4>
+<p>Eric’s group advocate shifting from top-down to bottom-up transdisciplinary approaches, integrating Traditional Ecological Knowledge (TEK) and Indigenous knowledge, and fostering feedback loops between action, communication, and education. They call for rejecting ivory tower science, including engineers and remote sensing experts, and ensuring continuous monitoring and FAIR data.</p>
+</section>
+<section id="practical-solutions" class="level4">
+<h4 class="anchored" data-anchor-id="practical-solutions">Practical Solutions</h4>
+<p>Both groups emphasize community involvement from project inception. Solutions include democratizing data collection, decentralizing knowledge production, empowering local stakeholders, planning beyond 3-year timelines, reducing funding bureaucracy, and ensuring practical, implementable use of monitoring data to bridge the science-policy gap.</p>
+</section>
+</section>
+<section id="idssd" class="level3">
+<h3 class="anchored" data-anchor-id="idssd">IDSSD</h3>
+<p>This was a joint scoping between the Artic 3 (now Polar) CRA and Biodiversity 3.</p>
+</section>
+<section id="sri2026" class="level3">
+<h3 class="anchored" data-anchor-id="sri2026">SRI2026</h3>
+<p><a href="https://sricongress.org/">SRI2026</a>’s scoping was done in two discussion groups. The full report is <a href="https://docs.google.com/document/d/1dcdHNkXAPAXkly_IUMT1j9nAwzveaRTx4g3PQEB8CYs/edit?usp=sharing">here</a>.</p>
+<section id="knowledge-gaps-and-data-challenges" class="level4">
+<h4 class="anchored" data-anchor-id="knowledge-gaps-and-data-challenges">Knowledge gaps and data challenges</h4>
+<p>Marine systems face critical knowledge gaps, lacking continuous time series due to project-specific, disconnected data collections. Accessibility remains a major barrier, and political regime shifts disrupt data continuity, with historical records often lost. Connecting biodiversity to communities is essential for enabling sustainable resource use, addressing human-wildlife conflicts, and linking monitoring to action by better understanding societal needs and the value of healthy ecosystems.</p>
+</section>
+<section id="transdisciplinary-solutions" class="level4">
+<h4 class="anchored" data-anchor-id="transdisciplinary-solutions">Transdisciplinary solutions</h4>
+<p>Researchers cannot address these challenges alone; interdisciplinary teams are required to bridge the gap between science and society. Co-creation must begin at project inception, with experts like lawyers defining data needs through legal scoping. Transdisciplinarity captures intangible biodiversity dimensions—spiritual, cultural, and social values—alongside economic benefits, necessitating standardized monitoring to ensure future data usability. This approach also enables triangulation between researchers, communities, and policymakers.</p>
+</section>
+<section id="community-engagement-and-policy" class="level4">
+<h4 class="anchored" data-anchor-id="community-engagement-and-policy">Community engagement and policy</h4>
+<p>Communication barriers, including language differences and technology gaps, hinder effective collaboration and citizen science participation. Restoration management currently suffers from top-down approaches that exclude local communities. Policy action must be community-driven, as ground-level initiatives often prove more effective than policy briefs. Crucially, monitoring benefits should directly reach indigenous communities to ensure equitable and meaningful impact.</p>
+</section>
+<section id="implementation-gap" class="level4">
+<h4 class="anchored" data-anchor-id="implementation-gap">Implementation gap</h4>
+<p>Despite robust monitoring infrastructure—such as South Africa’s 22 biodiversity research chairs, six UNESCO biodiversity sites, and extensive data through NRF SAEON, policy impact remains limited. A stark example: a community replanting effort in a semi-desert faces physical threats to its leader due to competing diamond mining rights. While monitoring sites, personnel, and data exist, the disconnect between knowledge and policy action persists, requiring better integration to drive real-world change.</p>
+</section>
+</section>
+<section id="cbc2026" class="level3">
+<h3 class="anchored" data-anchor-id="cbc2026">CBC2026</h3>
+<p><a href="https://cbc-conference.org/">CBC2026</a>’s scoping was done in the form of a word café. Participants were given eight questions to choose from. We voted with Wooclap and selected four. The summaries are below and the full report is <a href="https://docs.google.com/document/d/1ju_IUn5i5bH2bmZz3G0q4GcuPADFCDH5AzW62EBgevU/edit?usp=sharing">here</a>.</p>
+<section id="how-can-long-term-biodiversity-data-better-support-action" class="level4">
+<h4 class="anchored" data-anchor-id="how-can-long-term-biodiversity-data-better-support-action">How can long-term biodiversity data better support action?</h4>
+<p>A data assessment framework must evaluate inventory, quality, access, governance, and creation standards, with clear definitions of “long-term” to address both immediate and century-scale needs. Institutional commitment—sustained funding, stable policies, and standardized protocols—enables data-driven conservation prioritization. Integration with climate metrics (e.g., CO₂-equivalent) supports co-benefit analyses, while linking biodiversity data to social-environmental context provides holistic, actionable insights.</p>
+</section>
+<section id="how-can-biodiversity-monitoring-be-genuinely-transdisciplinary" class="level4">
+<h4 class="anchored" data-anchor-id="how-can-biodiversity-monitoring-be-genuinely-transdisciplinary">How can biodiversity monitoring be genuinely transdisciplinary?</h4>
+<p>Transdisciplinary monitoring requires early co-design with citizen scientists, land users, and communities, starting with agreed indicators. Incentives and clear value communication (e.g., “Share your data to improve management”) motivate participation, while policy integration demands long-term support. Existing apps (e.g., PictureThis, ObsIdentify) show potential, but standardization, verification, and data protection are needed to address scientific skepticism and ensure quality. Design must be accessible, engaging, and scalable across contexts.</p>
+</section>
+<section id="how-can-monitoring-systems-better-capture-change-its-drivers-and-action-effectiveness" class="level4">
+<h4 class="anchored" data-anchor-id="how-can-monitoring-systems-better-capture-change-its-drivers-and-action-effectiveness">How can monitoring systems better capture change, its drivers, and action effectiveness?</h4>
+<p>The current funding system creates harmonization a nd standardization gaps and broken time series. A coordination crisis (no central registry of activities) and knowledge-action gap (research not reaching practitioners) persist. Solutions include: a global monitoring registry, leveraging existing resources, closing funding gaps, transferring evidence directly to practitioners, and establishing feedback mechanisms. Prioritizing baseline establishment and identifying best indicators are also critical.</p>
+</section>
+<section id="how-can-biodiversity3-build-lasting-partnerships-capacities-and-infrastructures" class="level4">
+<h4 class="anchored" data-anchor-id="how-can-biodiversity3-build-lasting-partnerships-capacities-and-infrastructures">How can BIODIVERSITY3 build lasting partnerships, capacities, and infrastructures?</h4>
+<p>Lasting impact requires co-design from project inception, building institutional memory, and defining biodiversity dimensions (taxonomic, functional, genetic). Durable data infrastructures (FAIR/CARE principles) and clear governance ensure long-term accessibility. Gap analysis should guide future investments. Partnerships with schools, public authorities, and local initiatives can institutionalize monitoring, avoiding duplication and strengthening networks.</p>
+</section>
+</section>
 </section>
 <section id="dashboard-on-scoping-participation-data" class="level2">
 <h2 class="anchored" data-anchor-id="dashboard-on-scoping-participation-data">Dashboard on scoping participation data</h2>
