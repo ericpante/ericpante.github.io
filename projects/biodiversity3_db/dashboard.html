@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Biodiversity 3 CRA — scoping survey results – seadog</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-158031087360bce0ff56dc785ce39e06.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<link href="../../site_libs/htmltools-fill-0.5.9/fill.css" rel="stylesheet">
+<script src="../../site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<script src="../../site_libs/plotly-binding-4.12.0/plotly.js"></script>
+<script src="../../site_libs/typedarray-0.1/typedarray.min.js"></script>
+<script src="../../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="../../site_libs/crosstalk-1.2.2/css/crosstalk.min.css" rel="stylesheet">
+<script src="../../site_libs/crosstalk-1.2.2/js/crosstalk.min.js"></script>
+<link href="../../site_libs/plotly-htmlwidgets-css-2.25.2/plotly-htmlwidgets.css" rel="stylesheet">
+<script src="../../site_libs/plotly-main-2.25.2/plotly-latest.min.js"></script>
+<link href="../../site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet">
+<script src="../../site_libs/datatables-binding-0.34.0/datatables.js"></script>
+<link href="../../site_libs/dt-core-1.13.6/css/jquery.dataTables.min.css" rel="stylesheet">
+<link href="../../site_libs/dt-core-1.13.6/css/jquery.dataTables.extra.css" rel="stylesheet">
+<script src="../../site_libs/dt-core-1.13.6/js/jquery.dataTables.min.js"></script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-sidebar floating nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">seadog</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="../../projects.html" aria-current="page"> 
+<span class="menu-text">Projects</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../publications.html"> 
+<span class="menu-text">Publications</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <a class="flex-grow-1 no-decor" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+          <h1 class="quarto-secondary-nav-title">Biodiversity 3 CRA — scoping survey results</h1>
+        </a>     
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../projects.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Projects</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../projects/biodiversity3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Biodiversity 3</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../projects/biodiversity3/biodiversity3_scoping_BioMonWeek.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">BioMonWeek</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../projects/biodiversity3/biodiversity3_scoping_CBC.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CBC2026</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../projects/biodiversity3/biodiversity3_scoping_ICES.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ICES2026</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../projects/biodiversity3/biodiversity3_scoping_IDSSD.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">IDSSD</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../projects/biodiversity3/biodiversity3_scoping_IMCC8.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">IMCC8</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../projects/biodiversity3/biodiversity3_scoping_plenary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Belmont Forum Plenary</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../projects/biodiversity3/biodiversity3_scoping_results.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Scoping results</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../projects/biodiversity3/biodiversity3_scoping_SRI.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SRI2026</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../projects/biodiversity3/biodiversity3_scoping_WAITRO.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">WAITRO Summit 2026</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../projects/biodiversity3/biodiversity3_scoping_WBF.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">World Biodiversity Forum</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../projects/ocean2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ocean 2</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../projects/dui.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Drive</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../projects/marmap.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">marmap</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../projects/daunpapua.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">DaunPapua</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../projects/daunpapua_db/daunpapua_db.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">DAUNPAPUA sampling database</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../projects/PCIsustainability.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">PCI Sustainability</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a>
+  <ul class="collapse">
+  <li><a href="#row" id="toc-row" class="nav-link" data-scroll-target="#row">Row</a></li>
+  <li><a href="#row-1" id="toc-row-1" class="nav-link" data-scroll-target="#row-1">Row</a></li>
+  </ul></li>
+  <li><a href="#participants" id="toc-participants" class="nav-link" data-scroll-target="#participants">Participants</a>
+  <ul class="collapse">
+  <li><a href="#row-2" id="toc-row-2" class="nav-link" data-scroll-target="#row-2">Row</a></li>
+  <li><a href="#row-3" id="toc-row-3" class="nav-link" data-scroll-target="#row-3">Row</a></li>
+  </ul></li>
+  <li><a href="#perceptions" id="toc-perceptions" class="nav-link" data-scroll-target="#perceptions">Perceptions</a>
+  <ul class="collapse">
+  <li><a href="#column" id="toc-column" class="nav-link" data-scroll-target="#column">Column</a></li>
+  <li><a href="#column-1" id="toc-column-1" class="nav-link" data-scroll-target="#column-1">Column</a></li>
+  </ul></li>
+  <li><a href="#engagement" id="toc-engagement" class="nav-link" data-scroll-target="#engagement">Engagement</a>
+  <ul class="collapse">
+  <li><a href="#row-4" id="toc-row-4" class="nav-link" data-scroll-target="#row-4">Row</a></li>
+  <li><a href="#row-5" id="toc-row-5" class="nav-link" data-scroll-target="#row-5">Row</a></li>
+  </ul></li>
+  <li><a href="#voices" id="toc-voices" class="nav-link" data-scroll-target="#voices">Voices</a>
+  <ul class="collapse">
+  <li><a href="#row-6" id="toc-row-6" class="nav-link" data-scroll-target="#row-6">Row</a></li>
+  <li><a href="#row-7" id="toc-row-7" class="nav-link" data-scroll-target="#row-7">Row</a></li>
+  </ul></li>
+  <li><a href="#cbc-2026-topics" id="toc-cbc-2026-topics" class="nav-link" data-scroll-target="#cbc-2026-topics">CBC 2026 topics</a>
+  <ul class="collapse">
+  <li><a href="#row-8" id="toc-row-8" class="nav-link" data-scroll-target="#row-8">Row</a></li>
+  </ul></li>
+  <li><a href="#about" id="toc-about" class="nav-link" data-scroll-target="#about">About</a>
+  <ul class="collapse">
+  <li><a href="#row-9" id="toc-row-9" class="nav-link" data-scroll-target="#row-9">Row</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title d-none d-lg-block">Biodiversity 3 CRA — scoping survey results</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="overview" class="level1">
+<h1>Overview</h1>
+<section id="row" class="level2" height="30%">
+<h2 height="30%" class="anchored" data-anchor-id="row">Row</h2>
+<div class="cell" content="valuebox" title="Participants">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">list</span>(<span class="at">icon =</span> <span class="st">"people"</span>, <span class="at">color =</span> <span class="st">"info"</span>, <span class="at">value =</span> K<span class="sc">$</span>participants)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$icon
+[1] "people"
+
+$color
+[1] "info"
+
+$value
+[1] 59</code></pre>
+</div>
+</div>
+<div class="cell" content="valuebox" title="Countries">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">list</span>(<span class="at">icon =</span> <span class="st">"globe2"</span>, <span class="at">color =</span> <span class="st">"success"</span>, <span class="at">value =</span> K<span class="sc">$</span>countries)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$icon
+[1] "globe2"
+
+$color
+[1] "success"
+
+$value
+[1] 25</code></pre>
+</div>
+</div>
+<div class="cell" content="valuebox" title="funding insufficient">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">list</span>(<span class="at">icon =</span> <span class="st">"cash-coin"</span>, <span class="at">color =</span> <span class="st">"danger"</span>, <span class="at">value =</span> <span class="fu">sprintf</span>(<span class="st">"%.0f%%"</span>, K<span class="sc">$</span>funding_low))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$icon
+[1] "cash-coin"
+
+$color
+[1] "danger"
+
+$value
+[1] "65%"</code></pre>
+</div>
+</div>
+<div class="cell" content="valuebox" title="Transdisciplinarity is top priority">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">list</span>(<span class="at">icon =</span> <span class="st">"diagram-3"</span>, <span class="at">color =</span> <span class="st">"warning"</span>, <span class="at">value =</span> <span class="fu">sprintf</span>(<span class="st">"%.0f%%"</span>, K<span class="sc">$</span>trans_top))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$icon
+[1] "diagram-3"
+
+$color
+[1] "warning"
+
+$value
+[1] "90%"</code></pre>
+</div>
+</div>
+</section>
+<section id="row-1" class="level2" height="46%">
+<h2 height="46%" class="anchored" data-anchor-id="row-1">Row</h2>
+<div class="cell" title="Participants per event">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>ev_plot <span class="ot">&lt;-</span> ev <span class="sc">|&gt;</span> <span class="fu">mutate</span>(<span class="at">event_label =</span> <span class="fu">factor</span>(event_label, <span class="at">levels =</span> EVENT_ORDER))</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_ly</span>(ev_plot, <span class="at">x =</span> <span class="sc">~</span>event_label, <span class="at">y =</span> <span class="sc">~</span>participants, <span class="at">color =</span> <span class="sc">~</span>event_label, <span class="at">colors =</span> EVENT_COLORS,</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>        <span class="at">type =</span> <span class="st">"bar"</span>, <span class="at">text =</span> <span class="sc">~</span>participants, <span class="at">textposition =</span> <span class="st">"outside"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tidy</span>(<span class="at">legend =</span> <span class="cn">FALSE</span>, <span class="at">yaxis =</span> <span class="fu">list</span>(<span class="at">title =</span> <span class="st">"Participants"</span>, <span class="at">range =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="fu">max</span>(ev<span class="sc">$</span>participants) <span class="sc">*</span> <span class="fl">1.2</span>)))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-f02d9fd96313daa92cbc" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-f02d9fd96313daa92cbc">{"x":{"visdat":{"12c8c48647a2":["function () ","plotlyVisDat"]},"cur_data":"12c8c48647a2","attrs":{"12c8c48647a2":{"x":{},"y":{},"text":{},"textposition":"outside","color":{},"colors":["#2a9d8f","#264653","#e9c46a","#e76f51"],"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar"}},"layout":{"margin":{"b":10,"l":10,"t":10,"r":10},"barmode":"stack","plot_bgcolor":"white","font":{"size":12},"showlegend":false,"legend":{"orientation":"h","x":0,"y":1.02,"xanchor":"left","yanchor":"bottom","title":{"text":""}},"xaxis":{"domain":[0,1],"automargin":true,"gridcolor":"#eeeeee","title":"event_label","type":"category","categoryorder":"array","categoryarray":["CBC 2026","Davos","IDSSD","SRI"]},"yaxis":{"domain":[0,1],"automargin":true,"title":"Participants","range":[0,21.599999999999998]},"hovermode":"closest"},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":["CBC 2026"],"y":[18],"text":18,"textposition":"outside","type":"bar","name":"CBC 2026","marker":{"color":"rgba(42,157,143,1)","line":{"color":"rgba(42,157,143,1)"}},"textfont":{"color":"rgba(42,157,143,1)"},"error_y":{"color":"rgba(42,157,143,1)"},"error_x":{"color":"rgba(42,157,143,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["Davos"],"y":[18],"text":18,"textposition":"outside","type":"bar","name":"Davos","marker":{"color":"rgba(38,70,83,1)","line":{"color":"rgba(38,70,83,1)"}},"textfont":{"color":"rgba(38,70,83,1)"},"error_y":{"color":"rgba(38,70,83,1)"},"error_x":{"color":"rgba(38,70,83,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["IDSSD"],"y":[9],"text":9,"textposition":"outside","type":"bar","name":"IDSSD","marker":{"color":"rgba(233,196,106,1)","line":{"color":"rgba(233,196,106,1)"}},"textfont":{"color":"rgba(233,196,106,1)"},"error_y":{"color":"rgba(233,196,106,1)"},"error_x":{"color":"rgba(233,196,106,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["SRI"],"y":[14],"text":14,"textposition":"outside","type":"bar","name":"SRI","marker":{"color":"rgba(231,111,81,1)","line":{"color":"rgba(231,111,81,1)"}},"textfont":{"color":"rgba(231,111,81,1)"},"error_y":{"color":"rgba(231,111,81,1)"},"error_x":{"color":"rgba(231,111,81,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<div class="cell" title="Where participants come from (country mentions)">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>cm <span class="ot">&lt;-</span> <span class="fu">country_map</span>(co)</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_ly</span>(cm, <span class="at">type =</span> <span class="st">"choropleth"</span>, <span class="at">locations =</span> <span class="sc">~</span>iso3, <span class="at">z =</span> <span class="sc">~</span>mentions,</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>        <span class="at">text =</span> <span class="sc">~</span><span class="fu">paste0</span>(<span class="st">"&lt;b&gt;"</span>, country, <span class="st">"&lt;/b&gt;&lt;br&gt;"</span>, mentions, <span class="st">" mention(s)&lt;br&gt;"</span>, events),</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>        <span class="at">hoverinfo =</span> <span class="st">"text"</span>,</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>        <span class="at">colorscale =</span> <span class="fu">list</span>(<span class="fu">c</span>(<span class="dv">0</span>, <span class="st">"#d9f0ee"</span>), <span class="fu">c</span>(<span class="dv">1</span>, <span class="st">"#1b6f66"</span>))) <span class="sc">|&gt;</span></span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">colorbar</span>(<span class="at">title =</span> <span class="st">""</span>, <span class="at">thickness =</span> <span class="dv">10</span>, <span class="at">len =</span> <span class="fl">0.6</span>) <span class="sc">|&gt;</span></span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">layout</span>(<span class="at">margin =</span> <span class="fu">list</span>(<span class="at">l =</span> <span class="dv">0</span>, <span class="at">r =</span> <span class="dv">0</span>, <span class="at">t =</span> <span class="dv">0</span>, <span class="at">b =</span> <span class="dv">0</span>),</span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>         <span class="at">geo =</span> <span class="fu">list</span>(<span class="at">showframe =</span> <span class="cn">FALSE</span>, <span class="at">showcoastlines =</span> <span class="cn">FALSE</span>, <span class="at">projection =</span> <span class="fu">list</span>(<span class="at">type =</span> <span class="st">"natural earth"</span>),</span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>                    <span class="at">showcountries =</span> <span class="cn">TRUE</span>, <span class="at">countrycolor =</span> <span class="st">"#dddddd"</span>, <span class="at">landcolor =</span> <span class="st">"#f4f4f4"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-ababf0718bd03fcde91d" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-ababf0718bd03fcde91d">{"x":{"visdat":{"12c8c62cc422":["function () ","plotlyVisDat"]},"cur_data":"12c8c62cc422","attrs":{"12c8c62cc422":{"locations":{},"z":{},"text":{},"hoverinfo":"text","colorscale":[["0","#d9f0ee"],["1","#1b6f66"]],"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"choropleth"}},"layout":{"margin":{"b":0,"l":0,"t":0,"r":0},"scene":{"zaxis":{"title":"mentions"}},"hovermode":"closest","showlegend":false,"legend":{"yanchor":"top","y":0.5},"geo":{"showframe":false,"showcoastlines":false,"projection":{"type":"natural earth"},"showcountries":true,"countrycolor":"#dddddd","landcolor":"#f4f4f4"}},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"colorbar":{"title":"","ticklen":2,"len":0.59999999999999998,"lenmode":"fraction","y":1,"yanchor":"top","thickness":10},"colorscale":[["0","#d9f0ee"],["1","#1b6f66"]],"showscale":true,"locations":["DEU","ZAF","CHE","CAN","FRA","GBR","AUS","BEL","DNK","ITA","KEN","UKR","USA","ARG","CHN","COL","IDN","MDG","MUS","MOZ","NGA","NOR","OMN","TWN","THA"],"z":[11,7,5,3,3,3,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1],"text":["<b>Germany<\/b><br>11 mention(s)<br>CBC 2026, Davos","<b>South Africa<\/b><br>7 mention(s)<br>SRI","<b>Switzerland<\/b><br>5 mention(s)<br>Davos","<b>Canada<\/b><br>3 mention(s)<br>Davos, IDSSD","<b>France<\/b><br>3 mention(s)<br>Davos, IDSSD, SRI","<b>United Kingdom<\/b><br>3 mention(s)<br>Davos","<b>Australia<\/b><br>2 mention(s)<br>CBC 2026, Davos","<b>Belgium<\/b><br>2 mention(s)<br>CBC 2026, Davos","<b>Denmark<\/b><br>2 mention(s)<br>Davos","<b>Italy<\/b><br>2 mention(s)<br>CBC 2026, IDSSD","<b>Kenya<\/b><br>2 mention(s)<br>SRI","<b>Ukraine<\/b><br>2 mention(s)<br>CBC 2026","<b>United States<\/b><br>2 mention(s)<br>Davos, IDSSD","<b>Argentina<\/b><br>1 mention(s)<br>CBC 2026","<b>China<\/b><br>1 mention(s)<br>IDSSD","<b>Colombia<\/b><br>1 mention(s)<br>Davos","<b>Indonesia<\/b><br>1 mention(s)<br>CBC 2026","<b>Madagascar<\/b><br>1 mention(s)<br>SRI","<b>Mauritius<\/b><br>1 mention(s)<br>SRI","<b>Mozambique<\/b><br>1 mention(s)<br>SRI","<b>Nigeria<\/b><br>1 mention(s)<br>CBC 2026","<b>Norway<\/b><br>1 mention(s)<br>IDSSD","<b>Oman<\/b><br>1 mention(s)<br>IDSSD","<b>Taiwan<\/b><br>1 mention(s)<br>CBC 2026","<b>Thailand<\/b><br>1 mention(s)<br>IDSSD"],"hoverinfo":["text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text"],"type":"choropleth","marker":{"line":{"color":"rgba(31,119,180,1)"}},"frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+</section>
+<section id="participants" class="level1">
+<h1>Participants</h1>
+<section id="row-2" class="level2" height="50%">
+<h2 height="50%" class="anchored" data-anchor-id="row-2">Row</h2>
+<div class="cell" title="Gender identity">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">profile_fig</span>(<span class="st">"gender"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-278ff3d91d65b1da2254" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-278ff3d91d65b1da2254">{"x":{"visdat":{"12c8c48b18842":["function () ","plotlyVisDat"]},"cur_data":"12c8c48b18842","attrs":{"12c8c48b18842":{"x":{},"y":{},"orientation":"h","text":{},"textposition":"inside","insidetextanchor":"middle","customdata":{},"hovertemplate":"%{y}<br>%{fullData.name}: %{customdata} (%{x:.0f}%)<extra><\/extra>","color":{},"colors":["#264653","#2a9d8f","#e9c46a","#f4a261","#e76f51","#8d99ae","#6d597a","#b56576"],"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar"}},"layout":{"margin":{"b":10,"l":10,"t":50,"r":10},"barmode":"stack","plot_bgcolor":"white","font":{"size":12},"showlegend":true,"legend":{"orientation":"h","x":0,"y":1.02,"xanchor":"left","yanchor":"bottom","title":{"text":""}},"xaxis":{"domain":[0,1],"automargin":true,"gridcolor":"#eeeeee","title":"% of event respondents","range":[0,100]},"yaxis":{"domain":[0,1],"automargin":true,"title":"","autorange":"reversed","categoryorder":"array","categoryarray":["CBC 2026 (n=15)","Davos (n=16)","IDSSD (n=6)","SRI (n=13)"],"type":"category"},"hovermode":"closest"},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[66.666666666666657,56.25,83.333333333333343],"y":["CBC 2026 (n=15)","Davos (n=16)","IDSSD (n=6)"],"orientation":"h","text":[10,9,5],"textposition":["inside","inside","inside"],"insidetextanchor":"middle","customdata":[10,9,5],"hovertemplate":["%{y}<br>%{fullData.name}: %{customdata} (%{x:.0f}%)<extra><\/extra>","%{y}<br>%{fullData.name}: %{customdata} (%{x:.0f}%)<extra><\/extra>","%{y}<br>%{fullData.name}: %{customdata} (%{x:.0f}%)<extra><\/extra>"],"type":"bar","name":"woman","marker":{"color":"rgba(38,70,83,1)","line":{"color":"rgba(38,70,83,1)"}},"textfont":{"color":"rgba(38,70,83,1)"},"error_y":{"color":"rgba(38,70,83,1)"},"error_x":{"color":"rgba(38,70,83,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[33.333333333333329,43.75,16.666666666666664],"y":["CBC 2026 (n=15)","Davos (n=16)","IDSSD (n=6)"],"orientation":"h","text":[5,7,1],"textposition":["inside","inside","inside"],"insidetextanchor":"middle","customdata":[5,7,1],"hovertemplate":["%{y}<br>%{fullData.name}: %{customdata} (%{x:.0f}%)<extra><\/extra>","%{y}<br>%{fullData.name}: %{customdata} (%{x:.0f}%)<extra><\/extra>","%{y}<br>%{fullData.name}: %{customdata} (%{x:.0f}%)<extra><\/extra>"],"type":"bar","name":"man","marker":{"color":"rgba(237,185,103,1)","line":{"color":"rgba(237,185,103,1)"}},"textfont":{"color":"rgba(237,185,103,1)"},"error_y":{"color":"rgba(237,185,103,1)"},"error_x":{"color":"rgba(237,185,103,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[69.230769230769226],"y":["SRI (n=13)"],"orientation":"h","text":9,"textposition":"inside","insidetextanchor":"middle","customdata":[9],"hovertemplate":"%{y}<br>%{fullData.name}: %{customdata} (%{x:.0f}%)<extra><\/extra>","type":"bar","name":"Woman","marker":{"color":"rgba(180,141,143,1)","line":{"color":"rgba(180,141,143,1)"}},"textfont":{"color":"rgba(180,141,143,1)"},"error_y":{"color":"rgba(180,141,143,1)"},"error_x":{"color":"rgba(180,141,143,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[30.76923076923077],"y":["SRI (n=13)"],"orientation":"h","text":4,"textposition":"inside","insidetextanchor":"middle","customdata":[4],"hovertemplate":"%{y}<br>%{fullData.name}: %{customdata} (%{x:.0f}%)<extra><\/extra>","type":"bar","name":"Man","marker":{"color":"rgba(181,101,118,1)","line":{"color":"rgba(181,101,118,1)"}},"textfont":{"color":"rgba(181,101,118,1)"},"error_y":{"color":"rgba(181,101,118,1)"},"error_x":{"color":"rgba(181,101,118,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<div class="cell" title="Professional category">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">profile_fig</span>(<span class="st">"profession"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-a687ed840e533cfb155d" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-a687ed840e533cfb155d">{"x":{"visdat":{"12c8c44244e1e":["function () ","plotlyVisDat"]},"cur_data":"12c8c44244e1e","attrs":{"12c8c44244e1e":{"x":{},"y":{},"orientation":"h","text":{},"textposition":"inside","insidetextanchor":"middle","customdata":{},"hovertemplate":"%{y}<br>%{fullData.name}: %{customdata} (%{x:.0f}%)<extra><\/extra>","color":{},"colors":["#264653","#2a9d8f","#e9c46a","#f4a261","#e76f51","#8d99ae","#6d597a","#b56576"],"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar"}},"layout":{"margin":{"b":10,"l":10,"t":50,"r":10},"barmode":"stack","plot_bgcolor":"white","font":{"size":12},"showlegend":true,"legend":{"orientation":"h","x":0,"y":1.02,"xanchor":"left","yanchor":"bottom","title":{"text":""}},"xaxis":{"domain":[0,1],"automargin":true,"gridcolor":"#eeeeee","title":"% of event respondents","range":[0,100]},"yaxis":{"domain":[0,1],"automargin":true,"title":"","autorange":"reversed","categoryorder":"array","categoryarray":["CBC 2026 (n=19)","Davos (n=16)","IDSSD (n=5)","SRI (n=13)"],"type":"category"},"hovermode":"closest"},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[52.631578947368418,50,20,30.76923076923077],"y":["CBC 2026 (n=19)","Davos (n=16)","IDSSD (n=5)","SRI (n=13)"],"orientation":"h","text":[10,8,1,4],"textposition":["inside","inside","inside","inside"],"insidetextanchor":"middle","customdata":[10,8,1,4],"hovertemplate":["%{y}<br>%{fullData.name}: %{customdata} (%{x:.0f}%)<extra><\/extra>","%{y}<br>%{fullData.name}: %{customdata} (%{x:.0f}%)<extra><\/extra>","%{y}<br>%{fullData.name}: %{customdata} (%{x:.0f}%)<extra><\/extra>","%{y}<br>%{fullData.name}: %{customdata} (%{x:.0f}%)<extra><\/extra>"],"type":"bar","name":"researcher","marker":{"color":"rgba(38,70,83,1)","line":{"color":"rgba(38,70,83,1)"}},"textfont":{"color":"rgba(38,70,83,1)"},"error_y":{"color":"rgba(38,70,83,1)"},"error_x":{"color":"rgba(38,70,83,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[15.789473684210526,12.5,20,38.461538461538467],"y":["CBC 2026 (n=19)","Davos (n=16)","IDSSD (n=5)","SRI (n=13)"],"orientation":"h","text":[3,2,1,5],"textposition":["inside","inside","inside","inside"],"insidetextanchor":"middle","customdata":[3,2,1,5],"hovertemplate":["%{y}<br>%{fullData.name}: %{customdata} (%{x:.0f}%)<extra><\/extra>","%{y}<br>%{fullData.name}: %{customdata} (%{x:.0f}%)<extra><\/extra>","%{y}<br>%{fullData.name}: %{customdata} (%{x:.0f}%)<extra><\/extra>","%{y}<br>%{fullData.name}: %{customdata} (%{x:.0f}%)<extra><\/extra>"],"type":"bar","name":"university professor","marker":{"color":"rgba(94,164,138,1)","line":{"color":"rgba(94,164,138,1)"}},"textfont":{"color":"rgba(94,164,138,1)"},"error_y":{"color":"rgba(94,164,138,1)"},"error_x":{"color":"rgba(94,164,138,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[15.789473684210526,6.25,40,7.6923076923076925],"y":["CBC 2026 (n=19)","Davos (n=16)","IDSSD (n=5)","SRI (n=13)"],"orientation":"h","text":[3,1,2,1],"textposition":["inside","inside","inside","inside"],"insidetextanchor":"middle","customdata":[3,1,2,1],"hovertemplate":["%{y}<br>%{fullData.name}: %{customdata} (%{x:.0f}%)<extra><\/extra>","%{y}<br>%{fullData.name}: %{customdata} (%{x:.0f}%)<extra><\/extra>","%{y}<br>%{fullData.name}: %{customdata} (%{x:.0f}%)<extra><\/extra>","%{y}<br>%{fullData.name}: %{customdata} (%{x:.0f}%)<extra><\/extra>"],"type":"bar","name":"other","marker":{"color":"rgba(237,185,103,1)","line":{"color":"rgba(237,185,103,1)"}},"textfont":{"color":"rgba(237,185,103,1)"},"error_y":{"color":"rgba(237,185,103,1)"},"error_x":{"color":"rgba(237,185,103,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[5.2631578947368416,12.5,20],"y":["CBC 2026 (n=19)","Davos (n=16)","IDSSD (n=5)"],"orientation":"h","text":[1,2,1],"textposition":["inside","inside","inside"],"insidetextanchor":"middle","customdata":[1,2,1],"hovertemplate":["%{y}<br>%{fullData.name}: %{customdata} (%{x:.0f}%)<extra><\/extra>","%{y}<br>%{fullData.name}: %{customdata} (%{x:.0f}%)<extra><\/extra>","%{y}<br>%{fullData.name}: %{customdata} (%{x:.0f}%)<extra><\/extra>"],"type":"bar","name":"NGO","marker":{"color":"rgba(238,137,89,1)","line":{"color":"rgba(238,137,89,1)"}},"textfont":{"color":"rgba(238,137,89,1)"},"error_y":{"color":"rgba(238,137,89,1)"},"error_x":{"color":"rgba(238,137,89,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[5.2631578947368416,12.5,7.6923076923076925],"y":["CBC 2026 (n=19)","Davos (n=16)","SRI (n=13)"],"orientation":"h","text":[1,2,1],"textposition":["inside","inside","inside"],"insidetextanchor":"middle","customdata":[1,2,1],"hovertemplate":["%{y}<br>%{fullData.name}: %{customdata} (%{x:.0f}%)<extra><\/extra>","%{y}<br>%{fullData.name}: %{customdata} (%{x:.0f}%)<extra><\/extra>","%{y}<br>%{fullData.name}: %{customdata} (%{x:.0f}%)<extra><\/extra>"],"type":"bar","name":"student","marker":{"color":"rgba(180,141,143,1)","line":{"color":"rgba(180,141,143,1)"}},"textfont":{"color":"rgba(180,141,143,1)"},"error_y":{"color":"rgba(180,141,143,1)"},"error_x":{"color":"rgba(180,141,143,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[6.25,15.384615384615385],"y":["Davos (n=16)","SRI (n=13)"],"orientation":"h","text":[1,2],"textposition":["inside","inside"],"insidetextanchor":"middle","customdata":[1,2],"hovertemplate":["%{y}<br>%{fullData.name}: %{customdata} (%{x:.0f}%)<extra><\/extra>","%{y}<br>%{fullData.name}: %{customdata} (%{x:.0f}%)<extra><\/extra>"],"type":"bar","name":"funder","marker":{"color":"rgba(115,99,130,1)","line":{"color":"rgba(115,99,130,1)"}},"textfont":{"color":"rgba(115,99,130,1)"},"error_y":{"color":"rgba(115,99,130,1)"},"error_x":{"color":"rgba(115,99,130,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[5.2631578947368416],"y":["CBC 2026 (n=19)"],"orientation":"h","text":1,"textposition":"inside","insidetextanchor":"middle","customdata":[1],"hovertemplate":"%{y}<br>%{fullData.name}: %{customdata} (%{x:.0f}%)<extra><\/extra>","type":"bar","name":"societal actor","marker":{"color":"rgba(181,101,118,1)","line":{"color":"rgba(181,101,118,1)"}},"textfont":{"color":"rgba(181,101,118,1)"},"error_y":{"color":"rgba(181,101,118,1)"},"error_x":{"color":"rgba(181,101,118,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<div class="cell" title="Career stage">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">profile_fig</span>(<span class="st">"career"</span>, <span class="fu">c</span>(<span class="st">"early (0-5 yr experience)"</span>, <span class="st">"mid (5-15 yr experience)"</span>,</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>                        <span class="st">"late (15+ experience)"</span>, <span class="st">"prefer not to say"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-13f3dd7a161d4a6270be" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-13f3dd7a161d4a6270be">{"x":{"visdat":{"12c8c723161f0":["function () ","plotlyVisDat"]},"cur_data":"12c8c723161f0","attrs":{"12c8c723161f0":{"x":{},"y":{},"orientation":"h","text":{},"textposition":"inside","insidetextanchor":"middle","customdata":{},"hovertemplate":"%{y}<br>%{fullData.name}: %{customdata} (%{x:.0f}%)<extra><\/extra>","color":{},"colors":["#264653","#2a9d8f","#e9c46a","#f4a261","#e76f51","#8d99ae","#6d597a","#b56576"],"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar"}},"layout":{"margin":{"b":10,"l":10,"t":50,"r":10},"barmode":"stack","plot_bgcolor":"white","font":{"size":12},"showlegend":true,"legend":{"orientation":"h","x":0,"y":1.02,"xanchor":"left","yanchor":"bottom","title":{"text":""}},"xaxis":{"domain":[0,1],"automargin":true,"gridcolor":"#eeeeee","title":"% of event respondents","range":[0,100]},"yaxis":{"domain":[0,1],"automargin":true,"title":"","autorange":"reversed","categoryorder":"array","categoryarray":["CBC 2026 (n=15)","Davos (n=16)","IDSSD (n=6)","SRI (n=12)"],"type":"category"},"hovermode":"closest"},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[13.333333333333334,31.25,50],"y":["CBC 2026 (n=15)","Davos (n=16)","SRI (n=12)"],"orientation":"h","text":[2,5,6],"textposition":["inside","inside","inside"],"insidetextanchor":"middle","customdata":[2,5,6],"hovertemplate":["%{y}<br>%{fullData.name}: %{customdata} (%{x:.0f}%)<extra><\/extra>","%{y}<br>%{fullData.name}: %{customdata} (%{x:.0f}%)<extra><\/extra>","%{y}<br>%{fullData.name}: %{customdata} (%{x:.0f}%)<extra><\/extra>"],"type":"bar","name":"early (0-5 yr experience)","marker":{"color":"rgba(38,70,83,1)","line":{"color":"rgba(38,70,83,1)"}},"textfont":{"color":"rgba(38,70,83,1)"},"error_y":{"color":"rgba(38,70,83,1)"},"error_x":{"color":"rgba(38,70,83,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[53.333333333333336,31.25,33.333333333333329,41.666666666666671],"y":["CBC 2026 (n=15)","Davos (n=16)","IDSSD (n=6)","SRI (n=12)"],"orientation":"h","text":[8,5,2,5],"textposition":["inside","inside","inside","inside"],"insidetextanchor":"middle","customdata":[8,5,2,5],"hovertemplate":["%{y}<br>%{fullData.name}: %{customdata} (%{x:.0f}%)<extra><\/extra>","%{y}<br>%{fullData.name}: %{customdata} (%{x:.0f}%)<extra><\/extra>","%{y}<br>%{fullData.name}: %{customdata} (%{x:.0f}%)<extra><\/extra>","%{y}<br>%{fullData.name}: %{customdata} (%{x:.0f}%)<extra><\/extra>"],"type":"bar","name":"mid (5-15 yr experience)","marker":{"color":"rgba(238,137,89,1)","line":{"color":"rgba(238,137,89,1)"}},"textfont":{"color":"rgba(238,137,89,1)"},"error_y":{"color":"rgba(238,137,89,1)"},"error_x":{"color":"rgba(238,137,89,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[33.333333333333329,37.5,66.666666666666657,8.3333333333333321],"y":["CBC 2026 (n=15)","Davos (n=16)","IDSSD (n=6)","SRI (n=12)"],"orientation":"h","text":[5,6,4,1],"textposition":["inside","inside","inside","inside"],"insidetextanchor":"middle","customdata":[5,6,4,1],"hovertemplate":["%{y}<br>%{fullData.name}: %{customdata} (%{x:.0f}%)<extra><\/extra>","%{y}<br>%{fullData.name}: %{customdata} (%{x:.0f}%)<extra><\/extra>","%{y}<br>%{fullData.name}: %{customdata} (%{x:.0f}%)<extra><\/extra>","%{y}<br>%{fullData.name}: %{customdata} (%{x:.0f}%)<extra><\/extra>"],"type":"bar","name":"late (15+ experience)","marker":{"color":"rgba(181,101,118,1)","line":{"color":"rgba(181,101,118,1)"}},"textfont":{"color":"rgba(181,101,118,1)"},"error_y":{"color":"rgba(181,101,118,1)"},"error_x":{"color":"rgba(181,101,118,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+<section id="row-3" class="level2" height="50%">
+<h2 height="50%" class="anchored" data-anchor-id="row-3">Row</h2>
+<div class="cell" title="Role in biodiversity research (Davos, SRI)">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">profile_fig</span>(<span class="st">"involvement"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-eecc70fc6b6e7a9529e6" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-eecc70fc6b6e7a9529e6">{"x":{"visdat":{"12c8c52822ab2":["function () ","plotlyVisDat"]},"cur_data":"12c8c52822ab2","attrs":{"12c8c52822ab2":{"x":{},"y":{},"orientation":"h","text":{},"textposition":"inside","insidetextanchor":"middle","customdata":{},"hovertemplate":"%{y}<br>%{fullData.name}: %{customdata} (%{x:.0f}%)<extra><\/extra>","color":{},"colors":["#264653","#2a9d8f","#e9c46a","#f4a261","#e76f51","#8d99ae","#6d597a","#b56576"],"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar"}},"layout":{"margin":{"b":10,"l":10,"t":50,"r":10},"barmode":"stack","plot_bgcolor":"white","font":{"size":12},"showlegend":true,"legend":{"orientation":"h","x":0,"y":1.02,"xanchor":"left","yanchor":"bottom","title":{"text":""}},"xaxis":{"domain":[0,1],"automargin":true,"gridcolor":"#eeeeee","title":"% of event respondents","range":[0,100]},"yaxis":{"domain":[0,1],"automargin":true,"title":"","autorange":"reversed","categoryorder":"array","categoryarray":["Davos (n=15)","SRI (n=12)"],"type":"category"},"hovermode":"closest"},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[53.333333333333336,66.666666666666657],"y":["Davos (n=15)","SRI (n=12)"],"orientation":"h","text":[8,8],"textposition":["inside","inside"],"insidetextanchor":"middle","customdata":[8,8],"hovertemplate":["%{y}<br>%{fullData.name}: %{customdata} (%{x:.0f}%)<extra><\/extra>","%{y}<br>%{fullData.name}: %{customdata} (%{x:.0f}%)<extra><\/extra>"],"type":"bar","name":"research","marker":{"color":"rgba(38,70,83,1)","line":{"color":"rgba(38,70,83,1)"}},"textfont":{"color":"rgba(38,70,83,1)"},"error_y":{"color":"rgba(38,70,83,1)"},"error_x":{"color":"rgba(38,70,83,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[13.333333333333334,16.666666666666664],"y":["Davos (n=15)","SRI (n=12)"],"orientation":"h","text":[2,2],"textposition":["inside","inside"],"insidetextanchor":"middle","customdata":[2,2],"hovertemplate":["%{y}<br>%{fullData.name}: %{customdata} (%{x:.0f}%)<extra><\/extra>","%{y}<br>%{fullData.name}: %{customdata} (%{x:.0f}%)<extra><\/extra>"],"type":"bar","name":"not directly involved in research (eg funder)","marker":{"color":"rgba(140,173,130,1)","line":{"color":"rgba(140,173,130,1)"}},"textfont":{"color":"rgba(140,173,130,1)"},"error_y":{"color":"rgba(140,173,130,1)"},"error_x":{"color":"rgba(140,173,130,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[20,8.3333333333333321],"y":["Davos (n=15)","SRI (n=12)"],"orientation":"h","text":[3,1],"textposition":["inside","inside"],"insidetextanchor":"middle","customdata":[3,1],"hovertemplate":["%{y}<br>%{fullData.name}: %{customdata} (%{x:.0f}%)<extra><\/extra>","%{y}<br>%{fullData.name}: %{customdata} (%{x:.0f}%)<extra><\/extra>"],"type":"bar","name":"other","marker":{"color":"rgba(242,169,99,1)","line":{"color":"rgba(242,169,99,1)"}},"textfont":{"color":"rgba(242,169,99,1)"},"error_y":{"color":"rgba(242,169,99,1)"},"error_x":{"color":"rgba(242,169,99,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[6.666666666666667],"y":["Davos (n=15)"],"orientation":"h","text":1,"textposition":"inside","insidetextanchor":"middle","customdata":[1],"hovertemplate":"%{y}<br>%{fullData.name}: %{customdata} (%{x:.0f}%)<extra><\/extra>","type":"bar","name":"description (eg taxonomist)","marker":{"color":"rgba(218,121,100,1)","line":{"color":"rgba(218,121,100,1)"}},"textfont":{"color":"rgba(218,121,100,1)"},"error_y":{"color":"rgba(218,121,100,1)"},"error_x":{"color":"rgba(218,121,100,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[6.666666666666667],"y":["Davos (n=15)"],"orientation":"h","text":1,"textposition":"inside","insidetextanchor":"middle","customdata":[1],"hovertemplate":"%{y}<br>%{fullData.name}: %{customdata} (%{x:.0f}%)<extra><\/extra>","type":"bar","name":"monitoring (eg LTER)","marker":{"color":"rgba(122,114,142,1)","line":{"color":"rgba(122,114,142,1)"}},"textfont":{"color":"rgba(122,114,142,1)"},"error_y":{"color":"rgba(122,114,142,1)"},"error_x":{"color":"rgba(122,114,142,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[8.3333333333333321],"y":["SRI (n=12)"],"orientation":"h","text":1,"textposition":"inside","insidetextanchor":"middle","customdata":[1],"hovertemplate":"%{y}<br>%{fullData.name}: %{customdata} (%{x:.0f}%)<extra><\/extra>","type":"bar","name":"practitioner (e.g. park manager)","marker":{"color":"rgba(181,101,118,1)","line":{"color":"rgba(181,101,118,1)"}},"textfont":{"color":"rgba(181,101,118,1)"},"error_y":{"color":"rgba(181,101,118,1)"},"error_x":{"color":"rgba(181,101,118,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<div class="cell" title="Disciplines (CBC 2026, multiple answers allowed)">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">multi_fig</span>(<span class="st">"discipline"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-f14fdde7be6e635118c4" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-f14fdde7be6e635118c4">{"x":{"visdat":{"12c8c689bce6b":["function () ","plotlyVisDat"]},"cur_data":"12c8c689bce6b","attrs":{"12c8c689bce6b":{"x":{},"y":{},"orientation":"h","text":{},"textposition":"outside","marker":{"color":"#2a9d8f"},"customdata":{},"hovertemplate":"%{y}<br>%{x} votes (%{customdata:.0f}% of participants)<extra><\/extra>","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar"}},"layout":{"margin":{"b":10,"l":10,"t":10,"r":10},"barmode":"stack","plot_bgcolor":"white","font":{"size":12},"showlegend":false,"legend":{"orientation":"h","x":0,"y":1.02,"xanchor":"left","yanchor":"bottom","title":{"text":""}},"xaxis":{"domain":[0,1],"automargin":true,"gridcolor":"#eeeeee","title":"Number of participants"},"yaxis":{"domain":[0,1],"automargin":true,"title":"","type":"category","categoryorder":"array","categoryarray":["humanities","other","social sciences","inter / multi / transdisciplinary","natural sciences"]},"hovermode":"closest"},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[2,2,3,7,9],"y":["humanities","other","social sciences","inter / multi / transdisciplinary","natural sciences"],"orientation":"h","text":[2,2,3,7,9],"textposition":["outside","outside","outside","outside","outside"],"marker":{"color":"#2a9d8f","line":{"color":"rgba(31,119,180,1)"}},"customdata":[12.5,12.5,18.75,43.75,56.25],"hovertemplate":["%{y}<br>%{x} votes (%{customdata:.0f}% of participants)<extra><\/extra>","%{y}<br>%{x} votes (%{customdata:.0f}% of participants)<extra><\/extra>","%{y}<br>%{x} votes (%{customdata:.0f}% of participants)<extra><\/extra>","%{y}<br>%{x} votes (%{customdata:.0f}% of participants)<extra><\/extra>","%{y}<br>%{x} votes (%{customdata:.0f}% of participants)<extra><\/extra>"],"type":"bar","error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<div class="cell" title="CRA of interest (IDSSD, multiple answers allowed)">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">multi_fig</span>(<span class="st">"cra_interest"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-8cb9ef0c8d5a6f20642f" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-8cb9ef0c8d5a6f20642f">{"x":{"visdat":{"12c8c5849d387":["function () ","plotlyVisDat"]},"cur_data":"12c8c5849d387","attrs":{"12c8c5849d387":{"x":{},"y":{},"orientation":"h","text":{},"textposition":"outside","marker":{"color":"#2a9d8f"},"customdata":{},"hovertemplate":"%{y}<br>%{x} votes (%{customdata:.0f}% of participants)<extra><\/extra>","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar"}},"layout":{"margin":{"b":10,"l":10,"t":10,"r":10},"barmode":"stack","plot_bgcolor":"white","font":{"size":12},"showlegend":false,"legend":{"orientation":"h","x":0,"y":1.02,"xanchor":"left","yanchor":"bottom","title":{"text":""}},"xaxis":{"domain":[0,1],"automargin":true,"gridcolor":"#eeeeee","title":"Number of participants"},"yaxis":{"domain":[0,1],"automargin":true,"title":"","type":"category","categoryorder":"array","categoryarray":["Arctic 3","Biodiversity 3"]},"hovermode":"closest"},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[3,6],"y":["Arctic 3","Biodiversity 3"],"orientation":"h","text":[3,6],"textposition":["outside","outside"],"marker":{"color":"#2a9d8f","line":{"color":"rgba(31,119,180,1)"}},"customdata":[42.857142857142854,85.714285714285708],"hovertemplate":["%{y}<br>%{x} votes (%{customdata:.0f}% of participants)<extra><\/extra>","%{y}<br>%{x} votes (%{customdata:.0f}% of participants)<extra><\/extra>"],"type":"bar","error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+</section>
+<section id="perceptions" class="level1" data-orientation="columns">
+<h1 data-orientation="columns">Perceptions</h1>
+<section id="column" class="level2" width="60%">
+<h2 width="60%" class="anchored" data-anchor-id="column">Column</h2>
+<div class="cell" title="Is long-term biodiversity monitoring adequately funded? (0 = not at all, 4 = absolutely)">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">likert_fig</span>(<span class="st">"funding"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-bc4d5b651a02271b96a9" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-bc4d5b651a02271b96a9">{"x":{"visdat":{"12c8c8ea10da":["function () ","plotlyVisDat"]},"cur_data":"12c8c8ea10da","attrs":{"12c8c8ea10da":{"x":{},"y":{},"orientation":"h","text":{},"textposition":"inside","insidetextanchor":"middle","customdata":{},"hovertemplate":"%{y}<br>%{fullData.name}: %{customdata} responses (%{x:.0f}%)<extra><\/extra>","color":{},"colors":["#b2182b","#ef8a62","#d9d9d9","#67a9cf","#2166ac"],"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar"}},"layout":{"margin":{"b":10,"l":10,"t":50,"r":10},"barmode":"stack","plot_bgcolor":"white","font":{"size":12},"showlegend":true,"legend":{"orientation":"h","x":0,"y":1.02,"xanchor":"left","yanchor":"bottom","title":{"text":""}},"xaxis":{"domain":[0,1],"automargin":true,"gridcolor":"#eeeeee","title":"% of responses","range":[0,100]},"yaxis":{"domain":[0,1],"automargin":true,"title":"","autorange":"reversed","categoryorder":"array","categoryarray":["CBC 2026 (n=15, mean 1.6)","Davos (n=16, mean 1.4)","IDSSD (BD3) (n=5, mean 1.6)","IDSSD (A3) (n=4, mean 2.0)","SRI (n=12, mean 1.4)"],"type":"category"},"hovermode":"closest"},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[6.666666666666667,6.25,0,0,8.3333333333333321],"y":["CBC 2026 (n=15, mean 1.6)","Davos (n=16, mean 1.4)","IDSSD (A3) (n=4, mean 2.0)","IDSSD (BD3) (n=5, mean 1.6)","SRI (n=12, mean 1.4)"],"orientation":"h","text":["1","1","","","1"],"textposition":["inside","inside","inside","inside","inside"],"insidetextanchor":"middle","customdata":[1,1,0,0,1],"hovertemplate":["%{y}<br>%{fullData.name}: %{customdata} responses (%{x:.0f}%)<extra><\/extra>","%{y}<br>%{fullData.name}: %{customdata} responses (%{x:.0f}%)<extra><\/extra>","%{y}<br>%{fullData.name}: %{customdata} responses (%{x:.0f}%)<extra><\/extra>","%{y}<br>%{fullData.name}: %{customdata} responses (%{x:.0f}%)<extra><\/extra>","%{y}<br>%{fullData.name}: %{customdata} responses (%{x:.0f}%)<extra><\/extra>"],"type":"bar","name":"0 – Not at all","marker":{"color":"rgba(178,24,43,1)","line":{"color":"rgba(178,24,43,1)"}},"textfont":{"color":"rgba(178,24,43,1)"},"error_y":{"color":"rgba(178,24,43,1)"},"error_x":{"color":"rgba(178,24,43,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[46.666666666666664,68.75,25,60,58.333333333333336],"y":["CBC 2026 (n=15, mean 1.6)","Davos (n=16, mean 1.4)","IDSSD (A3) (n=4, mean 2.0)","IDSSD (BD3) (n=5, mean 1.6)","SRI (n=12, mean 1.4)"],"orientation":"h","text":["7","11","1","3","7"],"textposition":["inside","inside","inside","inside","inside"],"insidetextanchor":"middle","customdata":[7,11,1,3,7],"hovertemplate":["%{y}<br>%{fullData.name}: %{customdata} responses (%{x:.0f}%)<extra><\/extra>","%{y}<br>%{fullData.name}: %{customdata} responses (%{x:.0f}%)<extra><\/extra>","%{y}<br>%{fullData.name}: %{customdata} responses (%{x:.0f}%)<extra><\/extra>","%{y}<br>%{fullData.name}: %{customdata} responses (%{x:.0f}%)<extra><\/extra>","%{y}<br>%{fullData.name}: %{customdata} responses (%{x:.0f}%)<extra><\/extra>"],"type":"bar","name":"1 – Clearly not enough","marker":{"color":"rgba(239,138,98,1)","line":{"color":"rgba(239,138,98,1)"}},"textfont":{"color":"rgba(239,138,98,1)"},"error_y":{"color":"rgba(239,138,98,1)"},"error_x":{"color":"rgba(239,138,98,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[33.333333333333329,6.25,50,20,25],"y":["CBC 2026 (n=15, mean 1.6)","Davos (n=16, mean 1.4)","IDSSD (A3) (n=4, mean 2.0)","IDSSD (BD3) (n=5, mean 1.6)","SRI (n=12, mean 1.4)"],"orientation":"h","text":["5","1","2","1","3"],"textposition":["inside","inside","inside","inside","inside"],"insidetextanchor":"middle","customdata":[5,1,2,1,3],"hovertemplate":["%{y}<br>%{fullData.name}: %{customdata} responses (%{x:.0f}%)<extra><\/extra>","%{y}<br>%{fullData.name}: %{customdata} responses (%{x:.0f}%)<extra><\/extra>","%{y}<br>%{fullData.name}: %{customdata} responses (%{x:.0f}%)<extra><\/extra>","%{y}<br>%{fullData.name}: %{customdata} responses (%{x:.0f}%)<extra><\/extra>","%{y}<br>%{fullData.name}: %{customdata} responses (%{x:.0f}%)<extra><\/extra>"],"type":"bar","name":"2 – Enough to get by","marker":{"color":"rgba(217,217,217,1)","line":{"color":"rgba(217,217,217,1)"}},"textfont":{"color":"rgba(217,217,217,1)"},"error_y":{"color":"rgba(217,217,217,1)"},"error_x":{"color":"rgba(217,217,217,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[6.666666666666667,12.5,25,20,0],"y":["CBC 2026 (n=15, mean 1.6)","Davos (n=16, mean 1.4)","IDSSD (A3) (n=4, mean 2.0)","IDSSD (BD3) (n=5, mean 1.6)","SRI (n=12, mean 1.4)"],"orientation":"h","text":["1","2","1","1",""],"textposition":["inside","inside","inside","inside","inside"],"insidetextanchor":"middle","customdata":[1,2,1,1,0],"hovertemplate":["%{y}<br>%{fullData.name}: %{customdata} responses (%{x:.0f}%)<extra><\/extra>","%{y}<br>%{fullData.name}: %{customdata} responses (%{x:.0f}%)<extra><\/extra>","%{y}<br>%{fullData.name}: %{customdata} responses (%{x:.0f}%)<extra><\/extra>","%{y}<br>%{fullData.name}: %{customdata} responses (%{x:.0f}%)<extra><\/extra>","%{y}<br>%{fullData.name}: %{customdata} responses (%{x:.0f}%)<extra><\/extra>"],"type":"bar","name":"3 – Yes, but can do better","marker":{"color":"rgba(103,169,207,1)","line":{"color":"rgba(103,169,207,1)"}},"textfont":{"color":"rgba(103,169,207,1)"},"error_y":{"color":"rgba(103,169,207,1)"},"error_x":{"color":"rgba(103,169,207,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[6.666666666666667,6.25,0,0,8.3333333333333321],"y":["CBC 2026 (n=15, mean 1.6)","Davos (n=16, mean 1.4)","IDSSD (A3) (n=4, mean 2.0)","IDSSD (BD3) (n=5, mean 1.6)","SRI (n=12, mean 1.4)"],"orientation":"h","text":["1","1","","","1"],"textposition":["inside","inside","inside","inside","inside"],"insidetextanchor":"middle","customdata":[1,1,0,0,1],"hovertemplate":["%{y}<br>%{fullData.name}: %{customdata} responses (%{x:.0f}%)<extra><\/extra>","%{y}<br>%{fullData.name}: %{customdata} responses (%{x:.0f}%)<extra><\/extra>","%{y}<br>%{fullData.name}: %{customdata} responses (%{x:.0f}%)<extra><\/extra>","%{y}<br>%{fullData.name}: %{customdata} responses (%{x:.0f}%)<extra><\/extra>","%{y}<br>%{fullData.name}: %{customdata} responses (%{x:.0f}%)<extra><\/extra>"],"type":"bar","name":"4 – Absolutely","marker":{"color":"rgba(33,102,172,1)","line":{"color":"rgba(33,102,172,1)"}},"textfont":{"color":"rgba(33,102,172,1)"},"error_y":{"color":"rgba(33,102,172,1)"},"error_x":{"color":"rgba(33,102,172,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<div class="cell" title="Is there value in adding a transdisciplinary dimension? (0 = not at all, 4 = absolutely)">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">likert_fig</span>(<span class="st">"transdisc_value"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-344453e63d421ceaf37f" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-344453e63d421ceaf37f">{"x":{"visdat":{"12c8c244d181b":["function () ","plotlyVisDat"]},"cur_data":"12c8c244d181b","attrs":{"12c8c244d181b":{"x":{},"y":{},"orientation":"h","text":{},"textposition":"inside","insidetextanchor":"middle","customdata":{},"hovertemplate":"%{y}<br>%{fullData.name}: %{customdata} responses (%{x:.0f}%)<extra><\/extra>","color":{},"colors":["#b2182b","#ef8a62","#d9d9d9","#2166ac"],"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar"}},"layout":{"margin":{"b":10,"l":10,"t":50,"r":10},"barmode":"stack","plot_bgcolor":"white","font":{"size":12},"showlegend":true,"legend":{"orientation":"h","x":0,"y":1.02,"xanchor":"left","yanchor":"bottom","title":{"text":""}},"xaxis":{"domain":[0,1],"automargin":true,"gridcolor":"#eeeeee","title":"% of responses","range":[0,100]},"yaxis":{"domain":[0,1],"automargin":true,"title":"","autorange":"reversed","categoryorder":"array","categoryarray":["CBC 2026 (n=16, mean 3.6)","Davos (n=16, mean 3.7)","IDSSD (BD3) (n=5, mean 4.0)","IDSSD (A3) (n=3, mean 4.0)","SRI (n=12, mean 4.0)"],"type":"category"},"hovermode":"closest"},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[0,0,0,0,0],"y":["CBC 2026 (n=16, mean 3.6)","Davos (n=16, mean 3.7)","IDSSD (A3) (n=3, mean 4.0)","IDSSD (BD3) (n=5, mean 4.0)","SRI (n=12, mean 4.0)"],"orientation":"h","text":["","","","",""],"textposition":["inside","inside","inside","inside","inside"],"insidetextanchor":"middle","customdata":[0,0,0,0,0],"hovertemplate":["%{y}<br>%{fullData.name}: %{customdata} responses (%{x:.0f}%)<extra><\/extra>","%{y}<br>%{fullData.name}: %{customdata} responses (%{x:.0f}%)<extra><\/extra>","%{y}<br>%{fullData.name}: %{customdata} responses (%{x:.0f}%)<extra><\/extra>","%{y}<br>%{fullData.name}: %{customdata} responses (%{x:.0f}%)<extra><\/extra>","%{y}<br>%{fullData.name}: %{customdata} responses (%{x:.0f}%)<extra><\/extra>"],"type":"bar","name":"0 – Not at all","marker":{"color":"rgba(178,24,43,1)","line":{"color":"rgba(178,24,43,1)"}},"textfont":{"color":"rgba(178,24,43,1)"},"error_y":{"color":"rgba(178,24,43,1)"},"error_x":{"color":"rgba(178,24,43,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[6.25,6.25,0,0,0],"y":["CBC 2026 (n=16, mean 3.6)","Davos (n=16, mean 3.7)","IDSSD (A3) (n=3, mean 4.0)","IDSSD (BD3) (n=5, mean 4.0)","SRI (n=12, mean 4.0)"],"orientation":"h","text":["1","1","","",""],"textposition":["inside","inside","inside","inside","inside"],"insidetextanchor":"middle","customdata":[1,1,0,0,0],"hovertemplate":["%{y}<br>%{fullData.name}: %{customdata} responses (%{x:.0f}%)<extra><\/extra>","%{y}<br>%{fullData.name}: %{customdata} responses (%{x:.0f}%)<extra><\/extra>","%{y}<br>%{fullData.name}: %{customdata} responses (%{x:.0f}%)<extra><\/extra>","%{y}<br>%{fullData.name}: %{customdata} responses (%{x:.0f}%)<extra><\/extra>","%{y}<br>%{fullData.name}: %{customdata} responses (%{x:.0f}%)<extra><\/extra>"],"type":"bar","name":"1 – Interesting, not important","marker":{"color":"rgba(239,138,98,1)","line":{"color":"rgba(239,138,98,1)"}},"textfont":{"color":"rgba(239,138,98,1)"},"error_y":{"color":"rgba(239,138,98,1)"},"error_x":{"color":"rgba(239,138,98,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[12.5,6.25,0,0,0],"y":["CBC 2026 (n=16, mean 3.6)","Davos (n=16, mean 3.7)","IDSSD (A3) (n=3, mean 4.0)","IDSSD (BD3) (n=5, mean 4.0)","SRI (n=12, mean 4.0)"],"orientation":"h","text":["2","1","","",""],"textposition":["inside","inside","inside","inside","inside"],"insidetextanchor":"middle","customdata":[2,1,0,0,0],"hovertemplate":["%{y}<br>%{fullData.name}: %{customdata} responses (%{x:.0f}%)<extra><\/extra>","%{y}<br>%{fullData.name}: %{customdata} responses (%{x:.0f}%)<extra><\/extra>","%{y}<br>%{fullData.name}: %{customdata} responses (%{x:.0f}%)<extra><\/extra>","%{y}<br>%{fullData.name}: %{customdata} responses (%{x:.0f}%)<extra><\/extra>","%{y}<br>%{fullData.name}: %{customdata} responses (%{x:.0f}%)<extra><\/extra>"],"type":"bar","name":"2 – Important, but not a priority","marker":{"color":"rgba(217,217,217,1)","line":{"color":"rgba(217,217,217,1)"}},"textfont":{"color":"rgba(217,217,217,1)"},"error_y":{"color":"rgba(217,217,217,1)"},"error_x":{"color":"rgba(217,217,217,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[81.25,87.5,100,100,100],"y":["CBC 2026 (n=16, mean 3.6)","Davos (n=16, mean 3.7)","IDSSD (A3) (n=3, mean 4.0)","IDSSD (BD3) (n=5, mean 4.0)","SRI (n=12, mean 4.0)"],"orientation":"h","text":["13","14","3","5","12"],"textposition":["inside","inside","inside","inside","inside"],"insidetextanchor":"middle","customdata":[13,14,3,5,12],"hovertemplate":["%{y}<br>%{fullData.name}: %{customdata} responses (%{x:.0f}%)<extra><\/extra>","%{y}<br>%{fullData.name}: %{customdata} responses (%{x:.0f}%)<extra><\/extra>","%{y}<br>%{fullData.name}: %{customdata} responses (%{x:.0f}%)<extra><\/extra>","%{y}<br>%{fullData.name}: %{customdata} responses (%{x:.0f}%)<extra><\/extra>","%{y}<br>%{fullData.name}: %{customdata} responses (%{x:.0f}%)<extra><\/extra>"],"type":"bar","name":"4 – Absolutely, a priority","marker":{"color":"rgba(33,102,172,1)","line":{"color":"rgba(33,102,172,1)"}},"textfont":{"color":"rgba(33,102,172,1)"},"error_y":{"color":"rgba(33,102,172,1)"},"error_x":{"color":"rgba(33,102,172,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+<section id="column-1" class="level2" width="40%">
+<h2 width="40%" class="anchored" data-anchor-id="column-1">Column</h2>
+<div class="cell" title="Other funding opportunities people know of">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>fo <span class="ot">&lt;-</span> <span class="fu">funding_other_summary</span>(tx)</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>named <span class="ot">&lt;-</span> fo<span class="sc">$</span>named <span class="sc">|&gt;</span></span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">transmute</span>(<span class="at">Source =</span> event_label, <span class="st">`</span><span class="at">Funding opportunity named</span><span class="st">`</span> <span class="ot">=</span> answer)</span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a><span class="fu">tagList</span>(</span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">p</span>(<span class="fu">HTML</span>(<span class="fu">sprintf</span>(<span class="st">"&lt;b&gt;%d of %d answers were “No”.&lt;/b&gt; The %d that named something are listed below."</span>,</span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a>                 fo<span class="sc">$</span>n_no, fo<span class="sc">$</span>n_all, <span class="fu">nrow</span>(named)))),</span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tbl</span>(named, <span class="at">fill =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<p><b>16 of 27 answers were “No”.</b> The 11 that named something are listed below.</p>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-1d0b7de3a77610dfcf4d" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-1d0b7de3a77610dfcf4d">{"x":{"filter":"none","vertical":false,"fillContainer":false,"data":[["CBC 2026","Davos","Davos","Davos","Davos","Davos","Davos","IDSSD","IDSSD","SRI","SRI"],["Horizon, Biodiversa+","National space agencies","Government","Kickstarter","Possibly Instituto Chico Mendes","Synthesis centres (e.g. iDIv, CESAB)","National research funding organisations","EU Horizon SOIL Mission 100 living Labs on soil health","ArcticNet (Canada), various Horison EU, Nordforsk","MNP","SANBI"]],"container":"<table class=\"compact stripe\">\n  <thead>\n    <tr>\n      <th>Source<\/th>\n      <th>Funding opportunity named<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"ft","paging":false,"columnDefs":[{"name":"Source","targets":0},{"name":"Funding opportunity named","targets":1}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+</section>
+<section id="engagement" class="level1">
+<h1>Engagement</h1>
+<section id="row-4" class="level2" height="88%">
+<h2 height="88%" class="anchored" data-anchor-id="row-4">Row</h2>
+<div class="cell" title="What would move you from interest to engagement / co-funding? (Davos, IDSSD, SRI)">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>rd <span class="ot">&lt;-</span> <span class="fu">totals_data</span>(ch, <span class="st">"drivers"</span>)</span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>dropped_drv <span class="ot">&lt;-</span> rd<span class="sc">$</span>dropped</span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a><span class="fu">event_bars</span>(rd<span class="sc">$</span>data, <span class="st">"option"</span>, rd<span class="sc">$</span>keep, <span class="st">"Responses"</span>, <span class="at">dtick =</span> <span class="dv">1</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-5d82ab19f0802fdecd4f" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-5d82ab19f0802fdecd4f">{"x":{"visdat":{"12c8c67e39912":["function () ","plotlyVisDat"]},"cur_data":"12c8c67e39912","attrs":{"12c8c67e39912":{"x":{},"y":{},"orientation":"h","color":{},"colors":["#2a9d8f","#264653","#e9c46a","#e76f51"],"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar"}},"layout":{"margin":{"b":10,"l":10,"t":50,"r":10},"barmode":"stack","plot_bgcolor":"white","font":{"size":12},"showlegend":true,"legend":{"orientation":"h","x":0,"y":1.02,"xanchor":"left","yanchor":"bottom","title":{"text":""}},"xaxis":{"domain":[0,1],"automargin":true,"gridcolor":"#eeeeee","title":"Responses","dtick":1},"yaxis":{"domain":[0,1],"automargin":true,"title":"","type":"category","categoryorder":"array","categoryarray":["Capacity-building components","Flexible funding and eligibility<br>mechanisms","Open science and data-sharing<br>approaches","Strong science-policy interfaces","Opportunities for international<br>partnerships","Strong alignment with<br>institutional priorities","Alignment with national or<br>international policy agendas","Clear societal impact pathways","Strong Indigenous and local<br>community engagement"]},"hovermode":"closest"},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[4,4,1,1,1,2],"y":["Clear societal impact pathways","Strong Indigenous and local<br>community engagement","Flexible funding and eligibility<br>mechanisms","Capacity-building components","Open science and data-sharing<br>approaches","Strong science-policy interfaces"],"orientation":"h","type":"bar","name":"Davos","marker":{"color":"rgba(38,70,83,1)","line":{"color":"rgba(38,70,83,1)"}},"textfont":{"color":"rgba(38,70,83,1)"},"error_y":{"color":"rgba(38,70,83,1)"},"error_x":{"color":"rgba(38,70,83,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[2,1,1,1,2],"y":["Strong alignment with<br>institutional priorities","Alignment with national or<br>international policy agendas","Clear societal impact pathways","Strong Indigenous and local<br>community engagement","Opportunities for international<br>partnerships"],"orientation":"h","type":"bar","name":"IDSSD","marker":{"color":"rgba(233,196,106,1)","line":{"color":"rgba(233,196,106,1)"}},"textfont":{"color":"rgba(233,196,106,1)"},"error_y":{"color":"rgba(233,196,106,1)"},"error_x":{"color":"rgba(233,196,106,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[1,4,2,3,1],"y":["Strong alignment with<br>institutional priorities","Alignment with national or<br>international policy agendas","Clear societal impact pathways","Strong Indigenous and local<br>community engagement","Opportunities for international<br>partnerships"],"orientation":"h","type":"bar","name":"SRI","marker":{"color":"rgba(231,111,81,1)","line":{"color":"rgba(231,111,81,1)"}},"textfont":{"color":"rgba(231,111,81,1)"},"error_y":{"color":"rgba(231,111,81,1)"},"error_x":{"color":"rgba(231,111,81,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<div class="cell" title="What barriers could prevent your participation? (Davos, IDSSD, SRI)">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>rb <span class="ot">&lt;-</span> <span class="fu">totals_data</span>(ch, <span class="st">"barriers"</span>)</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>dropped_bar <span class="ot">&lt;-</span> rb<span class="sc">$</span>dropped</span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="fu">event_bars</span>(rb<span class="sc">$</span>data, <span class="st">"option"</span>, rb<span class="sc">$</span>keep, <span class="st">"Responses"</span>, <span class="at">dtick =</span> <span class="dv">1</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-d37f86114844fe96cc95" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-d37f86114844fe96cc95">{"x":{"visdat":{"12c8c75229ebe":["function () ","plotlyVisDat"]},"cur_data":"12c8c75229ebe","attrs":{"12c8c75229ebe":{"x":{},"y":{},"orientation":"h","color":{},"colors":["#2a9d8f","#264653","#e9c46a","#e76f51"],"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar"}},"layout":{"margin":{"b":10,"l":10,"t":50,"r":10},"barmode":"stack","plot_bgcolor":"white","font":{"size":12},"showlegend":true,"legend":{"orientation":"h","x":0,"y":1.02,"xanchor":"left","yanchor":"bottom","title":{"text":""}},"xaxis":{"domain":[0,1],"automargin":true,"gridcolor":"#eeeeee","title":"Responses","dtick":1},"yaxis":{"domain":[0,1],"automargin":true,"title":"","type":"category","categoryorder":"array","categoryarray":["Administrative complexity","Difficulty in identifying<br>suitable partners","Lack of partners","Political mandate / priorities","Timeline misalignment","Unclear strategic value","other","Lack of expertise or resources to<br>engage effectively","Limited institutional capacity /<br>mandate","Need for stronger policy<br>alignment","Eligibility rules","Budget limitations"]},"hovermode":"closest"},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[3,2,1,1,1,2,1,1],"y":["Budget limitations","Eligibility rules","Political mandate / priorities","Unclear strategic value","Lack of partners","Limited institutional capacity /<br>mandate","Need for stronger policy<br>alignment","other"],"orientation":"h","type":"bar","name":"Davos","marker":{"color":"rgba(38,70,83,1)","line":{"color":"rgba(38,70,83,1)"}},"textfont":{"color":"rgba(38,70,83,1)"},"error_y":{"color":"rgba(38,70,83,1)"},"error_x":{"color":"rgba(38,70,83,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[1,1],"y":["Timeline misalignment","Need for stronger policy<br>alignment"],"orientation":"h","type":"bar","name":"IDSSD","marker":{"color":"rgba(233,196,106,1)","line":{"color":"rgba(233,196,106,1)"}},"textfont":{"color":"rgba(233,196,106,1)"},"error_y":{"color":"rgba(233,196,106,1)"},"error_x":{"color":"rgba(233,196,106,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[5,1,1,2,1],"y":["Budget limitations","Administrative complexity","Eligibility rules","Lack of expertise or resources to<br>engage effectively","Difficulty in identifying<br>suitable partners"],"orientation":"h","type":"bar","name":"SRI","marker":{"color":"rgba(231,111,81,1)","line":{"color":"rgba(231,111,81,1)"}},"textfont":{"color":"rgba(231,111,81,1)"},"error_y":{"color":"rgba(231,111,81,1)"},"error_x":{"color":"rgba(231,111,81,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+<section id="row-5" class="level2" height="12%">
+<h2 height="12%" class="anchored" data-anchor-id="row-5">Row</h2>
+<div class="cell" title="Not shown">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">asis_output</span>(<span class="fu">paste0</span>(</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Options nobody chose — *drivers:* "</span>, <span class="cf">if</span> (<span class="fu">length</span>(dropped_drv)) <span class="fu">tolower</span>(<span class="fu">paste</span>(dropped_drv, <span class="at">collapse =</span> <span class="st">", "</span>)) <span class="cf">else</span> <span class="st">"none"</span>,</span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>  <span class="st">". *Barriers:* "</span>, <span class="cf">if</span> (<span class="fu">length</span>(dropped_bar)) <span class="fu">tolower</span>(<span class="fu">paste</span>(dropped_bar, <span class="at">collapse =</span> <span class="st">", "</span>)) <span class="cf">else</span> <span class="st">"none"</span>,</span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>  <span class="st">". CBC 2026 did not ask these questions; SRI's barrier list had extra options."</span></span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<p>Options nobody chose — <em>drivers:</em> co-investment opportunities, long-term collaboration potential, other. <em>Barriers:</em> challenges in engaging across disciplines or sectors, competing strategic priorities, concerns about workload relative to expected benefits, unclear added value or relevance to my work. CBC 2026 did not ask these questions; SRI’s barrier list had extra options.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="voices" class="level1">
+<h1>Voices</h1>
+<section id="row-6" class="level2" height="42%">
+<h2 height="42%" class="anchored" data-anchor-id="row-6">Row</h2>
+<div class="cell" title="Who should be co-design partners? (keyword-coded answers)">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>r <span class="ot">&lt;-</span> <span class="fu">theme_counts</span>(tx, <span class="st">"codesign"</span>)</span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a><span class="fu">event_bars</span>(r<span class="sc">$</span>data, <span class="st">"theme"</span>, r<span class="sc">$</span>order, <span class="st">"Answers mentioning the theme (one answer can count in several)"</span>, <span class="at">dtick =</span> <span class="dv">2</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-453355f5d9cf93f38aa7" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-453355f5d9cf93f38aa7">{"x":{"visdat":{"12c8c53d45200":["function () ","plotlyVisDat"]},"cur_data":"12c8c53d45200","attrs":{"12c8c53d45200":{"x":{},"y":{},"orientation":"h","color":{},"colors":["#2a9d8f","#264653","#e9c46a","#e76f51"],"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar"}},"layout":{"margin":{"b":10,"l":10,"t":50,"r":10},"barmode":"stack","plot_bgcolor":"white","font":{"size":12},"showlegend":true,"legend":{"orientation":"h","x":0,"y":1.02,"xanchor":"left","yanchor":"bottom","title":{"text":""}},"xaxis":{"domain":[0,1],"automargin":true,"gridcolor":"#eeeeee","title":"Answers mentioning the theme (one answer can count in several)","dtick":2},"yaxis":{"domain":[0,1],"automargin":true,"title":"","type":"category","categoryorder":"array","categoryarray":["More-than-humans","Academics","Civil society & NGOs","Education, youth & citizens","Land & resource users","Government & policy makers","Indigenous peoples & local<br>communities"]},"hovermode":"closest"},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[2,3,3,3,9,3,1],"y":["Academics","Civil society & NGOs","Education, youth & citizens","Government & policy makers","Indigenous peoples & local<br>communities","Land & resource users","More-than-humans"],"orientation":"h","type":"bar","name":"Davos","marker":{"color":"rgba(38,70,83,1)","line":{"color":"rgba(38,70,83,1)"}},"textfont":{"color":"rgba(38,70,83,1)"},"error_y":{"color":"rgba(38,70,83,1)"},"error_x":{"color":"rgba(38,70,83,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[1,1,2,1],"y":["Education, youth & citizens","Government & policy makers","Indigenous peoples & local<br>communities","Land & resource users"],"orientation":"h","type":"bar","name":"IDSSD","marker":{"color":"rgba(233,196,106,1)","line":{"color":"rgba(233,196,106,1)"}},"textfont":{"color":"rgba(233,196,106,1)"},"error_y":{"color":"rgba(233,196,106,1)"},"error_x":{"color":"rgba(233,196,106,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[1,3,7,1],"y":["Academics","Government & policy makers","Indigenous peoples & local<br>communities","Land & resource users"],"orientation":"h","type":"bar","name":"SRI","marker":{"color":"rgba(231,111,81,1)","line":{"color":"rgba(231,111,81,1)"}},"textfont":{"color":"rgba(231,111,81,1)"},"error_y":{"color":"rgba(231,111,81,1)"},"error_x":{"color":"rgba(231,111,81,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<div class="cell" title="Key factors for 30 by 30 (keyword-coded answers, Davos + SRI)">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>r <span class="ot">&lt;-</span> <span class="fu">theme_counts</span>(tx, <span class="st">"factors_30x30"</span>)</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="fu">event_bars</span>(r<span class="sc">$</span>data, <span class="st">"theme"</span>, r<span class="sc">$</span>order, <span class="st">"Answers mentioning the theme"</span>, <span class="at">dtick =</span> <span class="dv">1</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-e590b1529fade582e5ef" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-e590b1529fade582e5ef">{"x":{"visdat":{"12c8c13690a41":["function () ","plotlyVisDat"]},"cur_data":"12c8c13690a41","attrs":{"12c8c13690a41":{"x":{},"y":{},"orientation":"h","color":{},"colors":["#2a9d8f","#264653","#e9c46a","#e76f51"],"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar"}},"layout":{"margin":{"b":10,"l":10,"t":50,"r":10},"barmode":"stack","plot_bgcolor":"white","font":{"size":12},"showlegend":true,"legend":{"orientation":"h","x":0,"y":1.02,"xanchor":"left","yanchor":"bottom","title":{"text":""}},"xaxis":{"domain":[0,1],"automargin":true,"gridcolor":"#eeeeee","title":"Answers mentioning the theme","dtick":1},"yaxis":{"domain":[0,1],"automargin":true,"title":"","type":"category","categoryorder":"array","categoryarray":["Funding & incentives","Monitoring, evidence & tools","Other","Policy, political will &<br>accountability","Participation, partnership &<br>stewardship"]},"hovermode":"closest"},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[2,2,3,3,2],"y":["Funding & incentives","Monitoring, evidence & tools","Other","Participation, partnership &<br>stewardship","Policy, political will &<br>accountability"],"orientation":"h","type":"bar","name":"Davos","marker":{"color":"rgba(38,70,83,1)","line":{"color":"rgba(38,70,83,1)"}},"textfont":{"color":"rgba(38,70,83,1)"},"error_y":{"color":"rgba(38,70,83,1)"},"error_x":{"color":"rgba(38,70,83,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[3,3,2,5,5],"y":["Funding & incentives","Monitoring, evidence & tools","Other","Participation, partnership &<br>stewardship","Policy, political will &<br>accountability"],"orientation":"h","type":"bar","name":"SRI","marker":{"color":"rgba(231,111,81,1)","line":{"color":"rgba(231,111,81,1)"}},"textfont":{"color":"rgba(231,111,81,1)"},"error_y":{"color":"rgba(231,111,81,1)"},"error_x":{"color":"rgba(231,111,81,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+<section id="row-7" class="level2 tabset" height="58%">
+<h2 class="tabset anchored" height="58%" data-anchor-id="row-7">Row</h2>
+<div class="cell" title="Co-design partners">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tbl</span>(<span class="fu">text_table</span>(tx, <span class="st">"codesign"</span>, <span class="at">with_themes =</span> <span class="cn">TRUE</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-d1d24983214a5c0902c8" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-d1d24983214a5c0902c8">{"x":{"filter":"none","vertical":false,"fillContainer":true,"data":[["Davos","Davos","Davos","Davos","Davos","Davos","Davos","Davos","Davos","Davos","Davos","Davos","Davos","Davos","Davos","Davos","Davos","Davos","IDSSD · BD3","IDSSD · A3","IDSSD","IDSSD","SRI","SRI","SRI","SRI","SRI","SRI","SRI","SRI","SRI","SRI","SRI"],["Local communities","More-than-humans","Local communities","Local and indigenous peoples, children","Governements","Indigenous Peoples and local communities","IPs, LCs &amp; civil society organisations","Education departments","Academics","Local communities","Youth","Government","Local communities","Indigenous, local communities, academic and stakeholders","Entrepreneurs","Farmers","Local NGOs, local people (especially farmers). Extra especially women and indigenous peoples.","Municipalities","all land managers (farmers, foresters, etc) and owners","Northern Indigenous organizations (regional, national, international)","Citizens and primary/secondary schools (citizen science approches and education programs)","Both local comunities and political institutions","Indigenous people","Fisheries associations","Local communities","Communities and resources users","Indigenous people/Local people","policy makers","Local communities","Communities","Policymakers","Indigenous Peoples Local communities Academics","Politicians"],["Indigenous peoples &amp; local communities","More-than-humans","Indigenous peoples &amp; local communities","Indigenous peoples &amp; local communities; Education, youth &amp; citizens","Government &amp; policy makers","Indigenous peoples &amp; local communities","Indigenous peoples &amp; local communities; Civil society &amp; NGOs","Education, youth &amp; citizens","Academics","Indigenous peoples &amp; local communities","Education, youth &amp; citizens","Government &amp; policy makers","Indigenous peoples &amp; local communities","Indigenous peoples &amp; local communities; Civil society &amp; NGOs; Academics","Land &amp; resource users","Land &amp; resource users","Indigenous peoples &amp; local communities; Land &amp; resource users; Civil society &amp; NGOs","Government &amp; policy makers","Land &amp; resource users","Indigenous peoples &amp; local communities","Education, youth &amp; citizens","Indigenous peoples &amp; local communities; Government &amp; policy makers","Indigenous peoples &amp; local communities","Land &amp; resource users","Indigenous peoples &amp; local communities","Indigenous peoples &amp; local communities","Indigenous peoples &amp; local communities","Government &amp; policy makers","Indigenous peoples &amp; local communities","Indigenous peoples &amp; local communities","Government &amp; policy makers","Indigenous peoples &amp; local communities; Academics","Government &amp; policy makers"]],"container":"<table class=\"compact stripe fill-container\">\n  <thead>\n    <tr>\n      <th>Source<\/th>\n      <th>Answer<\/th>\n      <th>Coded theme(s)<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"ft","paging":false,"columnDefs":[{"name":"Source","targets":0},{"name":"Answer","targets":1},{"name":"Coded theme(s)","targets":2}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<div class="cell" title="30 by 30 factors">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tbl</span>(<span class="fu">text_table</span>(tx, <span class="st">"factors_30x30"</span>, <span class="at">with_themes =</span> <span class="cn">TRUE</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-d1b74a42a27427731db0" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-d1b74a42a27427731db0">{"x":{"filter":"none","vertical":false,"fillContainer":true,"data":[["Davos","Davos","Davos","Davos","Davos","Davos","Davos","Davos","Davos","Davos","Davos","Davos","SRI","SRI","SRI","SRI","SRI","SRI","SRI","SRI","SRI","SRI","SRI","SRI","SRI","SRI","SRI","SRI"],["Stop eating hamburgers","Political courage","Recognise Indigenous and traditional territories as a meaningful pathway","Enough land","Bench marks of progress action","Funding going directly to groups on the ground, without western middle-men.","Political will","Terrestrial uprisings","Shared visions","Value local stewardship","incentives","Clear, practical recommendations","Funding","Funding","Collaborations","Compliance","policy framework","Monitoring","Buy-in from affected parties","Incentives","Inclusions","Participatory events","Undo capitalism","Accountability","turning “data collection about nature” into a co-produced system for decision-making, governance, and action","Innovative tools","research polcy strenthening","Recognition of the many facets of biodiversity"],["Other","Policy, political will &amp; accountability","Participation, partnership &amp; stewardship","Other","Monitoring, evidence &amp; tools","Funding &amp; incentives","Policy, political will &amp; accountability","Other","Participation, partnership &amp; stewardship","Participation, partnership &amp; stewardship","Funding &amp; incentives","Monitoring, evidence &amp; tools","Funding &amp; incentives","Funding &amp; incentives","Participation, partnership &amp; stewardship","Policy, political will &amp; accountability","Policy, political will &amp; accountability","Monitoring, evidence &amp; tools","Participation, partnership &amp; stewardship","Funding &amp; incentives","Participation, partnership &amp; stewardship","Participation, partnership &amp; stewardship","Other","Policy, political will &amp; accountability","Policy, political will &amp; accountability; Participation, partnership &amp; stewardship; Monitoring, evidence &amp; tools","Monitoring, evidence &amp; tools","Policy, political will &amp; accountability","Other"]],"container":"<table class=\"compact stripe fill-container\">\n  <thead>\n    <tr>\n      <th>Source<\/th>\n      <th>Answer<\/th>\n      <th>Coded theme(s)<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"ft","paging":false,"columnDefs":[{"name":"Source","targets":0},{"name":"Answer","targets":1},{"name":"Coded theme(s)","targets":2}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<div class="cell" title="Transdisciplinarity → policy">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tbl</span>(<span class="fu">text_table</span>(tx, <span class="st">"transdisc_policy"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-d3d11ee039418e6b3035" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-d3d11ee039418e6b3035">{"x":{"filter":"none","vertical":false,"fillContainer":true,"data":[["Davos","Davos","Davos","Davos","Davos","Davos","Davos","Davos","Davos","Davos","Davos","Davos","IDSSD","IDSSD","IDSSD","IDSSD","IDSSD","IDSSD"],["Citizen science","Merging environmental education, citizen science and participatory/bottom democracy","Have good facilitators who can communicate between disciples and actors","Different perspectives, such as highlighting actions that could inprove human health or wellbeing. Or ny enhancing connections to local history.","By helping ensure that data collection is informed by and ready for management needs, and vice versa","Intermediate layer between science/scientists and policy","Creation of strong relationships with a shared goal","Give stakeholders agency","Help track many social elements of gbf, fundamental to effective conservation","Make monitoring attractive to people out of the science","Look at already implemented projects and learn/improve starting from them (e.g. in education, economic regulation, ....)","Strengthen stakeholder engagement and co-production of knowledge","More relevant research questions are asked, researched and results shared more appropriately.","It avoids duplications. It helps data sharing. It covers all aspects","Different perspectives added.","Involve government agencies in the research from the beginning, and encourage integration of findings into policies.","Raising awareness about (soil) biodiversity is a key issue to make substantial progress (both for advancing knowledge through citizen science and moving police makers forward)","Local involvement means more relevant research and more local support"]],"container":"<table class=\"compact stripe fill-container\">\n  <thead>\n    <tr>\n      <th>Source<\/th>\n      <th>Answer<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"ft","paging":false,"columnDefs":[{"name":"Source","targets":0},{"name":"Answer","targets":1}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<div class="cell" title="Knowledge gaps">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tbl</span>(<span class="fu">text_table</span>(tx, <span class="st">"knowledge_gaps"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-da35f7d106b84bfcd00b" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-da35f7d106b84bfcd00b">{"x":{"filter":"none","vertical":false,"fillContainer":true,"data":[["IDSSD","IDSSD","IDSSD","IDSSD","IDSSD","IDSSD","IDSSD"],["Indigenous and local practices and knowledge contributions to monitoring biodiversity","Ecological connectivity","Soil biodiversity including functional biodiversity","Data knowledge involving local communities","Belowground interaction networks (trophic and non trophic)","Local values and concerns","Topsoil vs subsoil biodiversity and fonctions"]],"container":"<table class=\"compact stripe fill-container\">\n  <thead>\n    <tr>\n      <th>Source<\/th>\n      <th>Answer<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"ft","paging":false,"columnDefs":[{"name":"Source","targets":0},{"name":"Answer","targets":1}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<div class="cell" title="Unique value of the CRA">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tbl</span>(<span class="fu">text_table</span>(tx, <span class="st">"unique_value"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-efd02108a7bfa05a48b1" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-efd02108a7bfa05a48b1">{"x":{"filter":"none","vertical":false,"fillContainer":true,"data":[["Davos","Davos","Davos","Davos","Davos","Davos","Davos","Davos","Davos"],["Long term approach","Support for biodiversity data","Inclusively","Potentially long term partnership and funding","By funding long term monitoring designed to need collect needs for management agencies and scientific research","Simplicity. Accessibility for local people without requiring them to be subordinate to a western University","Transdisciplinarity from the start, not as a potential","Longterm perspective","Long term financial supports"]],"container":"<table class=\"compact stripe fill-container\">\n  <thead>\n    <tr>\n      <th>Source<\/th>\n      <th>Answer<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"ft","paging":false,"columnDefs":[{"name":"Source","targets":0},{"name":"Answer","targets":1}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<div class="cell" title="Component to add">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tbl</span>(<span class="fu">text_table</span>(tx, <span class="st">"added_component"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-95a89635e06930d4d5d3" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-95a89635e06930d4d5d3">{"x":{"filter":"none","vertical":false,"fillContainer":true,"data":[["Davos","Davos","Davos","Davos","Davos","Davos","Davos"],["Long term, locally controlled funding","Ensuring that monitoring also accounts for and links to management actions","Agrobiodiversity","Communication for large public, and education","Sell it as an opportunity to fund our research","Key focus on engagement of IPLCs in biodiversity monitoring","a dedicated science–policy and stakeholder engagement platform"]],"container":"<table class=\"compact stripe fill-container\">\n  <thead>\n    <tr>\n      <th>Source<\/th>\n      <th>Answer<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"ft","paging":false,"columnDefs":[{"name":"Source","targets":0},{"name":"Answer","targets":1}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+</section>
+<section id="cbc-2026-topics" class="level1">
+<h1>CBC 2026 topics</h1>
+<section id="row-8" class="level2">
+<h2 class="anchored" data-anchor-id="row-8">Row</h2>
+<div class="cell" title="Which four topics should be discussed? (votes, 16 participants)">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="fu">multi_fig</span>(<span class="st">"cbc_topics"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-578236fedb7d4e92a273" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-578236fedb7d4e92a273">{"x":{"visdat":{"12c8c3290a69e":["function () ","plotlyVisDat"]},"cur_data":"12c8c3290a69e","attrs":{"12c8c3290a69e":{"x":{},"y":{},"orientation":"h","text":{},"textposition":"outside","marker":{"color":"#2a9d8f"},"customdata":{},"hovertemplate":"%{y}<br>%{x} votes (%{customdata:.0f}% of participants)<extra><\/extra>","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar"}},"layout":{"margin":{"b":10,"l":10,"t":10,"r":10},"barmode":"stack","plot_bgcolor":"white","font":{"size":12},"showlegend":false,"legend":{"orientation":"h","x":0,"y":1.02,"xanchor":"left","yanchor":"bottom","title":{"text":""}},"xaxis":{"domain":[0,1],"automargin":true,"gridcolor":"#eeeeee","title":"Number of participants"},"yaxis":{"domain":[0,1],"automargin":true,"title":"","type":"category","categoryorder":"array","categoryarray":["Integrating TEK / Indigenous &<br>local knowledge","FAIR / CARE data & sovereignty","Local relevance & global targets","Data → action & decisions","Lasting partnerships &<br>infrastructure","Monitoring design: change,<br>drivers, actions","Transdisciplinary design from the<br>outset","Reusing existing long-term<br>datasets"]},"hovermode":"closest"},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[2,2,4,7,7,8,10,10],"y":["Integrating TEK / Indigenous &<br>local knowledge","FAIR / CARE data & sovereignty","Local relevance & global targets","Data → action & decisions","Lasting partnerships &<br>infrastructure","Monitoring design: change,<br>drivers, actions","Transdisciplinary design from the<br>outset","Reusing existing long-term<br>datasets"],"orientation":"h","text":[2,2,4,7,7,8,10,10],"textposition":["outside","outside","outside","outside","outside","outside","outside","outside"],"marker":{"color":"#2a9d8f","line":{"color":"rgba(31,119,180,1)"}},"customdata":[12.5,12.5,25,43.75,43.75,50,62.5,62.5],"hovertemplate":["%{y}<br>%{x} votes (%{customdata:.0f}% of participants)<extra><\/extra>","%{y}<br>%{x} votes (%{customdata:.0f}% of participants)<extra><\/extra>","%{y}<br>%{x} votes (%{customdata:.0f}% of participants)<extra><\/extra>","%{y}<br>%{x} votes (%{customdata:.0f}% of participants)<extra><\/extra>","%{y}<br>%{x} votes (%{customdata:.0f}% of participants)<extra><\/extra>","%{y}<br>%{x} votes (%{customdata:.0f}% of participants)<extra><\/extra>","%{y}<br>%{x} votes (%{customdata:.0f}% of participants)<extra><\/extra>","%{y}<br>%{x} votes (%{customdata:.0f}% of participants)<extra><\/extra>"],"type":"bar","error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<div class="cell" title="Full wording">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>cc <span class="ot">&lt;-</span> ch <span class="sc">|&gt;</span> <span class="fu">filter</span>(topic <span class="sc">==</span> <span class="st">"cbc_topics"</span>) <span class="sc">|&gt;</span> <span class="fu">arrange</span>(<span class="fu">desc</span>(votes))</span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a><span class="fu">tbl</span>(<span class="fu">tibble</span>(<span class="at">Topic =</span> cc<span class="sc">$</span>option,</span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a>           <span class="st">`</span><span class="at">Question as asked</span><span class="st">`</span> <span class="ot">=</span> cc<span class="sc">$</span>option_full,</span>
+<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a>           <span class="at">Votes =</span> cc<span class="sc">$</span>votes,</span>
+<span id="cb32-5"><a href="#cb32-5" aria-hidden="true" tabindex="-1"></a>           <span class="st">`</span><span class="at">% of participants</span><span class="st">`</span> <span class="ot">=</span> <span class="fu">paste0</span>(<span class="fu">round</span>(cc<span class="sc">$</span>votes <span class="sc">/</span> cc<span class="sc">$</span>n_web <span class="sc">*</span> <span class="dv">100</span>), <span class="st">"%"</span>)))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-eba8b4a588d04852e3bd" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-eba8b4a588d04852e3bd">{"x":{"filter":"none","vertical":false,"fillContainer":true,"data":[["Transdisciplinary design from the outset","Reusing existing long-term datasets","Monitoring design: change, drivers, actions","Data → action &amp; decisions","Lasting partnerships &amp; infrastructure","Local relevance &amp; global targets","Integrating TEK / Indigenous &amp; local knowledge","FAIR / CARE data &amp; sovereignty"],["How can biodiversity monitoring be designed and implemented through genuinely transdisciplinary approaches, involving societal actors from the outset?","How can we make better use of existing, long-term biodiversity datasets, including historical, community-based, citizen-science and monitoring data?","How can we design monitoring systems that better capture biodiversity change, its drivers, and the effectiveness of conservation and restoration actions?","How can long-term biodiversity data be better used to support concrete action and decision-making?","How can BIODIVERSITY3 build lasting partnerships, capacities and monitoring infrastructures beyond the lifetime of individual research projects?","How can biodiversity monitoring be made more relevant to local and regional priorities while still contributing to global biodiversity assessments and targets?","How can Traditional Ecological Knowledge, Indigenous and Local Knowledge, and other knowledge systems be meaningfully integrated with scientific knowledge?","How can research and monitoring generate knowledge that is FAIR, accessible and reusable, while respecting CARE principles, data sovereignty and the rights of knowledge holders?"],[10,10,8,7,7,4,2,2],["62%","62%","50%","44%","44%","25%","12%","12%"]],"container":"<table class=\"compact stripe fill-container\">\n  <thead>\n    <tr>\n      <th>Topic<\/th>\n      <th>Question as asked<\/th>\n      <th>Votes<\/th>\n      <th>% of participants<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"ft","paging":false,"columnDefs":[{"className":"dt-right","targets":2},{"name":"Topic","targets":0},{"name":"Question as asked","targets":1},{"name":"Votes","targets":2},{"name":"% of participants","targets":3}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+</section>
+<section id="about" class="level1">
+<h1>About</h1>
+<section id="row-9" class="level2">
+<h2 class="anchored" data-anchor-id="row-9">Row</h2>
+<div class="card" title="Data &amp; caveats">
+<p><strong>Source.</strong> Four survey exports: <code>Scoping_CBC2026</code>, <code>Scoping_Davos</code>, <code>Scoping_IDSSD</code>, <code>Scoping_SRI</code>. Only the aggregated per-question sheets were used, plus participant count and country from the main sheet. The name, username and e-mail columns are never read; the message-wall sheets were ignored.</p>
+<p><strong>Participants</strong> = rows in each main-results sheet, including people who joined but answered little. <strong>Countries</strong> are mentions: some people listed two, and answers were normalised (e.g.&nbsp;Scotland and UK → United Kingdom).</p>
+<p><strong>Questionnaires differ by event.</strong> Questions were matched by wording, not number. CBC 2026 asked about discussion topics but not about engagement or barriers; IDSSD covered both Arctic 3 (A3) and Biodiversity 3 (BD3); SRI’s barrier list had extra options. IDSSD labels the top of its 0–4 scales “3”; because the wording matches, it is plotted as 4. The headline percentages pool Biodiversity 3 responses only (IDSSD’s A3 answers are shown separately).</p>
+<p><strong>Small samples.</strong> Most questions have 5–16 responses per event. Treat everything as indicative.</p>
+<p><strong>Keyword coding.</strong> Themes for co-design partners and 30 by 30 factors come from simple keyword rules in <code>build_data.R</code> (<code>CODESIGN_THEMES</code>, <code>FACTORS_THEMES</code>). They are a first pass for orientation; edit the rules or recode by hand.</p>
+<p><strong>Empty questions.</strong> Knowledge gaps (Davos, SRI), unique value and added component (IDSSD, SRI) and transdisciplinarity → policy (SRI) have no recorded answers.</p>
+<p><strong>Rebuild.</strong> Put the four <code>.xlsx</code> files in <code>raw/</code>, run <code>Rscript build_data.R raw</code>, then <code>quarto render dashboard.qmd</code>.</p>
+</div>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/ericpante\.github\.io");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>made with <a href="https://quarto.org/">quarto</a>, an open source scientific publishing system. To see the code, click <a href="https://github.com/ericpante/ericpante.github.io">here</a></p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
