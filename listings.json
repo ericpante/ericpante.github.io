@@ -37,18 +37,18 @@
   {
     "listing": "/projects/biodiversity3.html",
     "items": [
-      "/projects/biodiversity3/biodiversity3_scoping_plenary.html",
+      "/projects/biodiversity3/biodiversity3_scoping_SRI.html",
       "/projects/biodiversity3/biodiversity3_scoping_BioMonWeek.html",
-      "/projects/biodiversity3/biodiversity3_scoping_CBC.html",
+      "/projects/biodiversity3/biodiversity3_scoping_IMCC8.html",
+      "/projects/biodiversity3/biodiversity3_scoping_WBF.html",
+      "/projects/biodiversity3/biodiversity3_scoping_plenary.html",
       "/projects/biodiversity3/biodiversity3_scoping_ICES.html",
       "/projects/biodiversity3/biodiversity3_scoping_IDSSD.html",
-      "/projects/biodiversity3/biodiversity3_scoping_IMCC8.html",
-      "/projects/biodiversity3/biodiversity3_scoping_Americas.html",
-      "/projects/biodiversity3/biodiversity3_scoping_SEElife2.html",
-      "/projects/biodiversity3/biodiversity3_scoping_SRI.html",
-      "/projects/biodiversity3/biodiversity3_scoping_results.html",
+      "/projects/biodiversity3/biodiversity3_scoping_CBC.html",
       "/projects/biodiversity3/biodiversity3_scoping_WAITRO.html",
-      "/projects/biodiversity3/biodiversity3_scoping_WBF.html"
+      "/projects/biodiversity3/biodiversity3_scoping_results.html",
+      "/projects/biodiversity3/biodiversity3_scoping_Americas.html",
+      "/projects/biodiversity3/biodiversity3_scoping_SEElife2.html"
     ]
   }
 ]
